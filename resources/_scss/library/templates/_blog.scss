@@ -1,0 +1,9 @@
+.news__template {
+	padding-top: 8rem;
+	padding-bottom: 5rem;
+	background-color: #EEF7FA;
+}
+.card--news {
+	//background-color: #fff;
+	@extend .card--common;
+}

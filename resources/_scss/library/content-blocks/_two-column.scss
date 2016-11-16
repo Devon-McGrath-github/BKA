@@ -1,0 +1,18 @@
+.two-column {
+	.col-sm-6 {
+		order: 2;
+		@include media-breakpoint-up(sm) {}
+		& + .col-sm-6 {
+			@include media-breakpoint-up(sm) {}
+		}
+	}
+	&.two-column--align {
+		.row {
+			@include align-items(center);
+		}
+	}
+	&.two-column--invert
+	.col-sm-6 + .col-sm-6 {
+	  order: 1;
+	}
+}

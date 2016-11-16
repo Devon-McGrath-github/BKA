@@ -1,0 +1,46 @@
+$pagination-btn-color: #243444;
+
+.pagination {
+	width: 100%;
+	text-align: center;
+	padding-bottom: 5rem;
+	.pagination-inner {
+		position: relative;
+	}
+	.pagination-btn {
+		position: absolute;
+		top: 50%;
+		@include transform(translateY(-50%));
+		text-transform: uppercase;
+		color: $pagination-btn-color;
+		font-size: 0.9375rem;
+		&:hover {
+			text-decoration: none;
+		} 
+		span {
+			display: inline-block;
+			vertical-align: middle;
+		}
+	}
+	.pagination-prev {
+		left: 1.6rem;
+		.pagination-arrow {
+			margin-right: 1rem;
+		}
+	}
+	.pagination-next {
+		right: 1.6rem;
+		.pagination-arrow {
+			margin-left: 1rem;
+		}
+	}
+	.pagination-arrow {
+		width: 16px;
+		height: 16px;
+		vertical-align: middle;
+	}
+	.pagination-pages {
+		display: inline-block;
+		width: auto;
+	}
+}

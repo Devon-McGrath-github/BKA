@@ -1,0 +1,14 @@
+.site-navigation {
+	display: block;
+	@media screen and (min-width: #{$header-sm}) {
+		display: inline-block;
+		width: auto;
+	}
+	a {
+		color: $nav-link-color;
+		&.active,
+		&:hover {
+			color: darken($nav-link-color, 15%);
+		}
+	}
+}

@@ -1,0 +1,48 @@
+// Slick
+.slick-list,
+.slick-track {
+	height: 100%;
+}
+.slick-slide {
+	&:active,
+	&:focus {
+		outline: none;
+	}
+}
+.slick-arrow {
+	color: #fff;
+	background: transparent;
+	border: 0;
+	position: absolute;
+	top: 50%;
+	&:active,
+	&:focus {
+		outline: none;
+	}
+	z-index: $zindex-2;
+	@include transform(translateY(-50%));
+	&.slick-prev {
+		left: 0;
+	}
+	&.slick-next {
+		right: 0;
+	}
+}
+%globalSlider {
+	width: 100%;
+	.slide {
+		position: relative;
+		.row {
+			@include flexbox();
+			@include align-items(flex-end);
+			@include justify-content(flex-start);
+		}
+	}
+	.slide__image {}
+	.slide__content {}
+}
+
+
+@import "fullscreen-slider";
+@import "fullwidth-slider";
+@import "carousel-slider";

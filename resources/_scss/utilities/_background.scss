@@ -1,0 +1,54 @@
+//
+// Contextual backgrounds
+//
+
+.bg-faded {
+  background-color: $gray-lightest;
+}
+
+@include bg-variant('.bg-primary', $brand-primary);
+
+@include bg-variant('.bg-success', $brand-success);
+
+@include bg-variant('.bg-info', $brand-info);
+
+@include bg-variant('.bg-warning', $brand-warning);
+
+@include bg-variant('.bg-danger', $brand-danger);
+
+@include bg-variant('.bg-inverse', $brand-inverse);
+
+
+//
+// Custom utilities
+//
+
+// responsive aspect ratio's
+
+.ratio-21by9 {
+  @extend .embed-responsive-21by9;
+}
+.ratio-16by9 {
+  @extend .embed-responsive-16by9;
+}
+.ratio-4by3 {
+  @extend .embed-responsive-4by3;
+}
+.ratio-1by1 {
+  @extend .embed-responsive-1by1;
+}
+
+// Background-images
+
+%bg-image {
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.bg-image-cover {
+  @extend %bg-image;
+  background-size: cover;
+}
+.bg-image-contain {
+  @extend %bg-image;
+  background-size: contain;
+}

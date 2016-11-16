@@ -1,0 +1,9 @@
+.sub-navigation {
+	a {
+		color: $nav-link-color;
+		&.active,
+		&:hover {
+			color: darken($nav-link-color, 15%);
+		}
+	}
+}

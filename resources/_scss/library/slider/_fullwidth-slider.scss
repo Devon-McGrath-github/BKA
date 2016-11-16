@@ -1,0 +1,15 @@
+.fullwidth-slider__wrapper {
+	position: relative;
+	overflow: hidden;
+}
+.fullwidth-slider {
+	@extend %globalSlider;
+	height: 548px;
+	overflow: hidden;
+	.slide-content__wrapper {
+		width: 100%;
+		position: absolute;
+		bottom: 0;
+	}
+	.slide__content {}
+}

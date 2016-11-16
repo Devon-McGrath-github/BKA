@@ -1,0 +1,142 @@
+
+@mixin alt-column-left() {
+	.alt-card-col {
+		order: 2;
+		& + .alt-card-col {
+			text-align: left;
+		}
+	}
+}
+@mixin alt-column-right() {
+	.alt-card-col {
+		order: 2;
+		& + .alt-card-col{
+			order: 1;
+			text-align: right;
+		}
+	}
+}
+
+.two-column-alt {
+	padding-top: 0;
+	padding-bottom: 0;
+}
+
+@include media-breakpoint-up(sm) {
+	.alt-card:nth-child(odd) {
+		@include alt-column-left();
+	}
+	.alt-card:nth-child(even) {
+		@include alt-column-right();
+	}
+}
+
+@include media-breakpoint-up(lg) {
+	// 1 + 4  ( eg numbers 1, 5, 9, 13, 17 ... )
+	.alt-card:nth-child(4n-7) {
+    	@include alt-column-left();
+		
+		// 2 + 4 ( eg numbers 2, 6, 10, 14, 18 ... )
+    	& + .alt-card {
+    		@include alt-column-left();
+
+
+			// 3 + 4 ( eg numbers 3, 7, 11, 15, 19 ... )
+    		& + .alt-card {
+    			@include alt-column-right();
+
+				// 3 + 4 ( eg numbers 4, 8, 12, 16, 20 ... )
+    			& + .alt-card {
+    				@include alt-column-right();
+    			}
+    		}
+    	}
+    }
+}
+
+.alt-card {
+	@include alt-column-left();
+	@include transition(box-shadow 0.3s ease);
+	.card-block {
+		padding: 4rem 3.2rem 3rem 3.2rem;
+		color: $brand-secondary;
+		@include media-breakpoint-up(lg) {
+			padding: 2rem;
+		}
+		@media screen and (min-width: 1210px) {
+			padding: 4rem 3.2rem 3rem 3.2rem;
+		}
+	}
+	.card-title {
+		// @include alt-font-regular();
+		text-transform: uppercase;
+		font-size: 2.4rem;
+		margin-bottom: 2rem;
+		//@include responsive-text(18, 24, 400, 1200);
+		@include media-breakpoint-up(lg) {
+			font-size: 1.8rem;
+		}
+		@media screen and (min-width: 1210px) {
+			font-size: 2.4rem;
+		}
+	}
+	p {
+		font-size: 1.8rem;
+		@include media-breakpoint-up(lg) {
+			font-size: 1.6rem;
+			line-height: 1.8;
+		}
+
+		@media screen and (min-width: 1210px) {
+			font-size: 2.4rem;
+			font-size: 1.8rem;
+		}
+	}
+	.text-block {
+		
+		max-height: 94px;
+		overflow: hidden;
+		margin-bottom: .7rem;
+		@include media-breakpoint-up(lg) {
+			max-height: 85px;
+			margin-bottom: 0;
+		}
+		@media screen and (min-width: 1210px) {
+			max-height: 94px;
+			margin-bottom: .7rem;
+		}
+	}
+	&:hover {
+		-webkit-box-shadow: 0px 0px 10px 3px rgba(0,0,0,0.35);
+		-moz-box-shadow: 0px 0px 10px 3px rgba(0,0,0,0.35);
+		box-shadow: 0px 0px 10px 3px rgba(0,0,0,0.35);
+		z-index: 2;
+		@include transition(box-shadow 0.3s ease);
+		.alt-image {
+			transform: scale(1.065);
+			@include transition(all 0.3s ease);
+		}
+		.btn-link {
+			color: $brand-secondary;
+		}
+	}
+}
+
+.alt-image-container {
+	position: relative;
+	overflow: hidden;
+	&:before {
+		content: "";
+		display: block;
+		width: 100%;
+		padding-bottom: 100%;
+	}
+	.alt-image {
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		@include transition(all 0.3s ease);
+	}
+}

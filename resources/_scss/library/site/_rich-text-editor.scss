@@ -1,0 +1,48 @@
+.rte__content {
+	img {
+		display: block;
+		margin-top: 3rem;
+		margin-bottom: 3rem;
+		@include media-breakpoint-up(md) {
+			margin-top: 3.6rem;
+			margin-bottom: 3.6rem;
+		}
+		@include media-breakpoint-up(lg) {
+			margin-top: 4rem;
+			margin-bottom: 4rem;
+		}
+	}
+	h1 {}
+	h2 {}
+	h3 {}
+	h4 {}
+	h5 {}
+	h6 {}
+	ul,
+	ol {
+		padding: 0;
+		margin-top: 2.1rem;
+		@include media-breakpoint-up(md) {
+			margin-top: 2.9rem;
+		}
+		@include media-breakpoint-up(lg) {
+			margin-top: 3.9rem;
+		}
+		&:first-child {
+			margin-top: 0;
+		}
+	}
+	a {
+		border-bottom: 1px solid $brand-primary;
+		color: $body-color;
+		&:hover {
+			color: $brand-primary;
+		}
+	}
+	p + .btn {
+		margin-top: 2rem;
+		@include media-breakpoint-up(md) {
+			margin-top: 3rem;
+		}
+	}
+}

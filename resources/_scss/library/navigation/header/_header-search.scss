@@ -1,0 +1,8 @@
+.js-close-search {
+	.icon-close {}
+}
+.search {
+	color: $nav-link-color;
+	//background: url($data-search-green-blue) no-repeat right 0.75rem center;
+	&:focus {}
+}

@@ -1,0 +1,57 @@
+$burger-color: $brand-primary;
+
+// Burger icon
+.burger-link {
+    display: block;
+    width: 40px;
+    height: 40px;
+	position: fixed;
+	right: 10px;
+	top: 5px;
+	z-index: 9999;
+}
+.burger-icon {
+	height: 2px;
+    background-color: $burger-color;
+    width: 24px;
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    top: 50%;
+    margin-top: -2px;
+    @include transition(all .5s ease);
+    &:before,
+    &:after {
+    	content: '';
+		height: 2px;
+		background-color: $burger-color;
+		width: 24px;
+		display: block;
+		margin: 0 auto;
+		position: absolute;
+		@include transition(all .5s ease);
+    }
+    &:before {
+    	top: -7px;
+    }
+    &:after {
+    	bottom: -7px;
+    }
+    .show-menu & {
+    	background-color: transparent;
+		&:before {
+			width: 32px;
+			left: -3px;
+    		top: auto;
+			@include transform(rotate(45deg));
+			@include transition(all .5s ease);
+		}
+		&:after {
+			bottom: auto;
+			width: 32px;
+			left: -3px;
+			@include transform(rotate(-45deg));
+			@include transition(all .5s ease);
+		}
+    }
+}

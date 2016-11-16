@@ -1,0 +1,30 @@
+.archive-dropdown {
+	list-style-type: none;
+	padding-left: 0;
+	border-bottom: 1px solid $gray-lighter;
+	.year {
+		font-size: 1.0625rem;
+		padding: 1.25rem 0;
+		display: block;
+		border-top: 1px solid $gray-lighter;
+		padding-left: 20px;
+		cursor: pointer;
+	}
+}
+.archive-item {
+	padding-left: 20px;
+	list-style-type: none;
+	padding-bottom: 20px;
+	li {
+		padding-left: 0;
+		margin-bottom: 4px;
+	}
+	.month {
+		display: inline-block;
+		margin-right: 20px;
+	}
+	a {
+		font-size: 1.0625rem;
+		color: #333;
+	}
+}

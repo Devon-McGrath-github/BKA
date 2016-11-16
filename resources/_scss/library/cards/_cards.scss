@@ -1,0 +1,31 @@
+@mixin removeCbMarginTop {
+	margin-top: calc((#{$cb-padding-top} / 3) * -1);
+	@include media-breakpoint-up(sm) {
+		margin-top: calc((#{$cb-padding-top} / 2) * -1);
+	}
+	@include media-breakpoint-up(md) {
+		margin-top: $cb-padding-top * -1;
+	}
+}
+// Usage @include removeCbMarginTop();
+
+
+.card-title {}
+.card-text {
+	color: $body-color;
+	&.info {
+    	margin-bottom: 0;
+  	}
+}
+
+.card-block__wrapper {
+	& + .card-block__wrapper {}
+}
+
+
+@import "card-common";
+@import "one-column-card";
+@import "two-column-card";
+@import "three-column-card";
+@import "four-column-card";
+@import "two-column-card-alt";

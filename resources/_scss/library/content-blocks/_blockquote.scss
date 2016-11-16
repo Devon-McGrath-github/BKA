@@ -1,0 +1,17 @@
+.cb-blockquote {
+	footer {}
+	cite {
+		font-style: normal;
+	}
+	.lead {
+		color: #fff;
+		// @include alt-font-regular();
+		font-size: 3.2rem;
+		line-height: 1.25;
+	}
+	&.theme--dark {
+		.lead {
+			color: $brand-secondary;
+		}
+	}
+}
