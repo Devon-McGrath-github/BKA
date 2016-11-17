@@ -2,12 +2,9 @@
 
 
 // styling for the entire block of indexs
+.tile-block { @include content-block(); }
+
 .tile-block {
-  background-color: white;
-  width: 95%;
-  margin-left: 2.5%;
-  margin-right: 2.5%;
-  margin-bottom: 5%;
   // TODO: get correct border styling
   border-top: $border-light;
 }
@@ -22,6 +19,7 @@
   border-bottom: $border-light;
   .index-arrow {
     // float: right;
+    margin-left: auto;
   }
 
   .index-info {

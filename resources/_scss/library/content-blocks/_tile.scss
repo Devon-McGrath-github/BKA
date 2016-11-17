@@ -2,13 +2,9 @@
 
 // TODO: should modularise this as its repeated in index card
 // Main div
-.article-block {
-  background-color: white;
-  width: 95%;
-  margin-left: 2.5%;
-  margin-right: 2.5%;
-  margin-bottom: 5%;
-}
+
+
+.content-block { @include content-block(); }
 
 // category = heading text
 // TODO: background-color needs to change based on tile topic
@@ -30,6 +26,9 @@
 // main article with image
 .featured-article {
   border-bottom: $border-light;
+  .featured-article-image {
+    width: 100%
+  }
   .featured-article-text-content {
     // TODO: boilerplate with sub-article create a variable?
     // issue is may not use the same padding

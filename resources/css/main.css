@@ -7468,7 +7468,7 @@ img.mfp-img {
 .cb-blockquote.theme--dark .lead {
   color: #00d1b2; }
 
-.article-block {
+.content-block {
   background-color: white;
   width: 95%;
   margin-left: 2.5%;
@@ -7483,6 +7483,8 @@ img.mfp-img {
 
 .featured-article {
   border-bottom: 1px solid #e2e2e2; }
+  .featured-article .featured-article-image {
+    width: 100%; }
   .featured-article .featured-article-text-content {
     padding: 2%;
     border-left: 1px solid #e2e2e2;
@@ -7515,7 +7517,9 @@ img.mfp-img {
   width: 95%;
   margin-left: 2.5%;
   margin-right: 2.5%;
-  margin-bottom: 5%;
+  margin-bottom: 5%; }
+
+.tile-block {
   border-top: 1px solid #e2e2e2; }
 
 .index-card {
@@ -7525,6 +7529,8 @@ img.mfp-img {
   border-left: 1px solid #e2e2e2;
   border-right: 1px solid #e2e2e2;
   border-bottom: 1px solid #e2e2e2; }
+  .index-card .index-arrow {
+    margin-left: auto; }
   .index-card .index-info {
     width: 100%; }
   .index-card p {
@@ -7532,6 +7538,16 @@ img.mfp-img {
 
 .index-title, .index-info, .index-arrow {
   display: inline; }
+
+.advertisement-container {
+  background-color: white;
+  width: 95%;
+  margin-left: 2.5%;
+  margin-right: 2.5%;
+  margin-bottom: 5%; }
+
+.advertisement-image {
+  width: 100%; }
 
 /* Content Cards */
 .card-text {
