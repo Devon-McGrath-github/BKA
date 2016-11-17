@@ -1,7 +1,9 @@
-#nav {
+.nav {
   margin: 0;
   padding: 0;
   width: 100%;
+
+  background-color: $white;
 
   .header-logo {
     display: inline;
@@ -13,5 +15,6 @@
     display: inline;
     margin: 0;
     padding: 0;
+    float: left;
   }
 }

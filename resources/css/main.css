@@ -7181,6 +7181,11 @@ img.mfp-img {
   display: none; }
 
 /* Navigation */
+.display-gap {
+  margin: 0;
+  padding: 0;
+  border-top: 5px solid #40c4c6; }
+
 .site-navigation {
   display: block; }
   @media screen and (min-width: 640px) {
@@ -7247,19 +7252,29 @@ img.mfp-img {
       transform: rotate(-45deg);
       transition: all 0.5s ease; }
 
-#nav {
+.nav {
   margin: 0;
   padding: 0;
-  width: 100%; }
-  #nav .header-logo {
+  width: 100%;
+  background-color: #FFFFFF; }
+  .nav .header-logo {
     display: inline;
     margin: 0;
     padding: 0;
     float: left; }
-  #nav .folded-nav {
+  .nav .folded-nav {
     display: inline;
     margin: 0;
-    padding: 0; }
+    padding: 0;
+    float: left; }
+
+.site-footer {
+  background-color: #40c4c6;
+  color: #FFFFFF;
+  text-align: center; }
+
+.copyright {
+  display: inline; }
 
 /* Slider */
 .slick-list,
