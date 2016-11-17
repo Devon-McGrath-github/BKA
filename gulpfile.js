@@ -39,11 +39,13 @@ gulp.task('watch', function () {
 
     // listen on port 35729
     browserSync({
+      // TODO: make sure to change this out and have it working 100% before handing over project.
+      // proxy: "http://yoururl1"
       server: {
         baseDir: "./"
       }
     });
-    
+
     // watch scss files
     gulp.watch('resources/_scss/**/*.scss', ['sass']);
     gulp.watch('resources/css/*.css').on('change', reload);

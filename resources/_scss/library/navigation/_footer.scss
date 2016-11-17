@@ -4,10 +4,18 @@
   text-align: center;
 }
 
+// padding variable
+$padding-footer-text: 5%;
+
 .footer-heading {
   width: 100%;
   text-align: center;
   color: $white;
+  padding-top: $padding-footer-text;
+  padding-bottom: $padding-footer-text;
+  h3 {
+    margin: 0;
+  }
 }
 
 .footer-list {
@@ -23,7 +31,10 @@
   }
 }
 
-
+.copyright-container {
+  padding-top: $padding-footer-text;
+  padding-bottom: $padding-footer-text;
+}
 .copyright {
   display: inline;
 }

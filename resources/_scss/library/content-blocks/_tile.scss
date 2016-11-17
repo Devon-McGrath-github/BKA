@@ -1,9 +1,7 @@
 //tile
 
-// where should article-border go in variables.scss?
-$article-border:         1px solid black;
-
-// should modularise this (boilerplate in index card css)
+// TODO: should modularise this as its repeated in index card
+// Main div
 .article-block {
   background-color: white;
   width: 95%;
@@ -12,23 +10,60 @@ $article-border:         1px solid black;
   margin-bottom: 5%;
 }
 
-// background-color needs to change based on tile topic
+// category = heading text
+// TODO: background-color needs to change based on tile topic
 .category {
   background-color: $blue;
   text-align: center;
   color: $white;
+  margin: 0;
 }
-.featured-article {
-  border-bottom: $article-border;
-  .category-text {
-    color: $green;
-    display: inline;
-  }
 
-  .article-date {
-    display: inline;
+// border around all articles
+// .articles-container {
+//   border-top: 0;
+//   border-left: $border-light;
+//   border-right: $border-light;
+//   border-bottom: $border-light;
+// }
+
+// main article with image
+.featured-article {
+  border-bottom: $border-light;
+  .featured-article-text-content {
+    // TODO: boilerplate with sub-article create a variable?
+    // issue is may not use the same padding
+    padding: 2%;
+    border-left: $border-light;
+    border-right: $border-light;
   }
 }
+
+// Article titles
+.article-title-big {
+  color: $black-lighter;
+  margin: 0;
+}
+.article-title-small {
+  color: $black-lighter;
+  // removed margin for these h3's not universally
+  margin: 0;
+}
+
+// supporting article information. Text
+.category-text {
+  color: $green;
+  display: inline;
+}
+.article-info {
+  color: $gray-muted;
+  display: inline;
+}
+
 .sub-article {
-  border-bottom: $article-border;
+  padding: 2%;
+  // TODO: border needs to be adjusted. Its not a solid line in the brief
+  border-left: $border-light;
+  border-right: $border-light;
+  border-bottom: $border-light;
 }

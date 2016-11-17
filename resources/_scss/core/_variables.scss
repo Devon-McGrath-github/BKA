@@ -42,12 +42,14 @@
 //
 // Grayscale and brand colors for use across Bootstrap.
 $black:                     #0a0a0a !default;
+$black-lighter:             #4d4d4d !default;
 $gray-darker:               #363636 !default;
 $gray-dark:                 #4a4a4a !default;
 $gray:                      #7a7a7a !default;
 $gray-light:                #b5b5b5 !default;
 $gray-lighter:              #dbdbdb !default;
 $gray-lightest:             #f7f7f7 !default;
+$gray-muted:                #c8c8c8 !default;
 $white:                     #FFFFFF !default;
 
 $brand-primary:             #3273dc !default;
@@ -62,8 +64,13 @@ $purple:                    #253454 !default;
 $yellow:                    #FED14F !default;
 $turquoise:                 #009C92 !default;
 
-$green:                     #4a8348 !default;
 $blue:                      #40c4c6 !default;
+$blue-dark:                 #b7bbac !default;
+$red:                       #8d2704 !default;
+$orange:                    #e29d2d !default;
+$green:                     #4a8348 !default;
+
+$border-gray:               #e2e2e2 !default;
 
 
 // Options
@@ -264,6 +271,10 @@ $component-active-bg:    $brand-primary !default;
 
 $caret-width:            .3em !default;
 $caret-width-lg:         $caret-width !default;
+
+$border-light:           1px solid $border-gray;
+// TODO: customize border
+
 
 
 // Tables

@@ -1,13 +1,40 @@
 //index-card
 
+
+// styling for the entire block of indexs
 .tile-block {
   background-color: white;
   width: 95%;
   margin-left: 2.5%;
   margin-right: 2.5%;
   margin-bottom: 5%;
+  // TODO: get correct border styling
+  border-top: $border-light;
 }
 
+// styling for an individual card
+.index-card {
+  margin: 0;
+  padding: 2%;
+  padding-left: 4%;
+  border-left: $border-light;
+  border-right: $border-light;
+  border-bottom: $border-light;
+  .index-arrow {
+    // float: right;
+  }
+
+  .index-info {
+    width: 100%;
+  }
+
+  // local styling of p tag
+  p {
+    color: $black-lighter;
+  }
+}
+
+// making all 3 components of a single index card display inline
 .index-title, .index-info, .index-arrow {
   display: inline;
 }
