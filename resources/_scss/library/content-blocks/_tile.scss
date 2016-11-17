@@ -3,29 +3,32 @@
 // where should article-border go in variables.scss?
 $article-border:         1px solid black;
 
-.latest-news {
+// should modularise this (boilerplate in index card css)
+.article-block {
   background-color: white;
   width: 95%;
   margin-left: 2.5%;
   margin-right: 2.5%;
-  
-  .heading-news {
-    background-color: $blue;
-    text-align: center;
-    color: $white;
-  }
-  .main-article {
-    border-bottom: $article-border;
-    .category-text {
-      color: $green;
-      display: inline;
-    }
+  margin-bottom: 5%;
+}
 
-    .article-date {
-      display: inline;
-    }
+// background-color needs to change based on tile topic
+.heading-news {
+  background-color: $blue;
+  text-align: center;
+  color: $white;
+}
+.main-article {
+  border-bottom: $article-border;
+  .category-text {
+    color: $green;
+    display: inline;
   }
-  .sub-article {
-    border-bottom: $article-border;
+
+  .article-date {
+    display: inline;
   }
+}
+.sub-article {
+  border-bottom: $article-border;
 }

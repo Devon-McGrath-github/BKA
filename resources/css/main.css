@@ -4415,11 +4415,11 @@ a.bg-danger:focus, a.bg-danger:hover {
 a.bg-inverse:focus, a.bg-inverse:hover {
   background-color: #313131 !important; }
 
-.bg-image-cover, .content-block, .bg-image-contain {
+.bg-image-cover, .bg-image-contain {
   background-position: center center;
   background-repeat: no-repeat; }
 
-.bg-image-cover, .content-block {
+.bg-image-cover {
   background-size: cover; }
 
 .bg-image-contain {
@@ -7340,24 +7340,6 @@ img.mfp-img {
     bottom: 0; }
 
 /* Content Blocks */
-.content-block {
-  padding-top: 2rem;
-  padding-bottom: 2rem; }
-  @media (min-width: 544px) {
-    .content-block {
-      padding-top: 3rem;
-      padding-bottom: 3rem; } }
-  @media (min-width: 768px) {
-    .content-block {
-      padding-top: 6rem;
-      padding-bottom: 6rem; } }
-  .content-block.no-padding--bottom {
-    padding-bottom: 0; }
-  .content-block.no-padding--top {
-    padding-top: 0; }
-  .content-block img {
-    width: 100%; }
-
 .two-column .col-sm-6 {
   -ms-flex-order: 2;
   order: 2; }
@@ -7474,24 +7456,35 @@ img.mfp-img {
 .cb-blockquote.theme--dark .lead {
   color: #00d1b2; }
 
-.latest-news {
+.article-block {
   background-color: white;
   width: 95%;
   margin-left: 2.5%;
-  margin-right: 2.5%; }
-  .latest-news .heading-news {
-    background-color: #40c4c6;
-    text-align: center;
-    color: #FFFFFF; }
-  .latest-news .main-article {
-    border-bottom: 1px solid black; }
-    .latest-news .main-article .category-text {
-      color: #4a8348;
-      display: inline; }
-    .latest-news .main-article .article-date {
-      display: inline; }
-  .latest-news .sub-article {
-    border-bottom: 1px solid black; }
+  margin-right: 2.5%;
+  margin-bottom: 5%; }
+
+.heading-news {
+  background-color: #40c4c6;
+  text-align: center;
+  color: #FFFFFF; }
+
+.main-article {
+  border-bottom: 1px solid black; }
+  .main-article .category-text {
+    color: #4a8348;
+    display: inline; }
+  .main-article .article-date {
+    display: inline; }
+
+.sub-article {
+  border-bottom: 1px solid black; }
+
+.tile-block {
+  background-color: white;
+  width: 95%;
+  margin-left: 2.5%;
+  margin-right: 2.5%;
+  margin-bottom: 5%; }
 
 /* Content Cards */
 .card-text {
