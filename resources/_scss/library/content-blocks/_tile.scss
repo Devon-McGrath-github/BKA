@@ -13,12 +13,12 @@ $article-border:         1px solid black;
 }
 
 // background-color needs to change based on tile topic
-.heading-news {
+.category {
   background-color: $blue;
   text-align: center;
   color: $white;
 }
-.main-article {
+.featured-article {
   border-bottom: $article-border;
   .category-text {
     color: $green;
