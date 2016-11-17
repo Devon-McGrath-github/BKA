@@ -7247,6 +7247,14 @@ img.mfp-img {
       transform: rotate(-45deg);
       transition: all 0.5s ease; }
 
+#nav .header-logo {
+  display: inline;
+  margin: 0; }
+
+#nav .folded-nav {
+  display: inline;
+  margin: 0; }
+
 /* Slider */
 .slick-list,
 .slick-track {
@@ -7434,7 +7442,18 @@ img.mfp-img {
   width: 95%;
   margin-left: 2.5%;
   margin-right: 2.5%; }
+  .latest-news .heading-news {
+    background-color: #40c4c6;
+    text-align: center;
+    color: #FFFFFF; }
   .latest-news .main-article {
+    border-bottom: 1px solid black; }
+    .latest-news .main-article .category-text {
+      color: #4a8348;
+      display: inline; }
+    .latest-news .main-article .article-date {
+      display: inline; }
+  .latest-news .sub-article {
     border-bottom: 1px solid black; }
 
 /* Content Cards */
