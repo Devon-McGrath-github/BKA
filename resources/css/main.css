@@ -7247,13 +7247,19 @@ img.mfp-img {
       transform: rotate(-45deg);
       transition: all 0.5s ease; }
 
-#nav .header-logo {
-  display: inline;
-  margin: 0; }
-
-#nav .folded-nav {
-  display: inline;
-  margin: 0; }
+#nav {
+  margin: 0;
+  padding: 0;
+  width: 100%; }
+  #nav .header-logo {
+    display: inline;
+    margin: 0;
+    padding: 0;
+    float: left; }
+  #nav .folded-nav {
+    display: inline;
+    margin: 0;
+    padding: 0; }
 
 /* Slider */
 .slick-list,
