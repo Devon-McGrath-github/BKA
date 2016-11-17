@@ -7429,6 +7429,14 @@ img.mfp-img {
 .cb-blockquote.theme--dark .lead {
   color: #00d1b2; }
 
+.latest-news {
+  background-color: white;
+  width: 95%;
+  margin-left: 2.5%;
+  margin-right: 2.5%; }
+  .latest-news .main-article {
+    border-bottom: 1px solid black; }
+
 /* Content Cards */
 .card-text {
   color: #0a0a0a; }
