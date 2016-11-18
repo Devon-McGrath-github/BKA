@@ -7256,7 +7256,7 @@ img.mfp-img {
   margin: 0;
   padding: 0;
   width: 100%;
-  background-color: #FFFFFF; }
+  background-color: #8d2704; }
   .nav .header-logo {
     display: inline;
     margin: 0;
@@ -7267,6 +7267,9 @@ img.mfp-img {
     margin: 0;
     padding: 0;
     float: left; }
+
+.slider {
+  display: block; }
 
 .site-footer {
   background-color: #40c4c6;
@@ -7475,8 +7478,32 @@ img.mfp-img {
   margin-right: 2.5%;
   margin-bottom: 5%; }
 
-.category {
+.category-blue {
   background-color: #40c4c6;
+  text-align: center;
+  color: #FFFFFF;
+  margin: 0; }
+
+.category-blue-dark {
+  background-color: #b7bbac;
+  text-align: center;
+  color: #FFFFFF;
+  margin: 0; }
+
+.category-red {
+  background-color: #8d2704;
+  text-align: center;
+  color: #FFFFFF;
+  margin: 0; }
+
+.category-yellow {
+  background-color: #FED14F;
+  text-align: center;
+  color: #FFFFFF;
+  margin: 0; }
+
+.category-green {
+  background-color: #4a8348;
   text-align: center;
   color: #FFFFFF;
   margin: 0; }
@@ -7498,8 +7525,22 @@ img.mfp-img {
   color: #4d4d4d;
   margin: 0; }
 
+.category-text-blue {
+  color: #40c4c6; }
+
+.category-text-blue-dark {
+  color: #b7bbac; }
+
+.category-text-red {
+  color: #8d2704; }
+
+.category-text-yellow {
+  color: #FED14F; }
+
+.category-text-green {
+  color: #4a8348; }
+
 .category-text {
-  color: #4a8348;
   display: inline; }
 
 .article-info {

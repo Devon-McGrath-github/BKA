@@ -1,0 +1,12 @@
+// content block
+
+@mixin category($color) {
+  background-color: $color;
+  text-align: center;
+  color: $white;
+  margin: 0;
+}
+
+@mixin category-text($color) {
+  color: $color;
+}

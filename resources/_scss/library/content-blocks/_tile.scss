@@ -7,21 +7,12 @@
 .content-block { @include content-block(); }
 
 // category = heading text
-// TODO: background-color needs to change based on tile topic
-.category {
-  background-color: $blue;
-  text-align: center;
-  color: $white;
-  margin: 0;
-}
-
-// border around all articles
-// .articles-container {
-//   border-top: 0;
-//   border-left: $border-light;
-//   border-right: $border-light;
-//   border-bottom: $border-light;
-// }
+// classes have different colors
+.category-blue { @include category($blue);}
+.category-blue-dark { @include category($blue-dark);}
+.category-red { @include category($red);}
+.category-yellow { @include category($yellow);}
+.category-green { @include category($green);}
 
 // main article with image
 .featured-article {
@@ -50,8 +41,15 @@
 }
 
 // supporting article information. Text
+
+// text color
+.category-text-blue { @include category-text($blue);}
+.category-text-blue-dark { @include category-text($blue-dark);}
+.category-text-red { @include category-text($red);}
+.category-text-yellow { @include category-text($yellow);}
+.category-text-green { @include category-text($green);}
+
 .category-text {
-  color: $green;
   display: inline;
 }
 .article-info {
