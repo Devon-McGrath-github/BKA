@@ -12,6 +12,8 @@
 
         <link rel="stylesheet" href="resources/css/main.css">
 
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/1.5.2/css/ionicons.min.css">
+
     </head>
     <body>
         <!--[if lte IE 9]>
@@ -24,6 +26,7 @@
           <!-- add margin in css -->
         </div>
 
+        <!-- ############################################ -->
         <!-- nav bar -->
         <div class="nav">
           <p>where am i</p>
@@ -31,8 +34,23 @@
           <img class="folded-nav" src="resources/img/touch-icons-v2/folded-small.png" alt="menu"> -->
         </div>
 
+        <!-- ############################################ -->
         <!-- Slider -->
+
+        <!-- issues with flickity slider. Will need to come back to it -->
         <div class="slider">
+          <div class="courses cf js-flickity" >
+            <div class="course-item slide">
+                <div class="course-summary card">
+                    <div class="course-thumbnail">
+                        <img src="resources/img/304x80.png">
+                    </div>
+                </div>
+            </div>
+            <div class="course-item slide">
+              <p> is something here? </p>
+            </div>
+          </div>
         </div>
 
         <!-- Main Content -->
@@ -489,6 +507,9 @@
         <script src="resources/js/vendor/jquery.js"></script>
         <!--<script src="js/plugins.js"></script>
         <script src="js/main.js"></script>-->
+
+        <!-- flickity -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/1.1.0/flickity.pkgd.min.js"></script>
 
         <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
         <script>
