@@ -1,10 +1,14 @@
 // content block
 
+$padding-value:             3%;
+
 @mixin category($color) {
   background-color: $color;
   text-align: center;
   color: $white;
   margin: 0;
+  padding-top: $padding-value;
+  padding-bottom: $padding-value;
 }
 
 @mixin category-text($color) {

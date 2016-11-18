@@ -7268,9 +7268,6 @@ img.mfp-img {
     padding: 0;
     float: left; }
 
-.slider {
-  display: block; }
-
 .site-footer {
   background-color: #40c4c6;
   color: #FFFFFF;
@@ -7482,31 +7479,41 @@ img.mfp-img {
   background-color: #40c4c6;
   text-align: center;
   color: #FFFFFF;
-  margin: 0; }
+  margin: 0;
+  padding-top: 3%;
+  padding-bottom: 3%; }
 
 .category-blue-dark {
-  background-color: #b7bbac;
+  background-color: #33425b;
   text-align: center;
   color: #FFFFFF;
-  margin: 0; }
+  margin: 0;
+  padding-top: 3%;
+  padding-bottom: 3%; }
 
 .category-red {
   background-color: #8d2704;
   text-align: center;
   color: #FFFFFF;
-  margin: 0; }
+  margin: 0;
+  padding-top: 3%;
+  padding-bottom: 3%; }
 
 .category-yellow {
-  background-color: #FED14F;
+  background-color: #e29d2d;
   text-align: center;
   color: #FFFFFF;
-  margin: 0; }
+  margin: 0;
+  padding-top: 3%;
+  padding-bottom: 3%; }
 
 .category-green {
   background-color: #4a8348;
   text-align: center;
   color: #FFFFFF;
-  margin: 0; }
+  margin: 0;
+  padding-top: 3%;
+  padding-bottom: 3%; }
 
 .featured-article {
   border-bottom: 1px solid #e2e2e2; }
@@ -7529,13 +7536,13 @@ img.mfp-img {
   color: #40c4c6; }
 
 .category-text-blue-dark {
-  color: #b7bbac; }
+  color: #33425b; }
 
 .category-text-red {
   color: #8d2704; }
 
 .category-text-yellow {
-  color: #FED14F; }
+  color: #e29d2d; }
 
 .category-text-green {
   color: #4a8348; }
@@ -7564,6 +7571,7 @@ img.mfp-img {
   border-top: 1px solid #e2e2e2; }
 
 .index-card {
+  width: 100%;
   margin: 0;
   padding: 2%;
   padding-left: 4%;
@@ -7571,11 +7579,26 @@ img.mfp-img {
   border-right: 1px solid #e2e2e2;
   border-bottom: 1px solid #e2e2e2; }
   .index-card .index-arrow {
-    margin-left: auto; }
+    display: block; }
   .index-card .index-info {
     width: 100%; }
   .index-card p {
     color: #4d4d4d; }
+
+.column-left {
+  float: left;
+  width: 65%; }
+
+.column-right {
+  float: right;
+  width: 17.5%; }
+
+.column-centre {
+  display: inline-block;
+  width: 17.5%; }
+
+.agri-logo {
+  width: 100%; }
 
 .index-title, .index-info, .index-arrow {
   display: inline; }

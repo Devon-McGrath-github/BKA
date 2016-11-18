@@ -11,7 +11,7 @@
 .category-blue { @include category($blue);}
 .category-blue-dark { @include category($blue-dark);}
 .category-red { @include category($red);}
-.category-yellow { @include category($yellow);}
+.category-yellow { @include category($yellow-dark);}
 .category-green { @include category($green);}
 
 // main article with image
@@ -46,7 +46,7 @@
 .category-text-blue { @include category-text($blue);}
 .category-text-blue-dark { @include category-text($blue-dark);}
 .category-text-red { @include category-text($red);}
-.category-text-yellow { @include category-text($yellow);}
+.category-text-yellow { @include category-text($yellow-dark);}
 .category-text-green { @include category-text($green);}
 
 .category-text {
