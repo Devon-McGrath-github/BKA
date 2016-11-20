@@ -69,7 +69,6 @@
         </div>
 
         <!-- ############################################ -->
-        <!-- Slider -->
 
         <!-- issues with flickity slider. Will need to come back to it -->
         <!-- TODO: remove this excess slider code, left in case it is useful troubleshooting -->
@@ -82,12 +81,18 @@
 
         <!-- TODO: if the image sizes are different there is some white padding which is an issue, -->
         <!-- TODO: aspect ratio is not being maintained responsively -->
-        <div class="slider">
-          <div class="panel"><img src="resources/img/304x80.png" alt=""></div>
-          <div class="panel"><img src="resources/img/304x80.png" alt=""></div>
-          <div class="panel"><img src="resources/img/304x80.png" alt=""></div>
-        </div>
 
+        <!-- Slider -->
+        <div class="slider-container">
+          <!-- class referenced by script at the bottom, maintain continuity to avoid breaking slider -->
+          <div class="slider">
+            <!-- each div is a panel of the slider -->
+            <div class="panel"><img src="resources/img/304x80.png" alt=""></div>
+            <div class="panel"><img src="resources/img/304x80.png" alt=""></div>
+            <div class="panel"><img src="resources/img/304x80.png" alt=""></div>
+          </div>
+        </div>
+        <!-- Slider ends here -->
 
         <!-- Main Content -->
         <div class="content">
@@ -580,17 +585,20 @@
         })
         </script> -->
 
+        <!-- script that runs slick slider -->
         <script type="text/javascript">
           $(function () {
             var slickOpts = {
               dots: true,
               arrows: false,
               infinite: true,
+              // how long it takes for slides to transition
               speed: 800,
               autoplay: true,
+              // time between automatically transitioning slides
               autoplaySpeed: 10000,
             };
-            // Init the slick
+            // Init the slick slider
             $('.slider').slick(slickOpts);
             var slickEnabled = true;
           });
