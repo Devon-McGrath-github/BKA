@@ -79,6 +79,14 @@
           <div><img src="resources/img/304x80.png" alt=""></div>
         </div>
 
+        <div class="single-item">
+          <div class="panel"><img src="resources/img/304x80.png" alt=""></div>
+          <div class="panel">2</div>
+          <div class="panel">3</div>
+          <div class="panel">4</div>
+          <div class="panel">5</div>
+          <div class="panel">6</div>
+        </div>
         <!-- </div> -->
 
         <!-- Main Content -->
@@ -539,7 +547,8 @@
         <!-- slick slider. -->
         <script type="text/javascript" src="resources/js/libs/slick.js"></script>
 
-        <script type="text/javascript">
+        <!-- TODO: remove this code once slider is 100% -->
+        <!-- <script type="text/javascript">
         $(document).ready(function(){
           $(".slider").slick({
             autoplay: true,
@@ -552,12 +561,30 @@
                 dots: true,
                 arrows: false,
                 infinite: true,
-                slidesToShow: 1,
-                slidesToScroll: 3
+                // these seem unneccessary
+                //TODO: possibly remove this code.
+                // slidesToShow: 1,
+                // slidesToScroll: 3
               }
             }]
           });
         })
+        </script> -->
+
+        <script type="text/javascript">
+          $(function () {
+            var slickOpts = {
+              dots: true,
+              arrows: false,
+              infinite: true,
+              speed: 800,
+              autoplay: true,
+              autoplaySpeed: 10000,
+            };
+            // Init the slick
+            $('.single-item').slick(slickOpts);
+            var slickEnabled = true;
+          });
         </script>
 
         <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
