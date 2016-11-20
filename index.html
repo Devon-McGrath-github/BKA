@@ -73,7 +73,7 @@
 
         <!-- issues with flickity slider. Will need to come back to it -->
         <!-- <div class="slider"> -->
-        <div class="slick">
+        <div class="slider">
           <div><img src="resources/img/304x80.png" alt=""></div>
           <div><img src="resources/img/304x80.png" alt=""></div>
           <div><img src="resources/img/304x80.png" alt=""></div>
@@ -541,26 +541,20 @@
 
         <script type="text/javascript">
         $(document).ready(function(){
-
           $(".slider").slick({
+            autoplay: true,
+            dots: true,
 
-              autoplay: true,
-              dots: true,
-              customPaging : function(slider, i) {
-                  var thumb = $(slider.$slides[i]).data('thumb');
-                  return '<a><img src="'+thumb+'"></a>';
-              },
-
-              responsive: [{
-                  breakpoint: 500,
-                  settings: {
-                      dots: false,
-                      arrows: false,
-                      infinite: false,
-                      slidesToShow: 2,
-                      slidesToScroll: 2
-                  }
-              }]
+            responsive: [{
+              breakpoint: 500,
+              settings: {
+                dots: false,
+                arrows: false,
+                infinite: true,
+                slidesToShow: 1,
+                slidesToScroll: 3
+              }
+            }]
           });
         })
         </script>

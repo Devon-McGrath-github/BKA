@@ -1,48 +1,83 @@
-// Slick
-.slick-list,
-.slick-track {
-	height: 100%;
+$c1: #cee5ea;
+$c2: $red;
+
+.slider {
+    width: 100%;
+    margin: 0;
 }
+
 .slick-slide {
-	&:active,
-	&:focus {
-		outline: none;
-	}
+    background: $c1;
+    color: white;
+    padding: 0;
+    font-size: 30px;
+    font-family: "Arial", "Helvetica";
+    text-align: center;
+
+    img { width: 100%; display: inline-block; }
 }
-.slick-arrow {
-	color: #fff;
-	background: transparent;
-	border: 0;
-	position: absolute;
-	top: 50%;
-	&:active,
-	&:focus {
-		outline: none;
-	}
-	z-index: $zindex-2;
-	@include transform(translateY(-50%));
-	&.slick-prev {
-		left: 0;
-	}
-	&.slick-next {
-		right: 0;
-	}
+
+.slick-prev:before,
+.slick-next:before {
+    color: black;
 }
-%globalSlider {
-	width: 100%;
-	.slide {
-		position: relative;
-		.row {
-			@include flexbox();
-			@include align-items(flex-end);
-			@include justify-content(flex-start);
-		}
-	}
-	.slide__image {}
-	.slide__content {}
+
+.slick-dots {
+    bottom: -40px;
+}
+
+.slick-slide:nth-child(odd) {
+     background: $c2;
 }
 
 
-@import "fullscreen-slider";
-@import "fullwidth-slider";
-@import "carousel-slider";
+
+
+// // Slick
+// .slick-list,
+// .slick-track {
+// 	height: 100%;
+// }
+// .slick-slide {
+// 	&:active,
+// 	&:focus {
+// 		outline: none;
+// 	}
+// }
+// .slick-arrow {
+// 	color: #fff;
+// 	background: transparent;
+// 	border: 0;
+// 	position: absolute;
+// 	top: 50%;
+// 	&:active,
+// 	&:focus {
+// 		outline: none;
+// 	}
+// 	z-index: $zindex-2;
+// 	@include transform(translateY(-50%));
+// 	&.slick-prev {
+// 		left: 0;
+// 	}
+// 	&.slick-next {
+// 		right: 0;
+// 	}
+// }
+// %globalSlider {
+// 	width: 100%;
+// 	.slide {
+// 		position: relative;
+// 		.row {
+// 			@include flexbox();
+// 			@include align-items(flex-end);
+// 			@include justify-content(flex-start);
+// 		}
+// 	}
+// 	.slide__image {}
+// 	.slide__content {}
+// }
+//
+//
+// @import "fullscreen-slider";
+// @import "fullwidth-slider";
+// @import "carousel-slider";
