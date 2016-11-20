@@ -17,8 +17,9 @@
         <link href="https://fonts.googleapis.com/css?family=Bitter:400,400i" rel="stylesheet">
 
         <!-- TODO: Fix the styling and placeholder images of my slider. -->
-        <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.3.11/slick.css"/>
-        <!-- <link rel="stylesheet" type="text/css" href="resources/css/slick/slick.css"/> -->
+        <!-- <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.3.11/slick.css"/> -->
+        <link rel="stylesheet" type="text/css" href="resources/css/slick/slick.css"/>
+        <link rel="stylesheet" type="text/css" href="resources/css/slick/slick-theme.css"/>
 
     </head>
     <body>
@@ -34,8 +35,35 @@
 
         <!-- ############################################ -->
         <!-- nav bar -->
+        <!-- <nav id="nav" role="navigation">
+          <a href="#nav" title="Show navigation">Show navigation</a>
+          <a href="#" title="Hide navigation">Hide navigation</a>
+          <ul>
+              <li><a href="/">Home</a></li>
+              <li>
+                  <a href="/" aria-haspopup="true">Blog</a>
+                  <ul>
+                      <li><a href="/">Design</a></li>
+                      <li><a href="/">HTML</a></li>
+                      <li><a href="/">CSS</a></li>
+                      <li><a href="/">JavaScript</a></li>
+                  </ul>
+              </li>
+              <li>
+                  <a href="/" aria-haspopup="true">Work</a>
+                  <ul>
+                      <li><a href="/">Web Design</a></li>
+                      <li><a href="/">Typography</a></li>
+                      <li><a href="/">Front-End</a></li>
+                  </ul>
+              </li>
+              <li><a href="/">About</a></li>
+          </ul>
+        </nav> -->
+
+        <!-- TODO: remove placeholder nav code -->
         <div class="nav">
-          <p>where am i</p>
+          <p>Nav commented out</p>
           <!-- <img class="header-logo" src="resources/img/logo-small.png" alt="FarmersWeekly">
           <img class="folded-nav" src="resources/img/touch-icons-v2/folded-small.png" alt="menu"> -->
         </div>
@@ -513,17 +541,28 @@
 
         <script type="text/javascript">
         $(document).ready(function(){
-          $('.slick').slick({
-            dots: true,
-            infinite: true,
-            speed: 1100,
-            autoplay:true,
-            autoplaySpeed: 10000,
-            arrows: false,
-            slidesToShow: 1,
-            slidesToScroll: 1
+
+          $(".slider").slick({
+
+              autoplay: true,
+              dots: true,
+              customPaging : function(slider, i) {
+                  var thumb = $(slider.$slides[i]).data('thumb');
+                  return '<a><img src="'+thumb+'"></a>';
+              },
+
+              responsive: [{
+                  breakpoint: 500,
+                  settings: {
+                      dots: false,
+                      arrows: false,
+                      infinite: false,
+                      slidesToShow: 2,
+                      slidesToScroll: 2
+                  }
+              }]
           });
-        });
+        })
         </script>
 
         <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->

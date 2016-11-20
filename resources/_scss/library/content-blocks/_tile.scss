@@ -42,6 +42,11 @@
   color: $black-lighter;
   margin: 0;
   font-family: $font-family-bitter;
+  // TODO: does title need a hover?
+  // a:hover, a:focus {
+  //   text-decoration: underline !important;
+  // }
+
 }
 .article-title-small {
   color: $black-lighter;
