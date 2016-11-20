@@ -292,7 +292,10 @@ ol,
 ul,
 dl {
   margin-top: 0;
-  margin-bottom: 1rem; }
+  margin-bottom: 1rem;
+  -webkit-margin-before: 0;
+  -webkit-margin-after: 0;
+  -webkit-padding-start: 0; }
 
 ol ol,
 ul ul,
@@ -7336,6 +7339,15 @@ img.mfp-img {
     height: 100%;
     width: 100%; }
 
+.slider .slick-dots {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: auto;
+  z-index: 1;
+  width: auto;
+  text-align: right; }
+
 /* Slider */
 .slick-loading .slick-list {
   background: #fff url("./ajax-loader.gif") center center no-repeat; }
@@ -7350,7 +7362,7 @@ img.mfp-img {
 
 /* Dots */
 .slick-dotted.slick-slider {
-  margin-bottom: 30px; }
+  margin-bottom: 0; }
 
 .slick-dots {
   position: block;
@@ -7367,7 +7379,7 @@ img.mfp-img {
   display: inline-block;
   width: 20px;
   height: 20px;
-  margin: 0 5px;
+  margin: 0;
   padding: 0;
   cursor: pointer; }
 
@@ -7377,7 +7389,7 @@ img.mfp-img {
   display: block;
   width: 20px;
   height: 20px;
-  padding: 5px;
+  padding: 0;
   cursor: pointer;
   color: transparent;
   border: 0;
@@ -7390,20 +7402,20 @@ img.mfp-img {
 
 .slick-dots li button:hover:before,
 .slick-dots li button:focus:before {
-  opacity: .75;
+  opacity: .5;
   color: #40c4c6; }
 
 .slick-dots li button:before {
   font-family: 'slick';
   font-size: 30px;
-  position: absolute;
+  position: relative;
   top: 0;
   left: 0;
   width: 20px;
   height: 20px;
   content: '•';
   text-align: center;
-  opacity: .25;
+  opacity: 1;
   color: #FFFFFF;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }

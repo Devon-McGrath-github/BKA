@@ -20,45 +20,22 @@
 	}
 }
 
-// ##############################################
-//TODO: change these colors to white (or something more suitable)
-// $c1: $red;
-// $c2: $blue;
+// positioning of the dots
+.slider {
+	.slick-dots {
+		position: absolute;
+		top:0;
+		right:0;
+		bottom: auto;
+		z-index: 1;
+		width: auto;
+		text-align: right;
+		li {
+		}
+	}
+}
 
-//	TODO: remove this code, tied to the slider script that needs to be removed in index.html
-//
-// .slider {
-//     width: 100%;
-//     margin: 0;
-// }
-//
-// .slick-slide {
-//     background: $c1;
-//     color: white;
-//     padding: 0;
-//     font-size: 30px;
-//     font-family: "Arial", "Helvetica";
-//     text-align: center;
-//
-//     img { width: 100%; display: inline-block; }
-// }
-//
-// .slick-prev:before,
-// .slick-next:before {
-//     color: black;
-// }
-//
-// .slick-dots {
-//     bottom: -40px;
-// }
-//
-// .slick-slide:nth-child(odd) {
-//      background: $c2;
-// }
-
-// ##############################################
-
-// slick slider theme styling
+// slick-theme.css
 
 @charset 'UTF-8';
 /* Slider */
@@ -81,7 +58,7 @@
 /* Dots */
 .slick-dotted.slick-slider
 {
-    margin-bottom: 30px;
+    margin-bottom: 0;
 }
 
 .slick-dots
@@ -108,7 +85,7 @@
 
     width: 20px;
     height: 20px;
-    margin: 0 5px;
+    margin: 0;
     padding: 0;
 
     cursor: pointer;
@@ -122,7 +99,7 @@
 
     width: 20px;
     height: 20px;
-    padding: 5px;
+    padding: 0;
 
     cursor: pointer;
 
@@ -139,7 +116,7 @@
 .slick-dots li button:hover:before,
 .slick-dots li button:focus:before
 {
-    opacity: .75;
+    opacity: .5;
 		color: $blue;
 }
 .slick-dots li button:before
@@ -148,7 +125,8 @@
     font-size: 30px;
     // line-height: 20px;
 
-    position: absolute;
+		// changed from absolute
+    position: relative;
     top: 0;
     left: 0;
 
@@ -158,7 +136,7 @@
     content: '•';
     text-align: center;
 
-    opacity: .25;
+    opacity: 1;
     color: $white;
 
     -webkit-font-smoothing: antialiased;
