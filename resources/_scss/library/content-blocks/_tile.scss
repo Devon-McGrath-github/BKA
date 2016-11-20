@@ -1,8 +1,12 @@
 //tile
 
-// TODO: should modularise this as its repeated in index card
-// Main div
+.clickable-content {
+  a:hover, a:visited, a:link, a:active {
+    text-decoration: none;
+  }
+}
 
+// Main div
 
 .content-block { @include content-block(); }
 
@@ -13,6 +17,10 @@
 .category-red { @include category($red);}
 .category-yellow { @include category($yellow-dark);}
 .category-green { @include category($green);}
+
+.headline-text a {
+  text-decoration: none;
+}
 
 // main article with image
 .featured-article {
@@ -33,11 +41,16 @@
 .article-title-big {
   color: $black-lighter;
   margin: 0;
+  font-family: $font-family-bitter;
 }
 .article-title-small {
   color: $black-lighter;
   // removed margin for these h3's not universally
   margin: 0;
+  font-family: $font-family-bitter;
+  a {
+    text-decoration: none;
+  }
 }
 
 // supporting article information. Text
@@ -51,6 +64,9 @@
 
 .category-text {
   display: inline;
+  a:hover, a:visited, a:link, a:active {
+    text-decoration: none;
+  }
 }
 .article-info {
   color: $gray-muted;

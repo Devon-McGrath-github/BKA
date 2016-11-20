@@ -14,6 +14,12 @@
 
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/1.5.2/css/ionicons.min.css">
 
+        <link href="https://fonts.googleapis.com/css?family=Bitter:400,400i" rel="stylesheet">
+
+        <!-- TODO: Fix the styling and placeholder images of my slider. -->
+        <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.3.11/slick.css"/>
+        <!-- <link rel="stylesheet" type="text/css" href="resources/css/slick/slick.css"/> -->
+
     </head>
     <body>
         <!--[if lte IE 9]>
@@ -38,20 +44,14 @@
         <!-- Slider -->
 
         <!-- issues with flickity slider. Will need to come back to it -->
-        <div class="slider">
-          <div class="courses cf js-flickity" >
-            <div class="course-item slide">
-                <div class="course-summary card">
-                    <div class="course-thumbnail">
-                        <img src="resources/img/304x80.png">
-                    </div>
-                </div>
-            </div>
-            <div class="course-item slide">
-              <p> is something here? </p>
-            </div>
-          </div>
+        <!-- <div class="slider"> -->
+        <div class="slick">
+          <div><img src="resources/img/304x80.png" alt=""></div>
+          <div><img src="resources/img/304x80.png" alt=""></div>
+          <div><img src="resources/img/304x80.png" alt=""></div>
         </div>
+
+        <!-- </div> -->
 
         <!-- Main Content -->
         <div class="content">
@@ -60,15 +60,15 @@
           <!-- Latest News -->
           <div class="content-block">
             <!-- making the headline clickable -->
-            <a href="#">
+            <a class="headline-text" href="#">
               <!-- headline text -->
-              <h4 class="category-blue">Latest News</h4>
+              <h4 class="headline-text category-blue">Latest News</h4>
             </a>
 
             <!-- a tag making the whole block clickable, not just text-->
-            <a href="#">
               <div class="featured-article">
                 <!-- placeholder image -->
+                <a class="clickable-content" href="#">
                 <img class="featured-article-image" src="resources/img/304x80.png" alt="">
 
                 <div class="featured-article-text-content">
@@ -155,7 +155,7 @@
             </div>
 
             <!-- index information provider -->
-            <div class="index-card">
+            <div class="index-card info-provider">
               <!-- placeholder image -->
               <img class="agri-logo" src="resources/img/logo-small.png" alt="AgriHQ Market and Data">
             </div>
@@ -508,8 +508,23 @@
         <!--<script src="js/plugins.js"></script>
         <script src="js/main.js"></script>-->
 
-        <!-- flickity -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/1.1.0/flickity.pkgd.min.js"></script>
+        <!-- slick slider. -->
+        <script type="text/javascript" src="resources/js/libs/slick.js"></script>
+
+        <script type="text/javascript">
+        $(document).ready(function(){
+          $('.slick').slick({
+            dots: true,
+            infinite: true,
+            speed: 1100,
+            autoplay:true,
+            autoplaySpeed: 10000,
+            arrows: false,
+            slidesToShow: 1,
+            slidesToScroll: 1
+          });
+        });
+        </script>
 
         <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
         <script>
