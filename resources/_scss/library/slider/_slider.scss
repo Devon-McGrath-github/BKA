@@ -1,19 +1,21 @@
 // Slider CSS
 //
 
-// make margin 0 no gap.
+// TODO: remove unnecessary comments
+// make was originally 10px.
 // width: 100%;
 
 .panel {
 	background: #ccc;
-	margin: 10px;
+	margin: 0;
 	// height:200px;
 	width: 100%;
 	font-size: 72px;
 	text-align: center;
 	// line-height changes height, also affects text positioning
-	line-height: 200px;
+	// line-height: 200px;
 	img {
+		height: 100%;
 		width: 100%;
 	}
 }

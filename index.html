@@ -72,28 +72,29 @@
         <!-- Slider -->
 
         <!-- issues with flickity slider. Will need to come back to it -->
-        <!-- <div class="slider"> -->
+        <!-- TODO: remove this excess slider code, left in case it is useful troubleshooting -->
+        <!-- <div class="slider">
+          <div><img src="resources/img/304x80.png" alt=""></div>
+          <div><img src="resources/img/304x80.png" alt=""></div>
+          <div><img src="resources/img/304x80.png" alt=""></div>
+        </div> -->
+
+
+        <!-- TODO: if the image sizes are different there is some white padding which is an issue, -->
+        <!-- TODO: aspect ratio is not being maintained responsively -->
         <div class="slider">
-          <div><img src="resources/img/304x80.png" alt=""></div>
-          <div><img src="resources/img/304x80.png" alt=""></div>
-          <div><img src="resources/img/304x80.png" alt=""></div>
+          <div class="panel"><img src="resources/img/304x80.png" alt=""></div>
+          <div class="panel"><img src="resources/img/304x80.png" alt=""></div>
+          <div class="panel"><img src="resources/img/304x80.png" alt=""></div>
         </div>
 
-        <div class="single-item">
-          <div class="panel"><img src="resources/img/304x80.png" alt=""></div>
-          <div class="panel">2</div>
-          <div class="panel">3</div>
-          <div class="panel">4</div>
-          <div class="panel">5</div>
-          <div class="panel">6</div>
-        </div>
-        <!-- </div> -->
 
         <!-- Main Content -->
         <div class="content">
 
           <!-- ############################################ -->
           <!-- Latest News -->
+          <!-- content block LATEST NEWS -->
           <div class="content-block">
             <!-- making the headline clickable -->
             <a class="headline-text" href="#">
@@ -143,8 +144,8 @@
                 <p class="article-info">september 27 2016</p>
               </div>
             </a>
-
           </div>
+          <!-- content block LATEST NEWS ends here -->
 
 
           <!-- ############################################ -->
@@ -196,9 +197,11 @@
               <img class="agri-logo" src="resources/img/logo-small.png" alt="AgriHQ Market and Data">
             </div>
           </div>
+          <!-- AGRI DATA block ends here -->
 
           <!-- ############################################ -->
           <!-- Latest in Dairy -->
+          <!-- content block DAIRY -->
           <div class="content-block">
             <!-- making the headline clickable -->
             <a href="#">
@@ -247,13 +250,14 @@
               <p class="article-info">september 27 2016</p>
             </div>
           </a>
-
         </div>
+        <!-- content block DAIRY ends here -->
 
 
 
         <!-- ############################################ -->
         <!-- Latest in Beef -->
+        <!-- content block BEEF -->
         <div class="content-block">
           <!-- making the headline clickable -->
           <a href="#">
@@ -303,11 +307,12 @@
               <p class="article-info">september 27 2016</p>
             </div>
           </a>
-
         </div>
+        <!-- content block BEEF ends here -->
 
         <!-- ############################################ -->
         <!-- Latest in Sheep -->
+        <!-- content block SHEEP -->
         <div class="content-block">
           <!-- making the headline clickable -->
           <a href="#">
@@ -357,9 +362,11 @@
           </div>
         </a>
       </div>
+      <!-- content block SHEEP ends here -->
 
       <!-- ############################################ -->
       <!-- Latest in Arable -->
+      <!-- content block ARABLE -->
       <div class="content-block">
         <!-- making the headline clickable -->
         <a href="#">
@@ -408,8 +415,8 @@
             <p class="article-info">september 27 2016</p>
           </div>
         </a>
-
       </div>
+      <!-- content block ARABLE ends here -->
 
         <!-- ############################################ -->
         <!-- advertisement -->
@@ -418,12 +425,10 @@
             <img class="advertisement-image" src="resources/img/slider-small.png" alt="slider image">
           </div>
         </a>
-      </div>
-
-        <!-- most popular and opinion pieces -->
-        <!-- should be standard article block, just minus the 'featured' article -->
+        <!-- advertisement ends here -->
 
         <!-- ############################################ -->
+        <!-- mini content block -->
         <div class="content-block">
           <!-- a tag making the whole block clickable, not just text -->
           <a href="#">
@@ -454,8 +459,10 @@
             </div>
           </a>
         </div>
+        <!-- mini content block ends here -->
 
         <!-- ############################################ -->
+        <!-- mini content block -->
         <div class="content-block">
           <!-- a tag making the whole block clickable, not just text -->
           <a href="#">
@@ -486,6 +493,8 @@
             </div>
           </a>
         </div>
+        <!-- mini content block ends here -->
+
 
         <!-- ############################################ -->
         <!-- Footer -->
@@ -533,8 +542,8 @@
             <p class="copyright">© NZX Agri 2016</p>
             <p class="copyright">Terms of Use</p>
           </div>
-
         </div>
+        <!-- footer ends here -->
 
       <!-- content div ends here -->
       </div>
@@ -582,7 +591,7 @@
               autoplaySpeed: 10000,
             };
             // Init the slick
-            $('.single-item').slick(slickOpts);
+            $('.slider').slick(slickOpts);
             var slickEnabled = true;
           });
         </script>
