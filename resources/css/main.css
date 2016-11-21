@@ -7327,21 +7327,6 @@ img.mfp-img {
   display: inline; }
 
 /* Slider */
-.advertisement-horizontal-container {
-  display: none; }
-  @media (min-width: 650px) {
-    .advertisement-horizontal-container {
-      display: block;
-      width: 60%;
-      margin-left: auto;
-      margin-top: 3%;
-      margin-right: auto;
-      margin-bottom: 3%; } }
-
-.advertisement-horizontal {
-  max-height: 90px;
-  width: 100%; }
-
 .panel {
   background: #ccc;
   margin: 0;
@@ -7726,6 +7711,22 @@ img.mfp-img {
 
 .advertisement-image {
   width: 100%; }
+
+.advertisement-horizontal-container {
+  display: none; }
+  @media (min-width: 650px) {
+    .advertisement-horizontal-container {
+      background-color: #FFFFFF;
+      display: block;
+      width: 100%; } }
+
+.advertisement-horizontal {
+  max-height: 90px;
+  width: 60%;
+  margin-left: 20%;
+  margin-top: 2%;
+  margin-right: 20%;
+  margin-bottom: 2%; }
 
 /* Content Cards */
 .card-text {
