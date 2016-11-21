@@ -1,9 +1,28 @@
+// horizontal advertisement styling
+
+.advertisement-horizontal-container {
+	display: none;
+	@include mquery(medium) {
+		display: block;
+		width: 60%;
+		margin-left: auto;
+		margin-top: 3%;
+		margin-right: auto;
+		margin-bottom: 3%;
+	}
+}
+.advertisement-horizontal {
+	max-height: 90px;
+	width: 100%;
+}
+
 // Slider CSS
 
 // TODO: remove unnecessary comments
 // make was originally 10px.
 // width: 100%;
-
+// TODO: slider needs to be properly sized for different images.
+// makes sure that it is fully responsive
 .panel {
 	background: #ccc;
 	margin: 0;

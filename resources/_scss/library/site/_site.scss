@@ -8,7 +8,7 @@ body {
 
 .slider-content {
 	width: 100%;
-	background-color: $red;
+	background-color: $white;
 	overflow: auto;
 	@include mquery(medium) {
 		padding-left: 5%;
@@ -52,4 +52,3 @@ body {
 @import "rich-text-editor";
 @import "contact-item";
 @import "social-block";
-@import "main-media-query";

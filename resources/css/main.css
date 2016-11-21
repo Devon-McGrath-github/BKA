@@ -7327,6 +7327,21 @@ img.mfp-img {
   display: inline; }
 
 /* Slider */
+.advertisement-horizontal-container {
+  display: none; }
+  @media (min-width: 650px) {
+    .advertisement-horizontal-container {
+      display: block;
+      width: 60%;
+      margin-left: auto;
+      margin-top: 3%;
+      margin-right: auto;
+      margin-bottom: 3%; } }
+
+.advertisement-horizontal {
+  max-height: 90px;
+  width: 100%; }
+
 .panel {
   background: #ccc;
   margin: 0;
@@ -7871,7 +7886,7 @@ body {
 
 .slider-content {
   width: 100%;
-  background-color: #8d2704;
+  background-color: #FFFFFF;
   overflow: auto; }
   @media (min-width: 650px) {
     .slider-content {
