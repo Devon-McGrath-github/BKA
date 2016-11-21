@@ -19,6 +19,12 @@
   }
 }
 
+//
+//
+// https://css-tricks.com/fluid-width-equal-height-columns/
+// to save all your column issues
+//
+
 .news-content-block {
   @include mquery(medium) {
     -moz-columns: 2 auto;
