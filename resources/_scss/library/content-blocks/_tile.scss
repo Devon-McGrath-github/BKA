@@ -19,29 +19,47 @@
   }
 }
 
-//
-//
-// https://css-tricks.com/fluid-width-equal-height-columns/
-// to save all your column issues
-//
-
+// reordering of item source order and display for larger screens
 .news-content-block {
   @include mquery(medium) {
-    -moz-columns: 2 auto;
-    -webkit-columns: 2 auto;
-    columns: 2 auto;
-    -moz-column-gap: 80px;
-    -webkit-column-gap: 80px;
-    column-gap: 0;
-    margin-right: -80px;
-  }
-  .extra-articles {
-    display: none;
-    @include mquery(medium) {
-      display: block;
+  display: -webkit-flex; /* Safari */
+  display: flex;
+  flex-direction: column;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+  /* this makes sure the items actually wrap */
+  height: 600px;
+
+    /* Safari 6.1+ */
+    .headline-container   {-webkit-order: 1;}
+    .featured-article     {-webkit-order: 3;}
+    .articles-container   {-webkit-order: 2;}
+
+    /* Standard syntax */
+    .headline-container   {order: 1;}
+    .featured-article     {order: 3;}
+    .articles-container   {order: 2;}
+
+    /* creating columns */
+    .cell {
+      width: 50%;
+    }
+    .featured-article {
+      flex-basis: 100%;
     }
   }
 }
+
+
+
+// display extra articles for full size website
+.extra-articles {
+  display: none;
+  @include mquery(medium) {
+    display: block;
+  }
+}
+
 
 // category = heading text
 // classes have different colors

@@ -7565,16 +7565,43 @@ img.mfp-img {
 
 @media (min-width: 800px) {
   .news-content-block {
-    -moz-columns: 2 auto;
-    columns: 2 auto;
-    -moz-column-gap: 80px;
-    column-gap: 0;
-    margin-right: -80px; } }
+    /* Safari */
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    /* this makes sure the items actually wrap */
+    height: 600px;
+    /* Safari 6.1+ */
+    /* Standard syntax */
+    /* creating columns */ }
+    .news-content-block .headline-container {
+      -webkit-order: 1; }
+    .news-content-block .featured-article {
+      -webkit-order: 3; }
+    .news-content-block .articles-container {
+      -webkit-order: 2; }
+    .news-content-block .headline-container {
+      -ms-flex-order: 1;
+      order: 1; }
+    .news-content-block .featured-article {
+      -ms-flex-order: 3;
+      order: 3; }
+    .news-content-block .articles-container {
+      -ms-flex-order: 2;
+      order: 2; }
+    .news-content-block .cell {
+      width: 50%; }
+    .news-content-block .featured-article {
+      -ms-flex-preferred-size: 100%;
+      flex-basis: 100%; } }
 
-.news-content-block .extra-articles {
+.extra-articles {
   display: none; }
   @media (min-width: 800px) {
-    .news-content-block .extra-articles {
+    .extra-articles {
       display: block; } }
 
 .category-blue {
