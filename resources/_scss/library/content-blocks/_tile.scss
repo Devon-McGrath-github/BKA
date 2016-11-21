@@ -27,11 +27,13 @@
   flex-direction: column;
   -webkit-flex-wrap: wrap;
   flex-wrap: wrap;
+
+  // TODO: is stretch doing anything?
   -webkit-align-items: stretch;
   align-items: stretch;
   /* this makes sure the items actually wrap */
   // TODO: find fix for hard coded height, and the browser not knowing it needs to wrap
-  height: 600px;
+  height: 700px;
 
     /* Safari 6.1+ */
     .headline-container   {-webkit-order: 1;}
@@ -45,7 +47,10 @@
 
     /* creating columns */
     .cell {
-      width: 50%;
+      width: 60%;
+    }
+    .cell-2 {
+      width: 40%;
     }
     .featured-article {
       flex-basis: 100%;
@@ -102,7 +107,7 @@
   color: $black-lighter;
   margin: 0;
   font-family: $font-family-bitter;
-  font-style: oblique;
+  font-weight: bold;
   // TODO: does title need a hover?
   // a:hover, a:focus {
   //   text-decoration: underline !important;
@@ -149,10 +154,12 @@
 
 .sub-article {
   padding: 2%;
-  // TODO: border needs to be adjusted. Its not a solid line in the brief
   border-left: $border-light;
   border-right: $border-light;
   border-bottom: $border-light;
+  @include mquery(medium) {
+    padding: 6%;
+  }
 }
 
 // Mini Content Block
