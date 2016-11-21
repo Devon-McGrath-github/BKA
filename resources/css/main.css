@@ -7613,6 +7613,10 @@ img.mfp-img {
   margin: 0;
   padding-top: 3%;
   padding-bottom: 3%; }
+  @media (min-width: 800px) {
+    .category-blue {
+      padding-top: 5%;
+      padding-bottom: 5%; } }
 
 .category-blue-dark {
   background-color: #33425b;
@@ -7621,6 +7625,10 @@ img.mfp-img {
   margin: 0;
   padding-top: 3%;
   padding-bottom: 3%; }
+  @media (min-width: 800px) {
+    .category-blue-dark {
+      padding-top: 5%;
+      padding-bottom: 5%; } }
 
 .category-red {
   background-color: #8d2704;
@@ -7629,6 +7637,10 @@ img.mfp-img {
   margin: 0;
   padding-top: 3%;
   padding-bottom: 3%; }
+  @media (min-width: 800px) {
+    .category-red {
+      padding-top: 5%;
+      padding-bottom: 5%; } }
 
 .category-yellow {
   background-color: #e29d2d;
@@ -7637,6 +7649,10 @@ img.mfp-img {
   margin: 0;
   padding-top: 3%;
   padding-bottom: 3%; }
+  @media (min-width: 800px) {
+    .category-yellow {
+      padding-top: 5%;
+      padding-bottom: 5%; } }
 
 .category-green {
   background-color: #4a8348;
@@ -7645,6 +7661,10 @@ img.mfp-img {
   margin: 0;
   padding-top: 3%;
   padding-bottom: 3%; }
+  @media (min-width: 800px) {
+    .category-green {
+      padding-top: 5%;
+      padding-bottom: 5%; } }
 
 .headline-text a {
   text-decoration: none; }
@@ -7660,12 +7680,14 @@ img.mfp-img {
     @media (min-width: 800px) {
       .featured-article .featured-article-text-content {
         /* removed this border as it doubles up now */
-        border-left: none; } }
+        border-left: none;
+        padding: 6%; } }
 
 .article-title-big {
   color: #4d4d4d;
   margin: 0;
-  font-family: "Bitter", serif; }
+  font-family: "Bitter", serif;
+  font-style: oblique; }
 
 .article-title-small {
   color: #4d4d4d;
@@ -7697,6 +7719,14 @@ img.mfp-img {
 .article-info {
   color: #c8c8c8;
   display: inline; }
+
+.article-blurb {
+  font-family: "Bitter", serif;
+  color: #4d4d4d;
+  display: none; }
+  @media (min-width: 800px) {
+    .article-blurb {
+      display: block; } }
 
 .sub-article {
   padding: 2%;
