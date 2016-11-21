@@ -130,6 +130,9 @@ ul,
 dl {
   margin-top: 0;
   margin-bottom: 1rem;
+  -webkit-margin-before: 0;
+  -webkit-margin-after: 0;
+  -webkit-padding-start: 0;
 }
 
 ol ol,
@@ -157,14 +160,23 @@ blockquote {
 // Links
 //
 
-
+// changed a {} from:
+// a {
+//   color: $link-color;
+//   text-decoration: $link-decoration;
+//
+//   @include hover-focus {
+//     color: $link-hover-color;
+//     text-decoration: $link-hover-decoration;
+//   }
+// to current iteration as it was the highest level css and preventing me from removing underline on a tags
 a {
   color: $link-color;
   text-decoration: $link-decoration;
 
   @include hover-focus {
     color: $link-hover-color;
-    text-decoration: $link-hover-decoration;
+    text-decoration: none;
   }
 
   &:focus {

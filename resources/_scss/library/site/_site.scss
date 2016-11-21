@@ -1,10 +1,33 @@
+body {
+	background-color: $gray-lightest;
+}
+
 .no-js {
 		background-color: $gray-lightest;
 }
 
-.content {
-	background-color: $gray-lightest;
+.slider-content {
+	width: 100%;
+	background-color: $white;
+	overflow: auto;
+	@include mquery(medium) {
+		padding-left: 5%;
+		padding-right: 5%;
+		margin: 0;
+		z-index: 2;
+	}
 }
+
+.main-content {
+	// TODO: remove if unnecessary
+	// background-color: $gray-lightest;
+	z-index: 1;
+	@include mquery(medium) {
+		margin-left: 6%;
+		margin-right: 6%;
+	}
+}
+
 
 .main {
 	overflow-x: hidden;

@@ -10,6 +10,39 @@
 
 .content-block { @include content-block(); }
 
+.initial-content-block {
+  margin-top: -7%;
+  z-index: 10;
+  position: relative;
+  @include mquery(medium) {
+    margin-top: -14%;
+  }
+}
+
+//
+//
+// https://css-tricks.com/fluid-width-equal-height-columns/
+// to save all your column issues
+//
+
+.news-content-block {
+  @include mquery(medium) {
+    -moz-columns: 2 auto;
+    -webkit-columns: 2 auto;
+    columns: 2 auto;
+    -moz-column-gap: 80px;
+    -webkit-column-gap: 80px;
+    column-gap: 0;
+    margin-right: -80px;
+  }
+  .extra-articles {
+    display: none;
+    @include mquery(medium) {
+      display: block;
+    }
+  }
+}
+
 // category = heading text
 // classes have different colors
 .category-blue { @include category($blue);}
@@ -42,6 +75,11 @@
   color: $black-lighter;
   margin: 0;
   font-family: $font-family-bitter;
+  // TODO: does title need a hover?
+  // a:hover, a:focus {
+  //   text-decoration: underline !important;
+  // }
+
 }
 .article-title-small {
   color: $black-lighter;
@@ -79,4 +117,17 @@
   border-left: $border-light;
   border-right: $border-light;
   border-bottom: $border-light;
+}
+
+// Mini Content Block
+.most-popular-container {
+  @include mquery(medium) {
+    display: none;
+  }
+}
+
+.opinion-container {
+  @include mquery(medium) {
+
+  }
 }

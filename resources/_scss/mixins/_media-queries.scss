@@ -1,0 +1,18 @@
+// media queries
+
+// define the sizes for them and then simply import it where you need to use it.
+// allows you to localise media queries instead of spreading them out over numerous files.
+
+@mixin mquery($size) {
+  @if $size == small {
+    @media (min-width: 420px) {
+      @content;
+    }
+  }
+
+  @else if $size == medium {
+    @media (min-width: 800px) {
+      @content;
+    }
+  }
+}

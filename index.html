@@ -14,11 +14,12 @@
 
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/1.5.2/css/ionicons.min.css">
 
-        <link href="https://fonts.googleapis.com/css?family=Bitter:400,400i" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Bitter:400,700" rel="stylesheet">
 
         <!-- TODO: Fix the styling and placeholder images of my slider. -->
-        <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.3.11/slick.css"/>
-        <!-- <link rel="stylesheet" type="text/css" href="resources/css/slick/slick.css"/> -->
+        <!-- <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.3.11/slick.css"/> -->
+        <link rel="stylesheet" type="text/css" href="resources/css/slick/slick.css"/>
+        <link rel="stylesheet" type="text/css" href="resources/css/slick/slick-theme.css"/>
 
     </head>
     <body>
@@ -28,37 +29,78 @@
 
         <!-- Add your site or application content here -->
 
+        <!-- TODO: add this to the nav bar as a border -->
         <div class="display-gap">
           <!-- add margin in css -->
         </div>
 
         <!-- ############################################ -->
         <!-- nav bar -->
+        <!-- <nav id="nav" role="navigation">
+          <a href="#nav" title="Show navigation">Show navigation</a>
+          <a href="#" title="Hide navigation">Hide navigation</a>
+          <ul>
+              <li><a href="/">Home</a></li>
+              <li>
+                  <a href="/" aria-haspopup="true">Blog</a>
+                  <ul>
+                      <li><a href="/">Design</a></li>
+                      <li><a href="/">HTML</a></li>
+                      <li><a href="/">CSS</a></li>
+                      <li><a href="/">JavaScript</a></li>
+                  </ul>
+              </li>
+              <li>
+                  <a href="/" aria-haspopup="true">Work</a>
+                  <ul>
+                      <li><a href="/">Web Design</a></li>
+                      <li><a href="/">Typography</a></li>
+                      <li><a href="/">Front-End</a></li>
+                  </ul>
+              </li>
+              <li><a href="/">About</a></li>
+          </ul>
+        </nav> -->
+
+        <!-- TODO: remove placeholder nav code -->
         <div class="nav">
-          <p>where am i</p>
+          <p>Nav commented out</p>
           <!-- <img class="header-logo" src="resources/img/logo-small.png" alt="FarmersWeekly">
           <img class="folded-nav" src="resources/img/touch-icons-v2/folded-small.png" alt="menu"> -->
         </div>
 
         <!-- ############################################ -->
-        <!-- Slider -->
+        <!-- horizontal banner advertisement -->
 
-        <!-- issues with flickity slider. Will need to come back to it -->
-        <!-- <div class="slider"> -->
-        <div class="slick">
-          <div><img src="resources/img/304x80.png" alt=""></div>
-          <div><img src="resources/img/304x80.png" alt=""></div>
-          <div><img src="resources/img/304x80.png" alt=""></div>
+        <div class="advertisement-horizontal-container">
+          <img class="advertisement-horizontal" src="resources/img/304x80.png" alt="">
         </div>
 
-        <!-- </div> -->
+        <!-- ############################################ -->
+
+        <!-- TODO: if the image sizes are different there is some white padding which is an issue, -->
+        <!-- TODO: aspect ratio is not being maintained responsively -->
+
+        <!-- Slider -->
+        <!-- slider content styled in site.scss -->
+        <div class="slider-content">
+          <div class="js-slider slider">
+            <!-- each div is a panel of the slider -->
+            <div class="panel"><img src="resources/img/1000x600.png" alt=""></div>
+            <div class="panel"><img src="resources/img/304x80.png" alt=""></div>
+            <div class="panel"><img src="resources/img/304x80.png" alt=""></div>
+          </div>
+        </div>
+        <!-- Slider ends here -->
 
         <!-- Main Content -->
-        <div class="content">
+        <!-- site.scss file -->
+        <div class="main-content">
 
           <!-- ############################################ -->
           <!-- Latest News -->
-          <div class="content-block">
+          <!-- content block LATEST NEWS -->
+          <div class="content-block news-content-block initial-content-block">
             <!-- making the headline clickable -->
             <a class="headline-text" href="#">
               <!-- headline text -->
@@ -87,28 +129,53 @@
 
             <!-- sub article -->
             <!-- a tag making the whole block clickable, not just text -->
-            <a href="#">
-              <div class="sub-article">
-                <h3 class="article-title-small">Horn-free for new genetics release</h3>
-                <p class="article-info">september 27 2016</p>
-              </div>
-            </a>
-            <!-- sub article -->
-            <a href="#">
-              <div class="sub-article">
-                <h3 class="article-title-small">Horn-free for new genetics release</h3>
-                <p class="article-info">september 27 2016</p>
-              </div>
-            </a>
-            <!-- sub article -->
-            <a href="#">
-              <div class="sub-article">
-                <h3 class="article-title-small">Horn-free for new genetics release</h3>
-                <p class="article-info">september 27 2016</p>
-              </div>
-            </a>
+            <div class="sub-articles">
+              <a href="#">
+                <div class="sub-article">
+                  <h3 class="article-title-small">Horn-free for new genetics release</h3>
+                  <p class="article-info">september 27 2016</p>
+                </div>
+              </a>
+              <!-- sub article -->
+              <a href="#">
+                <div class="sub-article">
+                  <h3 class="article-title-small">Horn-free for new genetics release</h3>
+                  <p class="article-info">september 27 2016</p>
+                </div>
+              </a>
+              <!-- sub article -->
+              <a href="#">
+                <div class="sub-article">
+                  <h3 class="article-title-small">Horn-free for new genetics release</h3>
+                  <p class="article-info">september 27 2016</p>
+                </div>
+              </a>
+            </div>
 
+            <div class="sub-articles extra-articles">
+              <a href="#">
+                <div class="sub-article">
+                  <h3 class="article-title-small">Horn-free for new genetics release</h3>
+                  <p class="article-info">september 27 2016</p>
+                </div>
+              </a>
+              <!-- sub article -->
+              <a href="#">
+                <div class="sub-article">
+                  <h3 class="article-title-small">Horn-free for new genetics release</h3>
+                  <p class="article-info">september 27 2016</p>
+                </div>
+              </a>
+              <!-- sub article -->
+              <a href="#">
+                <div class="sub-article">
+                  <h3 class="article-title-small">Horn-free for new genetics release</h3>
+                  <p class="article-info">september 27 2016</p>
+                </div>
+              </a>
+            </div>
           </div>
+          <!-- content block LATEST NEWS ends here -->
 
 
           <!-- ############################################ -->
@@ -160,9 +227,11 @@
               <img class="agri-logo" src="resources/img/logo-small.png" alt="AgriHQ Market and Data">
             </div>
           </div>
+          <!-- AGRI DATA block ends here -->
 
           <!-- ############################################ -->
           <!-- Latest in Dairy -->
+          <!-- content block DAIRY -->
           <div class="content-block">
             <!-- making the headline clickable -->
             <a href="#">
@@ -211,13 +280,14 @@
               <p class="article-info">september 27 2016</p>
             </div>
           </a>
-
         </div>
+        <!-- content block DAIRY ends here -->
 
 
 
         <!-- ############################################ -->
         <!-- Latest in Beef -->
+        <!-- content block BEEF -->
         <div class="content-block">
           <!-- making the headline clickable -->
           <a href="#">
@@ -267,11 +337,12 @@
               <p class="article-info">september 27 2016</p>
             </div>
           </a>
-
         </div>
+        <!-- content block BEEF ends here -->
 
         <!-- ############################################ -->
         <!-- Latest in Sheep -->
+        <!-- content block SHEEP -->
         <div class="content-block">
           <!-- making the headline clickable -->
           <a href="#">
@@ -321,9 +392,11 @@
           </div>
         </a>
       </div>
+      <!-- content block SHEEP ends here -->
 
       <!-- ############################################ -->
       <!-- Latest in Arable -->
+      <!-- content block ARABLE -->
       <div class="content-block">
         <!-- making the headline clickable -->
         <a href="#">
@@ -372,8 +445,8 @@
             <p class="article-info">september 27 2016</p>
           </div>
         </a>
-
       </div>
+      <!-- content block ARABLE ends here -->
 
         <!-- ############################################ -->
         <!-- advertisement -->
@@ -382,13 +455,11 @@
             <img class="advertisement-image" src="resources/img/slider-small.png" alt="slider image">
           </div>
         </a>
-      </div>
-
-        <!-- most popular and opinion pieces -->
-        <!-- should be standard article block, just minus the 'featured' article -->
+        <!-- advertisement ends here -->
 
         <!-- ############################################ -->
-        <div class="content-block">
+        <!-- mini content block -->
+        <div class="content-block most-popular-container">
           <!-- a tag making the whole block clickable, not just text -->
           <a href="#">
             <!-- headline text -->
@@ -418,9 +489,11 @@
             </div>
           </a>
         </div>
+        <!-- mini content block ends here -->
 
         <!-- ############################################ -->
-        <div class="content-block">
+        <!-- mini content block OPINION -->
+        <div class="content-block opinion-container">
           <!-- a tag making the whole block clickable, not just text -->
           <a href="#">
             <!-- headline text -->
@@ -450,6 +523,8 @@
             </div>
           </a>
         </div>
+        <!-- mini content block ends here -->
+
 
         <!-- ############################################ -->
         <!-- Footer -->
@@ -497,12 +572,11 @@
             <p class="copyright">© NZX Agri 2016</p>
             <p class="copyright">Terms of Use</p>
           </div>
-
         </div>
+        <!-- footer ends here -->
 
       <!-- content div ends here -->
       </div>
-
 
         <script src="resources/js/vendor/jquery.js"></script>
         <!--<script src="js/plugins.js"></script>
@@ -511,19 +585,23 @@
         <!-- slick slider. -->
         <script type="text/javascript" src="resources/js/libs/slick.js"></script>
 
+        <!-- script that runs slick slider -->
         <script type="text/javascript">
-        $(document).ready(function(){
-          $('.slick').slick({
-            dots: true,
-            infinite: true,
-            speed: 1100,
-            autoplay:true,
-            autoplaySpeed: 10000,
-            arrows: false,
-            slidesToShow: 1,
-            slidesToScroll: 1
+          $(function () {
+            var slickOpts = {
+              dots: true,
+              arrows: false,
+              infinite: true,
+              // how long it takes for slides to transition
+              speed: 800,
+              autoplay: true,
+              // time between automatically transitioning slides
+              autoplaySpeed: 10000,
+            };
+            // Init the slick slider
+            $('.js-slider').slick(slickOpts);
+            var slickEnabled = true;
           });
-        });
         </script>
 
         <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
