@@ -7288,12 +7288,10 @@ img.mfp-img {
   width: 100%;
   background-color: #FFFFFF; }
   .nav .header-logo {
-    display: inline;
     margin: 0;
     padding: 0;
     float: left; }
   .nav .folded-nav {
-    display: inline;
     margin: 0;
     padding: 0;
     float: left; }
@@ -7339,14 +7337,16 @@ img.mfp-img {
     height: 100%;
     width: 100%; }
 
-.slider .slick-dots {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: auto;
-  z-index: 1;
-  width: auto;
-  text-align: right; }
+.slider {
+  z-index: 2; }
+  .slider .slick-dots {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: auto;
+    z-index: 1;
+    width: auto;
+    text-align: right; }
 
 /* Slider */
 .slick-loading .slick-list {
@@ -7550,6 +7550,11 @@ img.mfp-img {
   margin-left: 2.5%;
   margin-right: 2.5%;
   margin-bottom: 5%; }
+
+.initial-content-block {
+  margin-top: -5%;
+  z-index: 10;
+  position: absolute; }
 
 .category-blue {
   background-color: #40c4c6;

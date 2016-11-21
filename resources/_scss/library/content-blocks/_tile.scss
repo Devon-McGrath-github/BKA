@@ -10,6 +10,12 @@
 
 .content-block { @include content-block(); }
 
+.initial-content-block {
+  margin-top: -5%;
+  z-index: 10;
+  position: absolute;
+}
+
 // category = heading text
 // classes have different colors
 .category-blue { @include category($blue);}
