@@ -9,7 +9,11 @@
 
 .main-content {
 	background-color: $gray-lightest;
+	@include mquery(medium) {
+
+	}
 }
+
 
 .main {
 	overflow-x: hidden;
