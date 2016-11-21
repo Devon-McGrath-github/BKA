@@ -22,6 +22,10 @@ body {
 	// TODO: remove if unnecessary
 	// background-color: $gray-lightest;
 	z-index: 1;
+	@include mquery(medium) {
+		margin-left: 6%;
+		margin-right: 6%;
+	}
 }
 
 

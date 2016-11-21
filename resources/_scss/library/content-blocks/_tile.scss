@@ -14,6 +14,9 @@
   margin-top: -7%;
   z-index: 10;
   position: relative;
+  @include mquery(medium) {
+    margin-top: -14%;
+  }
 }
 
 // category = heading text
