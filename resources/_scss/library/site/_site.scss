@@ -2,7 +2,12 @@
 		background-color: $gray-lightest;
 }
 
-.content {
+.slider-content {
+	width: 100%;
+	background-color: $white;
+}
+
+.main-content {
 	background-color: $gray-lightest;
 }
 
@@ -33,3 +38,4 @@
 @import "rich-text-editor";
 @import "contact-item";
 @import "social-block";
+@import "main-media-query";

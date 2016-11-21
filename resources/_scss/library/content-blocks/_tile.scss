@@ -11,9 +11,9 @@
 .content-block { @include content-block(); }
 
 .initial-content-block {
-  margin-top: -5%;
+  margin-top: -7%;
   z-index: 10;
-  position: absolute;
+  position: relative;
 }
 
 // category = heading text

@@ -1,6 +1,7 @@
 // content block
 
 @mixin content-block() {
+  position: relative;
   background-color: white;
   width: 95%;
   margin-left: 2.5%;

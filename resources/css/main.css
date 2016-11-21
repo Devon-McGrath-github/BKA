@@ -7545,6 +7545,7 @@ img.mfp-img {
   text-decoration: none; }
 
 .content-block {
+  position: relative;
   background-color: white;
   width: 95%;
   margin-left: 2.5%;
@@ -7552,9 +7553,9 @@ img.mfp-img {
   margin-bottom: 5%; }
 
 .initial-content-block {
-  margin-top: -5%;
+  margin-top: -7%;
   z-index: 10;
-  position: absolute; }
+  position: relative; }
 
 .category-blue {
   background-color: #40c4c6;
@@ -7651,6 +7652,7 @@ img.mfp-img {
   border-bottom: 1px solid #e2e2e2; }
 
 .tile-block {
+  position: relative;
   background-color: white;
   width: 95%;
   margin-left: 2.5%;
@@ -7697,6 +7699,7 @@ img.mfp-img {
   display: inline; }
 
 .advertisement-container {
+  position: relative;
   background-color: white;
   width: 95%;
   margin-left: 2.5%;
@@ -7860,7 +7863,11 @@ img.mfp-img {
 .no-js {
   background-color: #f7f7f7; }
 
-.content {
+.slider-content {
+  width: 100%;
+  background-color: #FFFFFF; }
+
+.main-content {
   background-color: #f7f7f7; }
 
 .main {

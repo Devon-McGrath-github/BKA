@@ -70,20 +70,11 @@
 
         <!-- ############################################ -->
 
-        <!-- issues with flickity slider. Will need to come back to it -->
-        <!-- TODO: remove this excess slider code, left in case it is useful troubleshooting -->
-        <!-- <div class="slider">
-          <div><img src="resources/img/304x80.png" alt=""></div>
-          <div><img src="resources/img/304x80.png" alt=""></div>
-          <div><img src="resources/img/304x80.png" alt=""></div>
-        </div> -->
-
-
         <!-- TODO: if the image sizes are different there is some white padding which is an issue, -->
         <!-- TODO: aspect ratio is not being maintained responsively -->
 
         <!-- Slider -->
-        <div class="slider-container">
+        <div class="slider-content">
           <!-- class referenced by script at the bottom, maintain continuity to avoid breaking slider -->
           <div class="js-slider slider">
             <!-- each div is a panel of the slider -->
@@ -95,7 +86,8 @@
         <!-- Slider ends here -->
 
         <!-- Main Content -->
-        <div class="content">
+        <!-- site.scss file -->
+        <div class="main-content">
 
           <!-- ############################################ -->
           <!-- Latest News -->
@@ -560,30 +552,6 @@
 
         <!-- slick slider. -->
         <script type="text/javascript" src="resources/js/libs/slick.js"></script>
-
-        <!-- TODO: remove this code once slider is 100% -->
-        <!-- <script type="text/javascript">
-        $(document).ready(function(){
-          $(".slider").slick({
-            autoplay: true,
-            dots: true,
-            arrows: false,
-
-            responsive: [{
-              breakpoint: 500,
-              settings: {
-                dots: true,
-                arrows: false,
-                infinite: true,
-                // these seem unneccessary
-                //TODO: possibly remove this code.
-                // slidesToShow: 1,
-                // slidesToScroll: 3
-              }
-            }]
-          });
-        })
-        </script> -->
 
         <!-- script that runs slick slider -->
         <script type="text/javascript">
