@@ -7572,6 +7572,8 @@ img.mfp-img {
     flex-direction: column;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
+    -ms-flex-align: stretch;
+    align-items: stretch;
     /* this makes sure the items actually wrap */
     height: 600px;
     /* Safari 6.1+ */
@@ -7655,6 +7657,10 @@ img.mfp-img {
     padding: 2%;
     border-left: 1px solid #e2e2e2;
     border-right: 1px solid #e2e2e2; }
+    @media (min-width: 800px) {
+      .featured-article .featured-article-text-content {
+        /* removed this border as it doubles up now */
+        border-left: none; } }
 
 .article-title-big {
   color: #4d4d4d;

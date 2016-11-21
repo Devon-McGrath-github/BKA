@@ -27,7 +27,10 @@
   flex-direction: column;
   -webkit-flex-wrap: wrap;
   flex-wrap: wrap;
+  -webkit-align-items: stretch;
+  align-items: stretch;
   /* this makes sure the items actually wrap */
+  // TODO: find fix for hard coded height, and the browser not knowing it needs to wrap
   height: 600px;
 
     /* Safari 6.1+ */
@@ -85,6 +88,10 @@
     padding: 2%;
     border-left: $border-light;
     border-right: $border-light;
+    @include mquery(medium) {
+      /* removed this border as it doubles up now */
+      border-left: none;
+    }
   }
 }
 
