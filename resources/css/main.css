@@ -7570,6 +7570,8 @@ img.mfp-img {
     display: flex;
     -ms-flex-direction: column;
     flex-direction: column;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     -ms-flex-align: stretch;

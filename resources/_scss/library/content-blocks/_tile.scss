@@ -25,6 +25,9 @@
   display: -webkit-flex; /* Safari */
   display: flex;
   flex-direction: column;
+
+  flex-shrink: 0;
+
   -webkit-flex-wrap: wrap;
   flex-wrap: wrap;
 
@@ -123,9 +126,6 @@
     text-decoration: none;
   }
 }
-
-// supporting article information. Text
-
 // text color
 .category-text-blue { @include category-text($blue);}
 .category-text-blue-dark { @include category-text($blue-dark);}
@@ -149,6 +149,14 @@
   display: none;
   @include mquery(medium) {
     display: block;
+  }
+}
+
+// TODO: is this needed?
+// sub articles container
+.articles-container {
+  @include mquery(medium) {
+    // height: 100%;
   }
 }
 
