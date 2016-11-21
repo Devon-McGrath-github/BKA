@@ -11,7 +11,7 @@
   }
 
   @else if $size == medium {
-    @media (min-width: 560px) {
+    @media (min-width: 650px) {
       @content;
     }
   }

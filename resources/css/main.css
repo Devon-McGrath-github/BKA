@@ -7339,6 +7339,9 @@ img.mfp-img {
 
 .slider {
   z-index: 2; }
+  @media (min-width: 650px) {
+    .slider {
+      padding-bottom: 8%; } }
   .slider .slick-dots {
     position: absolute;
     top: 0;
@@ -7860,15 +7863,25 @@ img.mfp-img {
   background-color: #EEF7FA; }
 
 /* Site */
+body {
+  background-color: #f7f7f7; }
+
 .no-js {
   background-color: #f7f7f7; }
 
 .slider-content {
   width: 100%;
-  background-color: #FFFFFF; }
+  background-color: #8d2704;
+  overflow: auto; }
+  @media (min-width: 650px) {
+    .slider-content {
+      padding-left: 5%;
+      padding-right: 5%;
+      margin: 0;
+      z-index: 2; } }
 
 .main-content {
-  background-color: #f7f7f7; }
+  z-index: 1; }
 
 .main {
   overflow-x: hidden; }
