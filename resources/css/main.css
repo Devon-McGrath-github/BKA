@@ -6971,12 +6971,15 @@ img.mfp-img {
     .footer-heading {
       text-align: left; } }
 
-.footer-content {
+.footer-container {
   margin-left: 7.5%;
   margin-right: 7.5%; }
 
 [class*="footer-col-"] {
   display: inline-block; }
+
+.footer-col-1 {
+  width: 30%; }
 
 .footer-information {
   display: none; }
