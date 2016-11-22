@@ -18,12 +18,15 @@ $padding-footer-text: 5%;
   h3 {
     margin: 0;
   }
+  @include mquery(medium) {
+    text-align: left;
+  }
 }
 
 // footer content styling
 .footer-content {
-  padding-left: $wrapper-spacing+$content-wrapper-spacing;
-  padding-right: $wrapper-spacing+$content-wrapper-spacing;
+  margin-left: $wrapper-spacing+$content-wrapper-spacing;
+  margin-right: $wrapper-spacing+$content-wrapper-spacing;
 }
 
 [class*="footer-col-"] {

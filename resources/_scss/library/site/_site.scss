@@ -25,11 +25,10 @@ body {
 	margin-top: -7%;
   z-index: 10;
   position: relative;
+	padding-left: $content-wrapper-spacing;
+	padding-right: $content-wrapper-spacing;
   @include mquery(medium) {
     margin-top: -14%;
-  }
-
-	@include mquery(medium) {
 		margin-left: $wrapper-spacing;
 		margin-right: $wrapper-spacing;
 	}
@@ -41,7 +40,7 @@ body {
 	width: 100%;
 	@include mquery(medium) {
 		/* for deskop */
-		width: 73%;
+		width: 74%;
 		display: inline-block;
 		vertical-align: top;
 	}

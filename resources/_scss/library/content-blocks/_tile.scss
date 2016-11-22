@@ -10,15 +10,6 @@
 
 .content-block { @include content-block(); }
 
-.initial-content-block {
-  // margin-top: -7%;
-  // z-index: 10;
-  // position: relative;
-  // @include mquery(medium) {
-  //   margin-top: -14%;
-  // }
-}
-
 // reordering of item source order and display for larger screens
 .news-content-block {
   @include mquery(medium) {

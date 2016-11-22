@@ -6967,10 +6967,13 @@ img.mfp-img {
   padding-bottom: 5%; }
   .footer-heading h3 {
     margin: 0; }
+  @media (min-width: 768px) {
+    .footer-heading {
+      text-align: left; } }
 
 .footer-content {
-  padding-left: 8.5%;
-  padding-right: 8.5%; }
+  margin-left: 7.5%;
+  margin-right: 7.5%; }
 
 [class*="footer-col-"] {
   display: inline-block; }
@@ -7223,9 +7226,7 @@ img.mfp-img {
 .content-block {
   position: relative;
   background-color: white;
-  width: 95%;
-  margin-left: 2.5%;
-  margin-right: 2.5%;
+  width: 100%;
   margin-bottom: 5%; }
 
 @media (min-width: 768px) {
@@ -7413,9 +7414,7 @@ img.mfp-img {
 .tile-block {
   position: relative;
   background-color: white;
-  width: 95%;
-  margin-left: 2.5%;
-  margin-right: 2.5%;
+  width: 100%;
   margin-bottom: 5%; }
 
 .tile-block {
@@ -7460,9 +7459,7 @@ img.mfp-img {
 .advertisement-container {
   position: relative;
   background-color: white;
-  width: 95%;
-  margin-left: 2.5%;
-  margin-right: 2.5%;
+  width: 100%;
   margin-bottom: 5%; }
 
 .advertisement-image {
@@ -7656,12 +7653,12 @@ body {
   z-index: 3;
   margin-top: -7%;
   z-index: 10;
-  position: relative; }
+  position: relative;
+  padding-left: 1.5%;
+  padding-right: 1.5%; }
   @media (min-width: 768px) {
     .main-content {
-      margin-top: -14%; } }
-  @media (min-width: 768px) {
-    .main-content {
+      margin-top: -14%;
       margin-left: 6%;
       margin-right: 6%; } }
 
@@ -7671,7 +7668,7 @@ body {
   @media (min-width: 768px) {
     .col-1 {
       /* for deskop */
-      width: 73%;
+      width: 74%;
       display: inline-block;
       vertical-align: top; } }
 
