@@ -11,12 +11,12 @@
 .content-block { @include content-block(); }
 
 .initial-content-block {
-  margin-top: -7%;
-  z-index: 10;
-  position: relative;
-  @include mquery(medium) {
-    margin-top: -14%;
-  }
+  // margin-top: -7%;
+  // z-index: 10;
+  // position: relative;
+  // @include mquery(medium) {
+  //   margin-top: -14%;
+  // }
 }
 
 // reordering of item source order and display for larger screens
@@ -36,7 +36,7 @@
   align-items: stretch;
   /* this makes sure the items actually wrap */
   // TODO: find fix for hard coded height, and the browser not knowing it needs to wrap
-  height: 700px;
+  height: 1100px;
 
     /* Safari 6.1+ */
     .headline-container   {-webkit-order: 1;}

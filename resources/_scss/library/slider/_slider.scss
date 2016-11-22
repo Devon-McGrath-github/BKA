@@ -22,7 +22,7 @@
 
 // positioning of the dots
 .slider {
-	z-index: 2;
+	z-index: 1;
 
 	@include mquery(medium) {
 		padding-bottom: 8%;
