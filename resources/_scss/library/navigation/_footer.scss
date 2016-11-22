@@ -6,9 +6,6 @@
   width: 100%;
 }
 
-// padding variable
-$padding-footer-text: 5%;
-
 .footer-heading {
   width: 100%;
   text-align: center;
@@ -37,17 +34,17 @@ $padding-footer-text: 5%;
     display: -webkit-flex;
     display: flex;
     // flex items display right-left
-    -webkit-flex-direction: row;
-    flex-direction:         row;
+    -webkit-flex-direction:  row;
+    flex-direction:          row;
     // stops items going onto a new line
-    -webkit-flex-wrap: nowrap; /* Safari */
-    flex-wrap:         nowrap;
+    -webkit-flex-wrap:       nowrap; /* Safari */
+    flex-wrap:               nowrap;
     // aligns items with equal space between, but none on the outer left/right
     -webkit-justify-content: space-between; /* Safari */
     justify-content:         space-between;
     // items height fills all space given to them
-    -webkit-align-items: stretch; /* Safari */
-    align-items:         stretch;
+    -webkit-align-items:     stretch; /* Safari */
+    align-items:             stretch;
   }
 }
 
@@ -61,12 +58,16 @@ $padding-footer-text: 5%;
   width: 30%;
   margin-right: $footer-margin-right;
 }
-@mixin basic-footer-styling() {
+@mixin basic-footer-styling-mobile() {
+  float: left;
+}
+@mixin basic-footer-styling-desktop() {
   vertical-align: top;
   // sets size given to flex items (similar to width)
   flex-grow: 1;
   width: 12%;
   margin-right: $footer-margin-right;
+  float:none;
 }
 .footer-col-2 {
   @include mquery(medium);

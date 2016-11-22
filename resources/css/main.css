@@ -6963,8 +6963,8 @@ img.mfp-img {
   width: 100%;
   text-align: center;
   color: #FFFFFF;
-  padding-top: 5%;
-  padding-bottom: 5%; }
+  padding-top: 4%;
+  padding-bottom: 4%; }
   .footer-heading h3 {
     margin: 0; }
   @media (min-width: 760px) {
@@ -7008,28 +7008,32 @@ img.mfp-img {
   -ms-flex-positive: 1;
   flex-grow: 1;
   width: 12%;
-  margin-right: 2%; }
+  margin-right: 2%;
+  float: none; }
 
 .footer-col-3 {
   vertical-align: top;
   -ms-flex-positive: 1;
   flex-grow: 1;
   width: 12%;
-  margin-right: 2%; }
+  margin-right: 2%;
+  float: none; }
 
 .footer-col-4 {
   vertical-align: top;
   -ms-flex-positive: 1;
   flex-grow: 1;
   width: 12%;
-  margin-right: 2%; }
+  margin-right: 2%;
+  float: none; }
 
 .footer-col-5 {
   vertical-align: top;
   -ms-flex-positive: 1;
   flex-grow: 1;
   width: 12%;
-  margin-right: 2%; }
+  margin-right: 2%;
+  float: none; }
 
 .footer-col-6 {
   vertical-align: top;
@@ -7037,6 +7041,7 @@ img.mfp-img {
   flex-grow: 1;
   width: 12%;
   margin-right: 2%;
+  float: none;
   margin-right: 0; }
 
 .footer-information {
@@ -7056,8 +7061,8 @@ img.mfp-img {
     color: #FFFFFF; }
 
 .copyright-container {
-  padding-top: 5%;
-  padding-bottom: 5%; }
+  padding-top: 4%;
+  padding-bottom: 4%; }
   @media (min-width: 760px) {
     .copyright-container {
       text-align: left; } }
@@ -7530,21 +7535,31 @@ img.mfp-img {
 .advertisement-image {
   width: 100%; }
 
-.advertisement-horizontal-container {
+.horizontal-banner-ad-container {
   display: none; }
   @media (min-width: 760px) {
-    .advertisement-horizontal-container {
+    .horizontal-banner-ad-container {
       background-color: #FFFFFF;
       display: block;
       width: 100%; } }
 
-.advertisement-horizontal {
+.horizontal-banner-ad {
   max-height: 90px;
   width: 60%;
   margin-left: 20%;
   margin-top: 2%;
   margin-right: 20%;
   margin-bottom: 2%; }
+
+.horizontal-content-ad-container {
+  display: none; }
+  @media (min-width: 760px) {
+    .horizontal-content-ad-container {
+      display: block;
+      width: 100%;
+      padding-left: 5%;
+      padding-right: 5%;
+      padding-bottom: 5%; } }
 
 /* Content Cards */
 .card-text {
