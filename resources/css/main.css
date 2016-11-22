@@ -6956,7 +6956,8 @@ img.mfp-img {
 .site-footer {
   background-color: #40c4c6;
   color: #FFFFFF;
-  text-align: center; }
+  text-align: center;
+  width: 100%; }
 
 .footer-heading {
   width: 100%;
@@ -6966,6 +6967,13 @@ img.mfp-img {
   padding-bottom: 5%; }
   .footer-heading h3 {
     margin: 0; }
+
+.footer-information {
+  display: none; }
+  @media (min-width: 768px) {
+    .footer-information {
+      display: block;
+      text-align: left; } }
 
 .footer-list {
   list-style: none;

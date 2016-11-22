@@ -1,7 +1,9 @@
+// main div styling (blue footer box)
 .site-footer {
   background-color: $blue;
   color: $white;
   text-align: center;
+  width: 100%;
 }
 
 // padding variable
@@ -15,6 +17,19 @@ $padding-footer-text: 5%;
   padding-bottom: $padding-footer-text;
   h3 {
     margin: 0;
+  }
+}
+
+// footer content styling
+
+
+
+
+.footer-information {
+  display: none;
+  @include mquery(medium) {
+    display: block;
+    text-align: left;
   }
 }
 
