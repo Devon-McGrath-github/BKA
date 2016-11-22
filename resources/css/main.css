@@ -6975,11 +6975,17 @@ img.mfp-img {
   margin-left: 7.5%;
   margin-right: 7.5%; }
 
+.footer-content {
+  padding: 0;
+  margin: 0;
+  width: 100%; }
+
 [class*="footer-col-"] {
   display: inline-block; }
 
 .footer-col-1 {
-  width: 30%; }
+  width: 30%;
+  float: left; }
 
 .footer-information {
   display: none; }
@@ -7671,7 +7677,7 @@ body {
   @media (min-width: 768px) {
     .col-1 {
       /* for deskop */
-      width: 74%;
+      width: 72%;
       display: inline-block;
       vertical-align: top; } }
 
@@ -7682,6 +7688,7 @@ body {
     .col-2 {
       /* for desktop */
       width: 25%;
+      margin-left: 2%;
       display: inline-block;
       vertical-align: top; } }
 
