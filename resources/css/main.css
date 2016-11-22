@@ -6968,11 +6968,18 @@ img.mfp-img {
   .footer-heading h3 {
     margin: 0; }
 
+.footer-content {
+  padding-left: 8.5%;
+  padding-right: 8.5%; }
+
+[class*="footer-col-"] {
+  display: inline-block; }
+
 .footer-information {
   display: none; }
   @media (min-width: 768px) {
     .footer-information {
-      display: block;
+      display: inline-block;
       text-align: left; } }
 
 .footer-list {
@@ -6987,6 +6994,9 @@ img.mfp-img {
 .copyright-container {
   padding-top: 5%;
   padding-bottom: 5%; }
+  @media (min-width: 768px) {
+    .copyright-container {
+      text-align: left; } }
 
 .copyright {
   display: inline; }
@@ -7655,17 +7665,15 @@ body {
       margin-left: 6%;
       margin-right: 6%; } }
 
-[class*="col-"] {
-  display: inline-block;
-  vertical-align: top; }
-
 .col-1 {
   /* for mobile */
   width: 100%; }
   @media (min-width: 768px) {
     .col-1 {
       /* for deskop */
-      width: 73%; } }
+      width: 73%;
+      display: inline-block;
+      vertical-align: top; } }
 
 .col-2 {
   /* for mobile */
@@ -7673,7 +7681,9 @@ body {
   @media (min-width: 768px) {
     .col-2 {
       /* for desktop */
-      width: 25%; } }
+      width: 25%;
+      display: inline-block;
+      vertical-align: top; } }
 
 .main {
   overflow-x: hidden; }

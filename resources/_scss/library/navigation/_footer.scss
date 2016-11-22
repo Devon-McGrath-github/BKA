@@ -21,14 +21,24 @@ $padding-footer-text: 5%;
 }
 
 // footer content styling
+.footer-content {
+  padding-left: $wrapper-spacing+$content-wrapper-spacing;
+  padding-right: $wrapper-spacing+$content-wrapper-spacing;
+}
 
+[class*="footer-col-"] {
+  display: inline-block;
+}
 
+.footer-col-1 {
+  // width:
+}
 
 
 .footer-information {
   display: none;
   @include mquery(medium) {
-    display: block;
+    display: inline-block;
     text-align: left;
   }
 }
@@ -49,6 +59,9 @@ $padding-footer-text: 5%;
 .copyright-container {
   padding-top: $padding-footer-text;
   padding-bottom: $padding-footer-text;
+  @include mquery(medium) {
+    text-align: left;
+  }
 }
 .copyright {
   display: inline;

@@ -30,24 +30,20 @@ body {
   }
 
 	@include mquery(medium) {
-		margin-left: 6%;
-		margin-right: 6%;
+		margin-left: $wrapper-spacing;
+		margin-right: $wrapper-spacing;
 	}
 }
 
 // styling for responsive repositioning (transition from mobile layout to desktop layout)
-
-[class*="col-"] {
-	display: inline-block;
-	vertical-align: top;
-}
-
 .col-1 {
 	/* for mobile */
 	width: 100%;
 	@include mquery(medium) {
 		/* for deskop */
 		width: 73%;
+		display: inline-block;
+		vertical-align: top;
 	}
 }
 
@@ -57,6 +53,8 @@ body {
 	@include mquery(medium) {
 		/* for desktop */
 		width: 25%;
+		display: inline-block;
+		vertical-align: top;
 	}
 }
 
