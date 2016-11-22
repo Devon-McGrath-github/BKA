@@ -30,9 +30,25 @@ $padding-footer-text: 5%;
 }
 
 .footer-content {
-  padding: 0;
-  margin: 0;
-  width: 100%;
+  @include mquery(medium) {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    display: -webkit-flex;
+    display: flex;
+    // flex items display right-left
+    -webkit-flex-direction: row;
+    flex-direction:         row;
+    // stops items going onto a new line
+    -webkit-flex-wrap: nowrap; /* Safari */
+    flex-wrap:         nowrap;
+    // aligns items with equal space between, but none on the outer left/right
+    -webkit-justify-content: space-between; /* Safari */
+    justify-content:         space-between;
+    // items height fills all space given to them
+    -webkit-align-items: stretch; /* Safari */
+    align-items:         stretch;
+  }
 }
 
 [class*="footer-col-"] {
@@ -40,28 +56,39 @@ $padding-footer-text: 5%;
 }
 
 .footer-col-1 {
+  // sets size of flex items (similar to width)
+  flex-grow: 2;
   width: 30%;
-  float: left;
+  margin-right: $footer-margin-right;
 }
 @mixin basic-footer-styling() {
-  width: 14%;
   vertical-align: top;
-  float: left;
+  // sets size given to flex items (similar to width)
+  flex-grow: 1;
+  width: 12%;
+  margin-right: $footer-margin-right;
 }
 .footer-col-2 {
   @include mquery(medium);
+  @include basic-footer-styling();
 }
 .footer-col-3 {
   @include mquery(medium);
+  @include basic-footer-styling();
 }
 .footer-col-4 {
   @include mquery(medium);
+  @include basic-footer-styling();
 }
 .footer-col-5 {
   @include mquery(medium);
+  @include basic-footer-styling();
 }
 .footer-col-6 {
   @include mquery(medium);
+  @include basic-footer-styling();
+  // far right list, doesnt need a margin
+  margin-right: 0;
 }
 
 .footer-information {
