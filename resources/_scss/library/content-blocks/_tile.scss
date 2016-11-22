@@ -13,10 +13,10 @@
 .news-content-block {
   @include mquery(medium) {
   display: -webkit-flex; /* Safari */
+
+//TODO: would inline flex work for this         ##############################################################
   display: flex;
   flex-direction: column;
-
-  flex-shrink: 0;
 
   -webkit-flex-wrap: wrap;
   flex-wrap: wrap;
@@ -99,10 +99,6 @@
   margin: 0;
   font-family: $font-family-bitter;
   font-weight: bold;
-  // TODO: does title need a hover?
-  // a:hover, a:focus {
-  //   text-decoration: underline !important;
-  // }
 
 }
 .article-title-small {

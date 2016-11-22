@@ -6967,7 +6967,7 @@ img.mfp-img {
   padding-bottom: 5%; }
   .footer-heading h3 {
     margin: 0; }
-  @media (min-width: 768px) {
+  @media (min-width: 760px) {
     .footer-heading {
       text-align: left; } }
 
@@ -6989,7 +6989,7 @@ img.mfp-img {
 
 .footer-information {
   display: none; }
-  @media (min-width: 768px) {
+  @media (min-width: 760px) {
     .footer-information {
       display: inline-block;
       text-align: left; } }
@@ -7006,7 +7006,7 @@ img.mfp-img {
 .copyright-container {
   padding-top: 5%;
   padding-bottom: 5%; }
-  @media (min-width: 768px) {
+  @media (min-width: 760px) {
     .copyright-container {
       text-align: left; } }
 
@@ -7026,7 +7026,7 @@ img.mfp-img {
 
 .slider {
   z-index: 1; }
-  @media (min-width: 768px) {
+  @media (min-width: 760px) {
     .slider {
       padding-bottom: 8%; } }
   .slider .slick-dots {
@@ -7238,15 +7238,13 @@ img.mfp-img {
   width: 100%;
   margin-bottom: 5%; }
 
-@media (min-width: 768px) {
+@media (min-width: 760px) {
   .news-content-block {
     /* Safari */
     display: -ms-flexbox;
     display: flex;
     -ms-flex-direction: column;
     flex-direction: column;
-    -ms-flex-negative: 0;
-    flex-shrink: 0;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     -ms-flex-align: stretch;
@@ -7281,7 +7279,7 @@ img.mfp-img {
 
 .extra-articles {
   display: none; }
-  @media (min-width: 768px) {
+  @media (min-width: 760px) {
     .extra-articles {
       display: block; } }
 
@@ -7292,7 +7290,7 @@ img.mfp-img {
   margin: 0;
   padding-top: 3%;
   padding-bottom: 3%; }
-  @media (min-width: 768px) {
+  @media (min-width: 760px) {
     .category-blue {
       padding-top: 5%;
       padding-bottom: 5%; } }
@@ -7304,7 +7302,7 @@ img.mfp-img {
   margin: 0;
   padding-top: 3%;
   padding-bottom: 3%; }
-  @media (min-width: 768px) {
+  @media (min-width: 760px) {
     .category-blue-dark {
       padding-top: 5%;
       padding-bottom: 5%; } }
@@ -7316,7 +7314,7 @@ img.mfp-img {
   margin: 0;
   padding-top: 3%;
   padding-bottom: 3%; }
-  @media (min-width: 768px) {
+  @media (min-width: 760px) {
     .category-red {
       padding-top: 5%;
       padding-bottom: 5%; } }
@@ -7328,7 +7326,7 @@ img.mfp-img {
   margin: 0;
   padding-top: 3%;
   padding-bottom: 3%; }
-  @media (min-width: 768px) {
+  @media (min-width: 760px) {
     .category-yellow {
       padding-top: 5%;
       padding-bottom: 5%; } }
@@ -7340,7 +7338,7 @@ img.mfp-img {
   margin: 0;
   padding-top: 3%;
   padding-bottom: 3%; }
-  @media (min-width: 768px) {
+  @media (min-width: 760px) {
     .category-green {
       padding-top: 5%;
       padding-bottom: 5%; } }
@@ -7356,7 +7354,7 @@ img.mfp-img {
     padding: 2%;
     border-left: 1px solid #e2e2e2;
     border-right: 1px solid #e2e2e2; }
-    @media (min-width: 768px) {
+    @media (min-width: 760px) {
       .featured-article .featured-article-text-content {
         /* removed this border as it doubles up now */
         border-left: none;
@@ -7403,7 +7401,7 @@ img.mfp-img {
   font-family: "Bitter", serif;
   color: #4d4d4d;
   display: none; }
-  @media (min-width: 768px) {
+  @media (min-width: 760px) {
     .article-blurb {
       display: block; } }
 
@@ -7412,11 +7410,11 @@ img.mfp-img {
   border-left: 1px solid #e2e2e2;
   border-right: 1px solid #e2e2e2;
   border-bottom: 1px solid #e2e2e2; }
-  @media (min-width: 768px) {
+  @media (min-width: 760px) {
     .sub-article {
       padding: 6%; } }
 
-@media (min-width: 768px) {
+@media (min-width: 760px) {
   .most-popular-container {
     display: none; } }
 
@@ -7471,12 +7469,18 @@ img.mfp-img {
   width: 100%;
   margin-bottom: 5%; }
 
+.advertisement-2 {
+  display: none; }
+  @media (min-width: 760px) {
+    .advertisement-2 {
+      display: block; } }
+
 .advertisement-image {
   width: 100%; }
 
 .advertisement-horizontal-container {
   display: none; }
-  @media (min-width: 768px) {
+  @media (min-width: 760px) {
     .advertisement-horizontal-container {
       background-color: #FFFFFF;
       display: block;
@@ -7651,7 +7655,7 @@ body {
   width: 100%;
   background-color: #FFFFFF;
   overflow: auto; }
-  @media (min-width: 768px) {
+  @media (min-width: 760px) {
     .slider-content {
       padding-left: 5%;
       padding-right: 5%;
@@ -7664,17 +7668,56 @@ body {
   z-index: 10;
   position: relative;
   padding-left: 1.5%;
-  padding-right: 1.5%; }
-  @media (min-width: 768px) {
+  padding-right: 1.5%;
+  /* Safari */
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  /* Safari 6.1+ */
+  /* mini-block is 2 ads/opinion/most popular content blocks */
+  /* Standard syntax */
+  /* note articles-block is below mini-block in html */ }
+  @media (min-width: 760px) {
     .main-content {
       margin-top: -14%;
       margin-left: 6%;
       margin-right: 6%; } }
+  .main-content .flex-order-initial-article {
+    -webkit-order: 1; }
+  .main-content .flex-order-agri-data {
+    -webkit-order: 2; }
+  .main-content .flex-order-articles-block {
+    -webkit-order: 3; }
+  .main-content .flex-order-mini-block {
+    -webkit-order: 4; }
+  .main-content .flex-order-initial-article {
+    -ms-flex-order: 1;
+    order: 1; }
+  .main-content .flex-order-agri-data {
+    -ms-flex-order: 2;
+    order: 2; }
+  .main-content .flex-order-articles-block {
+    -ms-flex-order: 3;
+    order: 3; }
+  .main-content .flex-order-mini-block {
+    -ms-flex-order: 4;
+    order: 4; }
+  @media (min-width: 760px) {
+    .main-content {
+      /* note the order changes for desktop version*/
+      display: block; }
+      .main-content .flex-order-articles-block {
+        -ms-flex-order: 4;
+        order: 4; }
+      .main-content .flex-order-mini-block {
+        -ms-flex-order: 3;
+        order: 3; } }
 
 .col-1 {
   /* for mobile */
   width: 100%; }
-  @media (min-width: 768px) {
+  @media (min-width: 760px) {
     .col-1 {
       /* for deskop */
       width: 72%;
@@ -7684,7 +7727,7 @@ body {
 .col-2 {
   /* for mobile */
   width: 100%; }
-  @media (min-width: 768px) {
+  @media (min-width: 760px) {
     .col-2 {
       /* for desktop */
       width: 25%;

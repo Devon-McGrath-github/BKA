@@ -19,8 +19,6 @@ body {
 }
 
 .main-content {
-	// TODO: remove if unnecessary
-	// background-color: $gray-lightest;
 	z-index: 3;
 	margin-top: -7%;
   z-index: 10;
@@ -31,6 +29,34 @@ body {
     margin-top: -14%;
 		margin-left: $wrapper-spacing;
 		margin-right: $wrapper-spacing;
+	}
+
+	// flexbox order manipulation of main content sections
+	display: -webkit-flex; /* Safari */
+	display: flex;
+
+	flex-direction: column;
+	/* Safari 6.1+ */
+	.flex-order-initial-article				   	{-webkit-order: 1;}
+	.flex-order-agri-data  								{-webkit-order: 2;}
+	.flex-order-articles-block  					{-webkit-order: 3;}
+	/* mini-block is 2 ads/opinion/most popular content blocks */
+	.flex-order-mini-block								{-webkit-order: 4;}
+
+	/* Standard syntax */
+	.flex-order-initial-article				   	{order: 1;}
+	.flex-order-agri-data  								{order: 2;}
+	/* note articles-block is below mini-block in html */
+	.flex-order-articles-block  					{order: 3;}
+	.flex-order-mini-block								{order: 4;}
+
+	@include mquery(medium) {
+		/* note the order changes for desktop version*/
+		.flex-order-articles-block   				{order: 4;}
+		.flex-order-mini-block						  {order: 3;}
+		// disables flex-order, returns mini-block to original position in html (i.e above articles-block)
+		display: block;
+
 	}
 }
 
