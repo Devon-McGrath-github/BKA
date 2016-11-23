@@ -162,17 +162,6 @@
   }
 }
 
-.opinion-article {
-  padding: 2%;
-  border-left: $border-light;
-  border-right: $border-light;
-  border-bottom: $border-light;
-  @include mquery(medium) {
-    padding: 6%;
-  }
-}
-
-
 .opinion-container {
   .opinion-image {
     display: none;

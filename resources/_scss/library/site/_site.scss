@@ -7,6 +7,7 @@ body {
 }
 
 .slider-content {
+	padding-bottom: 8%;
 	width: 100%;
 	background-color: $white;
 	overflow: auto;
@@ -69,6 +70,7 @@ body {
 		width: 72%;
 		display: inline-block;
 		vertical-align: top;
+		// float: left;
 	}
 }
 
@@ -78,6 +80,7 @@ body {
 	width: 100%;
 	@include mquery(medium) {
 		/* for desktop */
+		// float: right;
 		width: 25%;
 		margin-left: 2%;
 		display: inline-block;
