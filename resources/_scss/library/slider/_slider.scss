@@ -6,37 +6,48 @@
 // TODO: slider needs to be properly sized for different images.
 // makes sure that it is fully responsive
 .panel {
+	position: relative;
 	background: #ccc;
 	margin: 0;
-	// height:200px;
 	width: 100%;
 	font-size: 72px;
 	text-align: center;
-	// line-height changes height, also affects text positioning
-	// line-height: 200px;
 	img {
 		height: 100%;
 		width: 100%;
 	}
+	.slide-caption {
+		left: 0;
+		top:0;
+		min-height: 80px;
+		position: absolute;
+		width: 100%;
+		z-index: 11;
+		text-align: left;
+		
+		// @include mquery(medium) {
+		// 	text-align: left;
+		// }
 }
 
 // positioning of the dots
 .slider {
 	z-index: 1;
 
-	@include mquery(medium) {
-		padding-bottom: 8%;
-	}
 	.slick-dots {
 		position: absolute;
-		top:0;
-		right:0;
+		top:3%;
+		right:2%;
 		bottom: auto;
 		z-index: 1;
 		width: auto;
 		text-align: right;
-		li {
+		@include mquery(medium) {
+			padding-bottom: 8%;
+			left: 2%;
+			text-align: left;
 		}
+	}
 	}
 }
 

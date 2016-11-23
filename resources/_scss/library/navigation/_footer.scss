@@ -8,15 +8,12 @@
 
 .footer-heading {
   width: 100%;
-  text-align: center;
+  text-align: left;
   color: $white;
   padding-top: $padding-footer-text;
   padding-bottom: $padding-footer-text;
   h3 {
     margin: 0;
-  }
-  @include mquery(medium) {
-    text-align: left;
   }
 }
 
@@ -95,10 +92,19 @@
 .copyright-container {
   padding-top: $padding-footer-text;
   padding-bottom: $padding-footer-text;
-  @include mquery(medium) {
-    text-align: left;
-  }
+  text-align: left;
 }
 .copyright {
+  display: inline;
+}
+.copyright-sentence {
+  display: inline;
+  padding-left: 8%;
+  padding-right: 4%;
+  @include mquery(medium) {
+    padding-left: 0;
+  }
+}
+.copyright-sentence-2 {
   display: inline;
 }

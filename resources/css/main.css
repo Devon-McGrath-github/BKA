@@ -6961,15 +6961,12 @@ img.mfp-img {
 
 .footer-heading {
   width: 100%;
-  text-align: center;
+  text-align: left;
   color: #FFFFFF;
   padding-top: 4%;
   padding-bottom: 4%; }
   .footer-heading h3 {
     margin: 0; }
-  @media (min-width: 760px) {
-    .footer-heading {
-      text-align: left; } }
 
 .footer-container {
   margin-left: 7.5%;
@@ -7035,16 +7032,26 @@ img.mfp-img {
 
 .copyright-container {
   padding-top: 4%;
-  padding-bottom: 4%; }
-  @media (min-width: 760px) {
-    .copyright-container {
-      text-align: left; } }
+  padding-bottom: 4%;
+  text-align: left; }
 
 .copyright {
   display: inline; }
 
+.copyright-sentence {
+  display: inline;
+  padding-left: 8%;
+  padding-right: 4%; }
+  @media (min-width: 760px) {
+    .copyright-sentence {
+      padding-left: 0; } }
+
+.copyright-sentence-2 {
+  display: inline; }
+
 /* Slider */
 .panel {
+  position: relative;
   background: #ccc;
   margin: 0;
   width: 100%;
@@ -7053,20 +7060,29 @@ img.mfp-img {
   .panel img {
     height: 100%;
     width: 100%; }
-
-.slider {
-  z-index: 1; }
-  @media (min-width: 760px) {
-    .slider {
-      padding-bottom: 8%; } }
-  .slider .slick-dots {
-    position: absolute;
+  .panel .slide-caption {
+    left: 0;
     top: 0;
-    right: 0;
-    bottom: auto;
-    z-index: 1;
-    width: auto;
-    text-align: right; }
+    min-height: 80px;
+    position: absolute;
+    width: 100%;
+    z-index: 11;
+    text-align: left; }
+  .panel .slider {
+    z-index: 1; }
+    .panel .slider .slick-dots {
+      position: absolute;
+      top: 3%;
+      right: 2%;
+      bottom: auto;
+      z-index: 1;
+      width: auto;
+      text-align: right; }
+      @media (min-width: 760px) {
+        .panel .slider .slick-dots {
+          padding-bottom: 8%;
+          left: 2%;
+          text-align: left; } }
 
 /* Slider */
 .slick-loading .slick-list {
@@ -7377,7 +7393,8 @@ img.mfp-img {
   text-decoration: none; }
 
 .featured-article {
-  border-bottom: 1px solid #e2e2e2; }
+  border-bottom: 1px solid #e2e2e2;
+  height: 100%; }
   .featured-article .featured-article-image {
     width: 100%; }
   .featured-article .featured-article-text-content {
@@ -7533,6 +7550,9 @@ img.mfp-img {
       padding-left: 5%;
       padding-right: 5%;
       padding-bottom: 5%; } }
+
+.horizontal-content-ad {
+  width: 100%; }
 
 /* Content Cards */
 .card-text {
