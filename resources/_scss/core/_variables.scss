@@ -126,6 +126,7 @@ $spacers: (
 ) !default;
 
 $border-width:              1px  !default;
+$border-width-hover:        4px  !default;
 
 $wrapper-spacing:           6%   !default;
 $content-wrapper-spacing:   1.5% !default;
@@ -283,7 +284,8 @@ $component-active-bg:    $brand-primary !default;
 $caret-width:            .3em !default;
 $caret-width-lg:         $caret-width !default;
 
-$border-light:           1px solid $border-gray;
+$border-light:           1px solid $border-gray !default;
+$border-hover:           $border-width-hover solid $blue !default;
 // TODO: customize border
 
 
