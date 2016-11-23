@@ -7051,7 +7051,6 @@ img.mfp-img {
 
 /* Slider */
 .panel {
-  position: relative;
   background: #ccc;
   margin: 0;
   width: 100%;
@@ -7060,29 +7059,25 @@ img.mfp-img {
   .panel img {
     height: 100%;
     width: 100%; }
-  .panel .slide-caption {
-    left: 0;
-    top: 0;
-    min-height: 80px;
+  .panel .slider-caption {
     position: absolute;
-    width: 100%;
-    z-index: 11;
-    text-align: left; }
-  .panel .slider {
-    z-index: 1; }
-    .panel .slider .slick-dots {
-      position: absolute;
-      top: 3%;
-      right: 2%;
-      bottom: auto;
-      z-index: 1;
-      width: auto;
-      text-align: right; }
-      @media (min-width: 760px) {
-        .panel .slider .slick-dots {
-          padding-bottom: 8%;
-          left: 2%;
-          text-align: left; } }
+    top: 0; }
+
+.slider {
+  z-index: 1; }
+  .slider .slick-dots {
+    position: absolute;
+    top: 3%;
+    right: 2%;
+    bottom: auto;
+    z-index: 3;
+    width: auto;
+    text-align: right; }
+    @media (min-width: 760px) {
+      .slider .slick-dots {
+        padding-bottom: 8%;
+        left: 2%;
+        text-align: left; } }
 
 /* Slider */
 .slick-loading .slick-list {
