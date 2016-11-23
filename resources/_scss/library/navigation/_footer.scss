@@ -78,11 +78,18 @@
   -webkit-columns: auto 2; /* Chrome, Safari, Opera */
   -moz-columns: auto 2; /* Firefox */
   columns: auto 2;
-  text-align: left;
+
   @include mquery(medium) {
     -webkit-columns: auto 5; /* Chrome, Safari, Opera */
     -moz-columns: auto 5; /* Firefox */
     columns: auto 5;
+  }
+  //styling of text/links
+  text-align: left;
+  padding-left: 0;
+  a {
+    color: $white;
+    display: block;
   }
 }
 

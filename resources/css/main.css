@@ -7022,13 +7022,17 @@ img.mfp-img {
   -moz-columns: auto 2;
   /* Firefox */
   columns: auto 2;
-  text-align: left; }
+  text-align: left;
+  padding-left: 0; }
   @media (min-width: 760px) {
     .footer-list {
       /* Chrome, Safari, Opera */
       -moz-columns: auto 5;
       /* Firefox */
       columns: auto 5; } }
+  .footer-list a {
+    color: #FFFFFF;
+    display: block; }
 
 .copyright-container {
   padding-top: 4%;
