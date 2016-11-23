@@ -13,8 +13,7 @@
 .news-content-block {
   @include mquery(medium) {
   position: relative;
-  display: -webkit-flex; /* Safari */
-  display: flex;
+  display: block;
 
   -webkit-flex-wrap: wrap;
   flex-wrap: wrap;
@@ -73,6 +72,10 @@
   border-bottom: $border-light;
   // height: 100%;
   margin: 0;
+  @include mquery(medium) {
+    display: inline-block;
+    width: 100%;
+  }
   .featured-article-image {
     width: 100%;
     // height: 50%;
@@ -138,7 +141,9 @@
 // sub articles container
 .articles-container {
   @include mquery(medium) {
-    // height: 100%;
+    display: inline-block;
+    width: 100%;
+    margin: 0;
   }
 }
 
