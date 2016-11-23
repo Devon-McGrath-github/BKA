@@ -70,7 +70,7 @@ body {
 		width: 72%;
 		display: inline-block;
 		vertical-align: top;
-		// float: left;
+		float: left;
 	}
 }
 
@@ -80,7 +80,7 @@ body {
 	width: 100%;
 	@include mquery(medium) {
 		/* for desktop */
-		// float: right;
+		float: right;
 		width: 25%;
 		margin-left: 2%;
 		display: inline-block;
