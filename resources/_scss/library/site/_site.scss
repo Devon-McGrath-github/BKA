@@ -7,11 +7,11 @@ body {
 }
 
 .slider-content {
-	padding-bottom: 8%;
 	width: 100%;
 	background-color: $white;
 	overflow: auto;
 	@include mquery(medium) {
+		padding-bottom: 8%;
 		padding-left: 5%;
 		padding-right: 5%;
 		margin: 0;

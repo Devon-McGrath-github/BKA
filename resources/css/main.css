@@ -7719,12 +7719,12 @@ body {
   background-color: #f7f7f7; }
 
 .slider-content {
-  padding-bottom: 8%;
   width: 100%;
   background-color: #FFFFFF;
   overflow: auto; }
   @media (min-width: 760px) {
     .slider-content {
+      padding-bottom: 8%;
       padding-left: 5%;
       padding-right: 5%;
       margin: 0;
