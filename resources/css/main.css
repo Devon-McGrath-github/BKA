@@ -7787,7 +7787,8 @@ body {
       /* for deskop */
       width: 72%;
       display: inline-block;
-      vertical-align: top; } }
+      vertical-align: top;
+      float: left; } }
 
 .col-2 {
   /* for mobile */
@@ -7795,6 +7796,7 @@ body {
   @media (min-width: 760px) {
     .col-2 {
       /* for desktop */
+      float: right;
       width: 25%;
       margin-left: 2%;
       display: inline-block;
