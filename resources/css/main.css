@@ -7460,6 +7460,24 @@ img.mfp-img {
   .most-popular-container {
     display: none; } }
 
+.opinion-article {
+  padding: 2%;
+  border-left: 1px solid #e2e2e2;
+  border-right: 1px solid #e2e2e2;
+  border-bottom: 1px solid #e2e2e2; }
+  @media (min-width: 760px) {
+    .opinion-article {
+      padding: 6%; } }
+
+.opinion-container .opinion-image {
+  display: none; }
+  @media (min-width: 760px) {
+    .opinion-container .opinion-image {
+      display: block;
+      width: 100%;
+      margin: 0;
+      padding: 0; } }
+
 .tile-block {
   position: relative;
   background-color: white;

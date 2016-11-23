@@ -162,8 +162,25 @@
   }
 }
 
-.opinion-container {
+.opinion-article {
+  padding: 2%;
+  border-left: $border-light;
+  border-right: $border-light;
+  border-bottom: $border-light;
   @include mquery(medium) {
+    padding: 6%;
+  }
+}
 
+
+.opinion-container {
+  .opinion-image {
+    display: none;
+    @include mquery(medium) {
+      display: block;
+      width: 100%;
+      margin: 0;
+      padding: 0;
+    }
   }
 }
