@@ -7482,40 +7482,52 @@ img.mfp-img {
   border-top: 1px solid #e2e2e2; }
 
 .index-card {
-  width: 100%;
-  margin: 0;
-  padding: 2%;
-  padding-left: 4%;
   border-left: 1px solid #e2e2e2;
   border-right: 1px solid #e2e2e2;
-  border-bottom: 1px solid #e2e2e2; }
-  .index-card .index-arrow {
-    display: block; }
+  border-bottom: 1px solid #e2e2e2;
+  padding: 5%; }
   .index-card .index-info {
-    width: 100%; }
+    text-align: right;
+    margin-top: auto;
+    margin-bottom: auto; }
   .index-card p {
-    color: #4d4d4d; }
+    color: #4d4d4d;
+    margin: 0; }
+
+.index-title {
+  padding-right: 2%; }
+
+.clear-div {
+  clear: both; }
 
 .info-provider {
-  padding-left: 2%; }
+  clear: both; }
 
 .column-left {
   float: left;
-  width: 65%; }
+  width: 60%; }
 
 .column-right {
   float: right;
-  width: 17.5%; }
-
-.column-centre {
-  display: inline-block;
-  width: 17.5%; }
+  width: 40%;
+  height: 100%; }
 
 .agri-logo {
   width: 100%; }
 
 .index-title, .index-info, .index-arrow {
-  display: inline; }
+  display: inline-block; }
+
+.info-column-left {
+  display: inline-block;
+  text-align: right;
+  width: 50%;
+  padding-right: 15px; }
+
+.info-column-right {
+  float: right;
+  display: inline-block;
+  width: 50%; }
 
 .advertisement-container {
   position: relative;
