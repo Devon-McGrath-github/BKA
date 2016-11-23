@@ -1,5 +1,12 @@
 .advertisement-container { @include content-block(); }
 
+.advertisement-2 {
+  display: none;
+  @include mquery(medium) {
+    display: block
+  }
+}
+
 .advertisement-image {
   width: 100%;
 }

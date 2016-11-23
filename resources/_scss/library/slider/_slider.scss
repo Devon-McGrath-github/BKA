@@ -8,34 +8,36 @@
 .panel {
 	background: #ccc;
 	margin: 0;
-	// height:200px;
 	width: 100%;
 	font-size: 72px;
 	text-align: center;
-	// line-height changes height, also affects text positioning
-	// line-height: 200px;
 	img {
 		height: 100%;
 		width: 100%;
+	}
+	.slider-caption {
+		position: absolute;
+		top: 0;
+		
 	}
 }
 
 // positioning of the dots
 .slider {
-	z-index: 2;
+	z-index: 1;
 
-	@include mquery(medium) {
-		padding-bottom: 8%;
-	}
 	.slick-dots {
 		position: absolute;
-		top:0;
-		right:0;
+		top:3%;
+		right:2%;
 		bottom: auto;
-		z-index: 1;
+		z-index: 3;
 		width: auto;
 		text-align: right;
-		li {
+		@include mquery(medium) {
+			padding-bottom: 8%;
+			left: 2%;
+			text-align: left;
 		}
 	}
 }

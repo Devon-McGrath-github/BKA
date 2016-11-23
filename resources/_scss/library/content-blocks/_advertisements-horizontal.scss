@@ -1,0 +1,37 @@
+// horizontal advertisement styling
+
+.horizontal-banner-ad-container {
+	display: none;
+	@include mquery(medium) {
+    background-color: $white;
+		display: block;
+		width: 100%;
+	}
+}
+.horizontal-banner-ad {
+	max-height: 90px;
+	width: 60%;
+  margin-left: 20%;
+  margin-top: 2%;
+  margin-right: 20%;
+  margin-bottom: 2%;
+}
+
+// advertisements inside column 1
+.horizontal-content-ad-container {
+	display: none;
+	@include mquery(medium) {
+		display: block;
+		width: 100%;
+		padding-left: $content-block-margin;
+		padding-right: $content-block-margin;
+		padding-bottom: $content-block-margin;
+	}
+}
+.horizontal-content-ad {
+	width: 100%;
+}
+
+.column-1-advertisement {
+	// TODO: how to responsively style images?
+}

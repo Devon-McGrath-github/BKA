@@ -1,15 +1,14 @@
+// main div styling (blue footer box)
 .site-footer {
   background-color: $blue;
   color: $white;
   text-align: center;
+  width: 100%;
 }
-
-// padding variable
-$padding-footer-text: 5%;
 
 .footer-heading {
   width: 100%;
-  text-align: center;
+  text-align: left;
   color: $white;
   padding-top: $padding-footer-text;
   padding-bottom: $padding-footer-text;
@@ -18,23 +17,94 @@ $padding-footer-text: 5%;
   }
 }
 
+// footer content styling
+.footer-container {
+  margin-left: $wrapper-spacing+$content-wrapper-spacing;
+  margin-right: $wrapper-spacing+$content-wrapper-spacing;
+}
+
+.footer-content {
+  @include mquery(medium) {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    display: -webkit-flex;
+    display: flex;
+    // flex items display right-left
+    -webkit-flex-direction:  row;
+    flex-direction:          row;
+    // stops items going onto a new line
+    -webkit-flex-wrap:       nowrap; /* Safari */
+    flex-wrap:               nowrap;
+    // aligns items with equal space between, but none on the outer left/right
+    -webkit-justify-content: space-between; /* Safari */
+    justify-content:         space-between;
+    // items height fills all space given to them
+    -webkit-align-items:     stretch; /* Safari */
+    align-items:             stretch;
+  }
+}
+
+[class*="footer-col-"] {
+  display: inline-block;
+}
+
+.footer-col-1 {
+  // sets size of flex items (similar to width)
+  flex-grow: 3;
+  margin-right: $footer-margin-right;
+}
+
+.footer-links-container {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  display: block;
+}
+.footer-information {
+  display: none;
+  @include mquery(medium) {
+    display: inline-block;
+    text-align: left;
+  }
+}
+
 .footer-list {
-  list-style: none;
-  list-style-type: none;
-  list-style-image: none;
+  width: 100%;
+  -webkit-columns: auto 2; /* Chrome, Safari, Opera */
+  -moz-columns: auto 2; /* Firefox */
+  columns: auto 2;
+
+  @include mquery(medium) {
+    -webkit-columns: auto 5; /* Chrome, Safari, Opera */
+    -moz-columns: auto 5; /* Firefox */
+    columns: auto 5;
+  }
+  //styling of text/links
   text-align: left;
   padding-left: 0;
-  li {
-    a {
-      color: $white;
-    }
+  a {
+    color: $white;
+    display: block;
   }
 }
 
 .copyright-container {
   padding-top: $padding-footer-text;
   padding-bottom: $padding-footer-text;
+  text-align: left;
 }
 .copyright {
+  display: inline;
+}
+.copyright-sentence {
+  display: inline;
+  padding-left: 8%;
+  padding-right: 4%;
+  @include mquery(medium) {
+    padding-left: 0;
+  }
+}
+.copyright-sentence-2 {
   display: inline;
 }

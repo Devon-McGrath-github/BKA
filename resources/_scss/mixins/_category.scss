@@ -1,6 +1,7 @@
 // content block
 
 $padding-value:             3%;
+$padding-value-medium:      5%;
 
 @mixin category($color) {
   background-color: $color;
@@ -9,6 +10,10 @@ $padding-value:             3%;
   margin: 0;
   padding-top: $padding-value;
   padding-bottom: $padding-value;
+  @include mquery(medium) {
+    padding-top: $padding-value-medium;
+    padding-bottom: $padding-value-medium;
+  }
 }
 
 @mixin category-text($color) {

@@ -125,8 +125,15 @@ $spacers: (
   )
 ) !default;
 
-$border-width: 1px !default;
+$border-width:              1px  !default;
 
+$wrapper-spacing:           6%   !default;
+$content-wrapper-spacing:   1.5% !default;
+
+$padding-footer-text:       4%   !default;
+$footer-margin-right:       2%   !default;
+
+$content-block-margin:      5%   !default;
 
 // Body
 //
