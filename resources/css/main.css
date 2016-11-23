@@ -6954,6 +6954,9 @@ img.mfp-img {
     float: left; }
 
 .site-footer {
+  display: block;
+  clear: both;
+  position: relative;
   background-color: #40c4c6;
   color: #FFFFFF;
   text-align: center;

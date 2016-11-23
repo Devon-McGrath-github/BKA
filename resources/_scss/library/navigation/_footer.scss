@@ -1,5 +1,8 @@
 // main div styling (blue footer box)
 .site-footer {
+  display: block;
+  clear: both;
+  position: relative;
   background-color: $blue;
   color: $white;
   text-align: center;
