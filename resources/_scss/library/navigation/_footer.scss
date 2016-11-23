@@ -58,40 +58,13 @@
   width: 30%;
   margin-right: $footer-margin-right;
 }
-@mixin basic-footer-styling-mobile() {
-  float: left;
-}
-@mixin basic-footer-styling-desktop() {
-  vertical-align: top;
-  // sets size given to flex items (similar to width)
-  flex-grow: 1;
-  width: 12%;
-  margin-right: $footer-margin-right;
-  float:none;
-}
-.footer-col-2 {
-  @include mquery(medium);
-  @include basic-footer-styling();
-}
-.footer-col-3 {
-  @include mquery(medium);
-  @include basic-footer-styling();
-}
-.footer-col-4 {
-  @include mquery(medium);
-  @include basic-footer-styling();
-}
-.footer-col-5 {
-  @include mquery(medium);
-  @include basic-footer-styling();
-}
-.footer-col-6 {
-  @include mquery(medium);
-  @include basic-footer-styling();
-  // far right list, doesnt need a margin
-  margin-right: 0;
-}
 
+.footer-links-container {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  display: block;
+}
 .footer-information {
   display: none;
   @include mquery(medium) {
@@ -101,15 +74,15 @@
 }
 
 .footer-list {
-  list-style: none;
-  list-style-type: none;
-  list-style-image: none;
+  width: 100%;
+  -webkit-columns: auto 2; /* Chrome, Safari, Opera */
+  -moz-columns: auto 2; /* Firefox */
+  columns: auto 2;
   text-align: left;
-  padding-left: 0;
-  li {
-    a {
-      color: $white;
-    }
+  @include mquery(medium) {
+    -webkit-columns: auto 5; /* Chrome, Safari, Opera */
+    -moz-columns: auto 5; /* Firefox */
+    columns: auto 5;
   }
 }
 
