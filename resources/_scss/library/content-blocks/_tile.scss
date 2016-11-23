@@ -13,20 +13,10 @@
 .news-content-block {
   @include mquery(medium) {
   display: -webkit-flex; /* Safari */
-
-//TODO: would inline flex work for this         ##############################################################
   display: flex;
-  flex-direction: column;
 
   -webkit-flex-wrap: wrap;
   flex-wrap: wrap;
-
-  // TODO: is stretch doing anything?
-  -webkit-align-items: stretch;
-  align-items: stretch;
-  /* this makes sure the items actually wrap */
-  // TODO: find fix for hard coded height, and the browser not knowing it needs to wrap
-  height: 1100px;
 
     /* Safari 6.1+ */
     .headline-container   {-webkit-order: 1;}
@@ -39,14 +29,19 @@
     .articles-container   {order: 2;}
 
     /* creating columns */
-    .cell {
+    .content-column-right {
       width: 60%;
+      float: right;
+  		display: inline-block;
+  		vertical-align: top;
+      position: relative;
     }
-    .cell-2 {
+    .content-column-left {
       width: 40%;
-    }
-    .featured-article {
-      flex-basis: 100%;
+      float: left;
+  		display: inline-block;
+  		vertical-align: top;
+      position: relative;
     }
   }
 }
@@ -100,7 +95,6 @@
   margin: 0;
   font-family: $font-family-bitter;
   font-weight: bold;
-
 }
 .article-title-small {
   color: $black-lighter;

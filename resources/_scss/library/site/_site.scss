@@ -57,7 +57,6 @@ body {
 		.flex-order-mini-block						  {order: 3;}
 		// disables flex-order, returns mini-block to original position in html (i.e above articles-block)
 		display: block;
-
 	}
 }
 
@@ -88,6 +87,10 @@ body {
 	}
 }
 
+// div clears floats so parent div expands with floated elements
+.clear-div {
+  clear:both;
+}
 
 .main {
 	overflow-x: hidden;

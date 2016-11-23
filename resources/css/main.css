@@ -7287,14 +7287,8 @@ img.mfp-img {
     /* Safari */
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-direction: column;
-    flex-direction: column;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
-    -ms-flex-align: stretch;
-    align-items: stretch;
-    /* this makes sure the items actually wrap */
-    height: 1100px;
     /* Safari 6.1+ */
     /* Standard syntax */
     /* creating columns */ }
@@ -7313,13 +7307,18 @@ img.mfp-img {
     .news-content-block .articles-container {
       -ms-flex-order: 2;
       order: 2; }
-    .news-content-block .cell {
-      width: 60%; }
-    .news-content-block .cell-2 {
-      width: 40%; }
-    .news-content-block .featured-article {
-      -ms-flex-preferred-size: 100%;
-      flex-basis: 100%; } }
+    .news-content-block .content-column-right {
+      width: 60%;
+      float: right;
+      display: inline-block;
+      vertical-align: top;
+      position: relative; }
+    .news-content-block .content-column-left {
+      width: 40%;
+      float: left;
+      display: inline-block;
+      vertical-align: top;
+      position: relative; } }
 
 .extra-articles {
   display: none; }
@@ -7496,9 +7495,6 @@ img.mfp-img {
 
 .index-title {
   padding-right: 2%; }
-
-.clear-div {
-  clear: both; }
 
 .info-provider {
   clear: both; }
@@ -7816,6 +7812,9 @@ body {
       margin-left: 2%;
       display: inline-block;
       vertical-align: top; } }
+
+.clear-div {
+  clear: both; }
 
 .main {
   overflow-x: hidden; }
