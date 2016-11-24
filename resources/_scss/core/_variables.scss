@@ -17,6 +17,10 @@
 // Fonts
 // Components
 
+// bitter font-family 
+@import url('https://fonts.googleapis.com/css?family=Bitter:400,700');
+
+
 @mixin _assert-ascending($map, $map-name) {
   $prev-key: null;
   $prev-num: null;
@@ -209,8 +213,6 @@ $font-family-sans-serif: "Source Sans Pro", Arial, sans-serif !default;;
 $font-family-serif:      Georgia, "Times New Roman", Times, serif !default;
 $font-family-monospace:  Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
 $font-family-base:       $font-family-sans-serif !default;
-
-@import url('https://fonts.googleapis.com/css?family=Bitter:400,700');
 
 $font-family-bitter:     'Bitter', serif !default;
 

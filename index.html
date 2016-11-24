@@ -29,7 +29,7 @@
     <!-- ############################################ -->
     <!-- nav bar -->
     <!-- TODO: use nav tag? -->
-    <div class="nav clearfix">
+    <nav class="nav clearfix container-fluid">
       <div class="logo">
         <img class="header-logo" src="resources/img/logo-small.png" alt="FarmersWeekly">
       </div>
@@ -93,11 +93,12 @@
 
 
       <!-- nav ends here -->
-    </div>
+    </nav>
+
+    <main class="container-fluid">
 
     <!-- ############################################ -->
     <!-- horizontal banner advertisement -->
-
     <div class="horizontal-banner-ad-container column-1-advertisement">
       <img class="horizontal-banner-ad" src="resources/img/304x80.png" alt="">
     </div>
@@ -109,7 +110,7 @@
 
     <!-- Slider -->
     <!-- slider content styled in site.scss -->
-    <div class="slider-content">
+    <div class="slider-content container-fluid">
       <div class="js-slider slider">
         <!-- each div is a panel of the slider -->
         <div class="panel">
@@ -129,7 +130,7 @@
 
     <!-- Main Content -->
     <!-- site.scss file -->
-    <div class="main-content">
+    <div class="main-content container-fluid">
 
       <div class="col-1">
         <!-- ############################################ -->
@@ -138,12 +139,12 @@
         <div class="content-block news-content-block initial-content-block flex-order-initial-article clearfix">
           <!-- making the headline clickable -->
           <div class="content-column-left">
-            <div class="headline-container">
+            <section class="headline-container">
               <a class="headline-text" href="#">
                 <!-- headline text -->
                 <h4 class="headline-text category-blue">Latest News</h4>
               </a>
-            </div>
+            </section>
           </div>
 
           <!-- TODO: I cant seem to get this to fill the column vertically -->
@@ -651,22 +652,23 @@
           </a>
           <!-- sub article -->
           <a href="#">
-            <div class="sub-article">
+            <article class="sub-article">
               <h3 class="article-title-small">Horn-free for new genetics release</h3>
               <p class="article-info">september 27 2016</p>
-            </div>
+            </article>
           </a>
         </div>
         <!-- content block ARABLE ends here -->
       <!-- col-1 div ends here -->
       </div>
 
-    <!-- main content div ends here -->
+
     </div>
 
+    </main>
+
     <!-- ############################################ -->
-    <!-- Footer -->
-    <div class="site-footer">
+    <footer class="site-footer">
       <div class="footer-container">
 
         <div class=footer-heading>
@@ -725,7 +727,7 @@
           <p class="copyright-sentence-2">Terms of Use</p>
         </div>
       </div>
-    </div>
+    </footer>
 
     <!-- jquery inclusion -->
     <script src="resources/js/vendor/jquery.js"></script>
