@@ -53,6 +53,7 @@
       display: block;
       text-decoration: none;
       font-family: $basic-font;
+			font-weight: 600;
       color: $black-lighter;
       font-size: 1.5rem;
       text-align: center;
@@ -97,7 +98,9 @@
 
 .newsletter-text {
   font-size: 1.4rem;
+	font-weight: 600;
   display: block;
+	color: $black-lighter;
   margin-bottom: $nav-newsletter-margin;
 }
 

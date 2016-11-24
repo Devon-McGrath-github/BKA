@@ -24,6 +24,7 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700');
 
 
+//TODO: am I using 4 font sizes, load speed increases if only 2 are used.
 @mixin _assert-ascending($map, $map-name) {
   $prev-key: null;
   $prev-num: null;
@@ -227,6 +228,7 @@ $newsletter-font:           $font-family-open-sans !default;
 /* font for nav bar and some other text */
 $basic-font:                $font-family-open-sans !default;
 $title-font:                $font-family-bitter, $font-family-sans-serif !default;
+// the actual footer font is breeve news medium, however pay to access font
 $footer-heading-font:       $font-family-open-sans !default;
 $footer-main-font:          $font-family-open-sans !default;
 

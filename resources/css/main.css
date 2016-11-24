@@ -6955,6 +6955,7 @@ img.mfp-img {
     display: block;
     text-decoration: none;
     font-family: "Open Sans", "Source Sans Pro", Arial, sans-serif;
+    font-weight: 600;
     color: #4d4d4d;
     font-size: 1.5rem;
     text-align: center;
@@ -6988,7 +6989,9 @@ img.mfp-img {
 
 .newsletter-text {
   font-size: 1.4rem;
+  font-weight: 600;
   display: block;
+  color: #4d4d4d;
   margin-bottom: 0.75rem; }
 
 .newsletter-input {
@@ -7012,6 +7015,7 @@ img.mfp-img {
   position: relative;
   background-color: #40c4c6;
   font-family: "Open Sans", "Source Sans Pro", Arial, sans-serif;
+  font-weight: 600;
   color: #FFFFFF;
   text-align: center;
   width: 100%; }
@@ -7024,7 +7028,8 @@ img.mfp-img {
   padding-top: 4%;
   padding-bottom: 4%; }
   .footer-heading h3 {
-    margin: 0; }
+    margin: 0;
+    font-size: 3.5rem; }
 
 .footer-container {
   margin-left: 7.5%;
@@ -7066,6 +7071,7 @@ img.mfp-img {
 .footer-information {
   display: none;
   font-family: "Open Sans", "Source Sans Pro", Arial, sans-serif;
+  font-weight: 300;
   color: #FFFFFF; }
   @media (min-width: 768px) {
     .footer-information {
@@ -7087,7 +7093,6 @@ img.mfp-img {
       /* Firefox */
       columns: auto 5; } }
   .footer-list a {
-    font-family: "Open Sans", "Source Sans Pro", Arial, sans-serif;
     color: #FFFFFF;
     display: block; }
 
