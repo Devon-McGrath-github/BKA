@@ -29,7 +29,7 @@
 		z-index: 3;
 		width: auto;
 		text-align: right;
-		@include mquery(medium) {
+		@include media-breakpoint-up(md) {
 			padding-bottom: 8%;
 			left: 2%;
 			text-align: left;

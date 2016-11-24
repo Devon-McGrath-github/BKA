@@ -6,17 +6,17 @@
 	border-top: 5px solid $blue;
   border-bottom: $border-light;
   background-color: $white;
-  @include mquery(medium) {
+  @include media-breakpoint-up(md) {
     padding: 0 $content-padding 0 $content-padding;
   }
 }
 
 .logo {
   display: none;
-  @include mquery(small) {
+  @include media-breakpoint-up(sm) {
 
   }
-  @include mquery(medium) {
+  @include media-breakpoint-up(md) {
     display: inline-block;
     vertical-align: top;
     margin: 0;

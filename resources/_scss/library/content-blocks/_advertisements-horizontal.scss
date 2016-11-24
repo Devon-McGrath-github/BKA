@@ -2,7 +2,7 @@
 
 .horizontal-banner-ad-container {
 	display: none;
-	@include mquery(medium) {
+	@include media-breakpoint-up(md) {
     background-color: $white;
 		display: block;
 		width: 100%;
@@ -20,7 +20,7 @@
 // advertisements inside column 1
 .horizontal-content-ad-container {
 	display: none;
-	@include mquery(medium) {
+	@include media-breakpoint-up(md) {
 		display: block;
 		width: 100%;
 		padding-left: $content-block-margin;

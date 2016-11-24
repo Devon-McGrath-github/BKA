@@ -11,7 +11,7 @@
 
 // reordering of item source order and display for larger screens
 .news-content-block {
-  @include mquery(medium) {
+  @include media-breakpoint-up(md) {
   position: relative;
   display: block;
 
@@ -51,7 +51,7 @@
 // display extra articles for full size website
 .extra-articles {
   display: none;
-  @include mquery(medium) {
+  @include media-breakpoint-up(md) {
     display: block;
   }
 }
@@ -73,7 +73,7 @@
   border-bottom: $border-light;
   // height: 100%;
   margin: 0;
-  @include mquery(medium) {
+  @include media-breakpoint-up(md) {
     display: inline-block;
     width: 100%;
   }
@@ -81,7 +81,7 @@
     width: 100%;
     .image-info {
       display: none;
-      @include mquery(medium) {
+      @include media-breakpoint-up(md) {
         display: inline-block;
         position: absolute;
     		top:1%;
@@ -111,7 +111,7 @@
     padding: 2%;
     border-left: $border-light;
     border-right: $border-light;
-    @include mquery(medium) {
+    @include media-breakpoint-up(md) {
       /* removed this border as it doubles up now */
       border-left: none;
       position: relative;
@@ -158,7 +158,7 @@
   font-family: $title-font;
   color: $black-lighter;
   display: none;
-  @include mquery(medium) {
+  @include media-breakpoint-up(md) {
     display: block;
   }
 }
@@ -166,7 +166,7 @@
 // TODO: is this needed?
 // sub articles container
 .articles-container {
-  @include mquery(medium) {
+  @include media-breakpoint-up(md) {
     display: inline-block;
     width: 100%;
     margin: 0;
@@ -178,14 +178,14 @@
   border-left: $border-light;
   border-right: $border-light;
   border-bottom: $border-light;
-  @include mquery(medium) {
+  @include media-breakpoint-up(md) {
     padding: 6%;
   }
 }
 
 // Mini Content Block
 .most-popular-container {
-  @include mquery(medium) {
+  @include media-breakpoint-up(md) {
     display: none;
   }
 }
@@ -193,7 +193,7 @@
 .opinion-container {
   .opinion-image {
     display: none;
-    @include mquery(medium) {
+    @include media-breakpoint-up(md) {
       display: block;
       width: 100%;
       margin: 0;

@@ -29,7 +29,7 @@
 }
 
 .footer-content {
-  @include mquery(medium) {
+  @include media-breakpoint-up(md) {
     padding: 0;
     margin: 0;
     width: 100%;
@@ -70,7 +70,7 @@
   display: none;
   font-family: $footer-main-font;
   color: $white;
-  @include mquery(medium) {
+  @include media-breakpoint-up(md) {
     display: inline-block;
     text-align: left;
   }
@@ -82,7 +82,7 @@
   -moz-columns: auto 2; /* Firefox */
   columns: auto 2;
 
-  @include mquery(medium) {
+  @include media-breakpoint-up(md) {
     -webkit-columns: auto 5; /* Chrome, Safari, Opera */
     -moz-columns: auto 5; /* Firefox */
     columns: auto 5;
@@ -109,7 +109,7 @@
   display: inline;
   padding-left: 8%;
   padding-right: 4%;
-  @include mquery(medium) {
+  @include media-breakpoint-up(md) {
     padding-left: 0;
   }
 }
