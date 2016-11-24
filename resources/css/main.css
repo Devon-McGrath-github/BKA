@@ -7465,7 +7465,8 @@ img.mfp-img {
       display: inline-block;
       width: 100%; } }
   .featured-article .image-container {
-    width: 100%; }
+    width: 100%;
+    max-height: 50%; }
     .featured-article .image-container .image-info {
       display: none; }
       @media (min-width: 768px) {
@@ -7486,7 +7487,7 @@ img.mfp-img {
   .featured-article .featured-article-image {
     width: 100%; }
   .featured-article .featured-article-text-content {
-    padding: 2%;
+    padding: 3%;
     border-left: 1px solid #e2e2e2;
     border-right: 1px solid #e2e2e2; }
     @media (min-width: 768px) {
@@ -7500,7 +7501,11 @@ img.mfp-img {
   color: #4d4d4d;
   margin: 0;
   font-family: "Bitter", "Source Sans Pro", Arial, sans-serif, "Source Sans Pro", Arial, sans-serif;
-  font-weight: bold; }
+  font-weight: bold;
+  padding: 2% 0; }
+  @media (min-width: 768px) {
+    .article-title-big {
+      padding: 4% 0; } }
 
 .article-title-small {
   color: #4d4d4d;
@@ -7533,6 +7538,10 @@ img.mfp-img {
   font-family: "Open Sans", "Source Sans Pro", Arial, sans-serif;
   color: #c8c8c8;
   display: inline; }
+
+@media (min-width: 768px) {
+  .article-footer-text {
+    padding-bottom: 4%; } }
 
 .article-blurb {
   font-family: "Bitter", "Source Sans Pro", Arial, sans-serif, "Source Sans Pro", Arial, sans-serif;
