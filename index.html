@@ -31,7 +31,7 @@
     <!-- ############################################ -->
     <!-- nav bar -->
     <!-- TODO: use nav tag? -->
-    <div class="nav">
+    <div class="nav clearfix">
       <div class="logo">
         <img class="header-logo" src="resources/img/logo-small.png" alt="FarmersWeekly">
       </div>
@@ -40,7 +40,7 @@
 
         <!-- <p>Nav commented out</p> -->
         <!-- <a href="article1.html">button</a> -->
-        <div class="nav-main">
+        <div class="nav-main clearfix">
           <ul class="nav-main-list">
             <li>
               <a href="#">NEWS</a>
@@ -80,10 +80,8 @@
           </ul>
         </div>
 
-      <!-- <img class="folded-nav" src="resources/img/touch-icons-v2/folded-small.png" alt="menu"> -->
       </div>
 
-      <div class="clear-div"></div>
       <div class="search-icon">
         <!-- placeholder image -->
         <img class="search-image" src="resources/img/magnifying-glass.png" alt="menu">
@@ -95,7 +93,7 @@
         <button class="button-basic-blue">Go</button>
       </div>
 
-      <div class="clear-div"></div>
+
       <!-- nav ends here -->
     </div>
 
@@ -139,7 +137,7 @@
         <!-- ############################################ -->
         <!-- Latest News -->
         <!-- content block LATEST NEWS -->
-        <div class="content-block news-content-block initial-content-block flex-order-initial-article">
+        <div class="content-block news-content-block initial-content-block flex-order-initial-article clearfix">
           <!-- making the headline clickable -->
           <div class="content-column-left">
             <div class="headline-container">
@@ -156,27 +154,27 @@
               <!-- placeholder image -->
               <!-- a tag making the whole block clickable, not just text-->
               <a class="clickable-content" href="#">
-              <div class="image-container">
-                <img class="featured-article-image" src="resources/img/304x80.png" alt="">
-                <div class="image-info">
-                  <!-- placeholder for the image-sprites -->
-                  <img class="image-info-item eye-icon" src="resources/img/eye-icon.png" alt="">
-                  <p class="image-info-item image-stat">52</p>
-                  <img class="image-info-item speech-icon" src="resources/img/speech-bubble.png" alt="">
-                  <p class="image-info-item image-stat">35</p>
+                <div class="image-container">
+                  <img class="featured-article-image" src="resources/img/304x80.png" alt="">
+                  <div class="image-info">
+                    <!-- placeholder for the image-sprites -->
+                    <img class="image-info-item eye-icon" src="resources/img/eye-icon.png" alt="">
+                    <p class="image-info-item image-stat">52</p>
+                    <img class="image-info-item speech-icon" src="resources/img/speech-bubble.png" alt="">
+                    <p class="image-info-item image-stat">35</p>
+                  </div>
                 </div>
-              </div>
-              <div class="featured-article-text-content">
-                <!-- seperated text so color can be changed -->
-                <p class="category-text category-text-green">Arable</p>
-                <p class="article-info"> - September 27 2016 </p>
+                <div class="featured-article-text-content">
+                  <!-- seperated text so color can be changed -->
+                  <p class="category-text category-text-green">Arable</p>
+                  <p class="article-info"> - September 27 2016 </p>
 
-                <!-- article title -->
-                <h2 class="article-title-big">O'Conner still not convinced of benefits</h2>
-                <!-- first last coming from where? -->
-                <p class="article-info">by First Lastname</p>
-                <p class="article-blurb">Lely introduces a new automated calf feeder - the Calm Control. The Lely Calm supplies calves with precisely what they need, when they need it</p>
-              </div>
+                  <!-- article title -->
+                  <h2 class="article-title-big">O'Conner still not convinced of benefits</h2>
+                  <!-- first last coming from where? -->
+                  <p class="article-info">by First Lastname</p>
+                  <p class="article-blurb">Lely introduces a new automated calf feeder - the Calm Control. The Lely Calm supplies calves with precisely what they need, when they need it</p>
+                </div>
               <!-- clickable block ends -->
               </a>
             </div>
@@ -233,7 +231,6 @@
             </div>
           </div>
           </div>
-          <div class="clear-div"></div>
         </div>
       <!-- content block LATEST NEWS ends here -->
 
@@ -251,101 +248,89 @@
         <!-- ############################################ -->
         <!-- Agri Data -->
         <div class="tile-block flex-order-agri-data">
-          <div class="index-card">
+          <div class="index-card clearfix">
             <div class="column-left">
               <p class="index-title">GDT Price Index</p>
             </div>
-            <div class="column-right">
+            <div class="column-right clearfix">
               <div class="info-column-left">
                 <p class="index-info">919</p>
               </div>
               <div class="info-column-right">
                 <img class="index-arrow" src="resources/img/triangle-green.png" alt="">
               </div>
-              <div class="clear-div"></div>
             </div>
-            <div class="clear-div"></div>
           </div>
 
           <!-- repeated cards to test how they display stacked ontop of each other -->
-          <div class="index-card">
+          <div class="index-card clearfix">
             <div class="column-left">
               <p class="index-title">NZ Steer Schedule</p>
             </div>
-            <div class="column-right">
+            <div class="column-right clearfix">
               <div class="info-column-left">
                 <p class="index-info">5.16</p>
               </div>
               <div class="info-column-right">
                 <img class="index-arrow" src="resources/img/triangle-orange.png" alt="">
               </div>
-              <div class="clear-div"></div>
             </div>
-            <div class="clear-div"></div>
           </div>
 
-          <div class="index-card">
+          <div class="index-card clearfix">
             <div class="column-left">
               <p class="index-title">NZ Lamb Schedule</p>
             </div>
-            <div class="column-right">
+            <div class="column-right clearfix">
               <div class="info-column-left">
                 <p class="index-info">5.75</p>
               </div>
               <div class="info-column-right">
                 <img class="index-arrow" src="resources/img/triangle-green.png" alt="">
               </div>
-              <div class="clear-div"></div>
             </div>
-            <div class="clear-div"></div>
           </div>
 
-          <div class="index-card">
+          <div class="index-card clearfix">
             <div class="column-left">
               <p class="index-title">CAN Feed Wheat</p>
             </div>
-            <div class="column-right">
+            <div class="column-right clearfix">
               <div class="info-column-left">
                 <p class="index-info">273</p>
               </div>
               <div class="info-column-right">
                 <img class="index-arrow" src="resources/img/triangle-green.png" alt="">
               </div>
-              <div class="clear-div"></div>
             </div>
-            <div class="clear-div"></div>
           </div>
 
-          <div class="index-card">
+          <div class="index-card clearfix">
             <div class="column-left">
               <p class="index-title">Fonterra</p>
             </div>
-            <div class="column-right">
+            <div class="column-right clearfix">
               <div class="info-column-left">
                 <p class="index-info">5.25</p>
               </div>
               <div class="info-column-right">
                 <img class="index-arrow" src="resources/img/triangle-green.png" alt="">
               </div>
-              <div class="clear-div"></div>
             </div>
-            <div class="clear-div"></div>
           </div>
 
-          <div class="index-card">
+          <div class="index-card clearfix">
             <div class="column-left">
               <p class="index-title">AgriHQ</p>
             </div>
-            <div class="column-right">
+            <div class="column-right clearfix">
               <div class="info-column-left">
                 <p class="index-info">5.90</p>
               </div>
               <div class="info-column-right">
                 <img class="index-arrow" src="resources/img/triangle-green.png" alt="">
               </div>
-              <div class="clear-div"></div>
             </div>
-            <div class="clear-div"></div>
           </div>
 
           <!-- index information provider -->
