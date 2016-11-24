@@ -2,6 +2,17 @@ body {
 	background-color: $gray-lightest;
 }
 
+main {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+}
+// .container-fluid {
+// 	padding: 0;
+// 	margin: 0;
+// 	width: 100%;
+// }
+
 .no-js {
 		background-color: $gray-lightest;
 }
