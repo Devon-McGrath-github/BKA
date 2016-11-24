@@ -6980,7 +6980,11 @@ img.mfp-img {
   float: left; }
 
 .search-image {
-  width: 100%; }
+  width: 22px;
+  height: 22px; }
+
+.icon-credit {
+  display: none; }
 
 .newsletter-container {
   display: inline-block;
@@ -7616,6 +7620,10 @@ img.mfp-img {
   float: right;
   width: 40%;
   height: 100%; }
+
+.index-arrow {
+  width: 20px;
+  height: 20px; }
 
 .agri-logo {
   width: 100%; }
