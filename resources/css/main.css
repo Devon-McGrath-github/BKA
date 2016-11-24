@@ -5,6 +5,7 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
 @import url("https://fonts.googleapis.com/css?family=Bitter:400,700");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700");
 /* font's currently placeholder */
 /* font for nav bar and some other text */
 /*////////////////////////////////////////////////////
@@ -6953,7 +6954,7 @@ img.mfp-img {
   .nav-main-list li a, .nav-secondary-list li a {
     display: block;
     text-decoration: none;
-    font-family: "Source Sans Pro", Arial, sans-serif;
+    font-family: "Open Sans", "Source Sans Pro", Arial, sans-serif;
     color: #4d4d4d;
     font-size: 1.5rem;
     text-align: center;
@@ -6999,7 +7000,7 @@ img.mfp-img {
 .button-basic-blue {
   border: none;
   color: #FFFFFF;
-  font-family: "Source Sans Pro", Arial, sans-serif;
+  font-family: "Open Sans", "Source Sans Pro", Arial, sans-serif;
   background-color: #40c4c6;
   padding: 6px 13px;
   display: block;
@@ -7010,7 +7011,7 @@ img.mfp-img {
   clear: both;
   position: relative;
   background-color: #40c4c6;
-  font-family: "Source Sans Pro", Arial, sans-serif;
+  font-family: "Open Sans", "Source Sans Pro", Arial, sans-serif;
   color: #FFFFFF;
   text-align: center;
   width: 100%; }
@@ -7018,7 +7019,7 @@ img.mfp-img {
 .footer-heading {
   width: 100%;
   text-align: left;
-  font-family: "Source Sans Pro", Arial, sans-serif;
+  font-family: "Open Sans", "Source Sans Pro", Arial, sans-serif;
   color: #FFFFFF;
   padding-top: 4%;
   padding-bottom: 4%; }
@@ -7064,7 +7065,7 @@ img.mfp-img {
 
 .footer-information {
   display: none;
-  font-family: "Source Sans Pro", Arial, sans-serif;
+  font-family: "Open Sans", "Source Sans Pro", Arial, sans-serif;
   color: #FFFFFF; }
   @media (min-width: 768px) {
     .footer-information {
@@ -7086,7 +7087,7 @@ img.mfp-img {
       /* Firefox */
       columns: auto 5; } }
   .footer-list a {
-    font-family: "Source Sans Pro", Arial, sans-serif;
+    font-family: "Open Sans", "Source Sans Pro", Arial, sans-serif;
     color: #FFFFFF;
     display: block; }
 
@@ -7147,9 +7148,7 @@ img.mfp-img {
 @font-face {
   font-family: 'slick';
   font-weight: normal;
-  font-style: normal;
-  src: url("./fonts/slick.eot");
-  src: url("./fonts/slick.eot?#iefix") format("embedded-opentype"), url("./fonts/slick.woff") format("woff"), url("./fonts/slick.ttf") format("truetype"), url("./fonts/slick.svg#slick") format("svg"); }
+  font-style: normal; }
 
 /* Dots */
 .slick-dotted.slick-slider {
@@ -7389,7 +7388,7 @@ img.mfp-img {
   background-color: #40c4c6;
   text-align: center;
   color: #FFFFFF;
-  font-family: "Source Sans Pro", Arial, sans-serif;
+  font-family: "Open Sans", "Source Sans Pro", Arial, sans-serif;
   margin: 0;
   padding-top: 3%;
   padding-bottom: 3%; }
@@ -7402,7 +7401,7 @@ img.mfp-img {
   background-color: #33425b;
   text-align: center;
   color: #FFFFFF;
-  font-family: "Source Sans Pro", Arial, sans-serif;
+  font-family: "Open Sans", "Source Sans Pro", Arial, sans-serif;
   margin: 0;
   padding-top: 3%;
   padding-bottom: 3%; }
@@ -7415,7 +7414,7 @@ img.mfp-img {
   background-color: #8d2704;
   text-align: center;
   color: #FFFFFF;
-  font-family: "Source Sans Pro", Arial, sans-serif;
+  font-family: "Open Sans", "Source Sans Pro", Arial, sans-serif;
   margin: 0;
   padding-top: 3%;
   padding-bottom: 3%; }
@@ -7428,7 +7427,7 @@ img.mfp-img {
   background-color: #e29d2d;
   text-align: center;
   color: #FFFFFF;
-  font-family: "Source Sans Pro", Arial, sans-serif;
+  font-family: "Open Sans", "Source Sans Pro", Arial, sans-serif;
   margin: 0;
   padding-top: 3%;
   padding-bottom: 3%; }
@@ -7441,7 +7440,7 @@ img.mfp-img {
   background-color: #4a8348;
   text-align: center;
   color: #FFFFFF;
-  font-family: "Source Sans Pro", Arial, sans-serif;
+  font-family: "Open Sans", "Source Sans Pro", Arial, sans-serif;
   margin: 0;
   padding-top: 3%;
   padding-bottom: 3%; }
@@ -7476,7 +7475,7 @@ img.mfp-img {
           text-align: right; }
           .featured-article .image-container .image-info p {
             color: white;
-            font-family: "Source Sans Pro", Arial, sans-serif;
+            font-family: "Open Sans", "Source Sans Pro", Arial, sans-serif;
             display: inline-block;
             font-size: 1.3rem; } }
   .featured-article .featured-article-image {
@@ -7495,13 +7494,13 @@ img.mfp-img {
 .article-title-big {
   color: #4d4d4d;
   margin: 0;
-  font-family: "Bitter", serif, "Source Sans Pro", Arial, sans-serif;
+  font-family: "Bitter", "Source Sans Pro", Arial, sans-serif, "Source Sans Pro", Arial, sans-serif;
   font-weight: bold; }
 
 .article-title-small {
   color: #4d4d4d;
   margin: 0;
-  font-family: "Bitter", serif, "Source Sans Pro", Arial, sans-serif; }
+  font-family: "Bitter", "Source Sans Pro", Arial, sans-serif, "Source Sans Pro", Arial, sans-serif; }
   .article-title-small a {
     text-decoration: none; }
 
@@ -7526,12 +7525,12 @@ img.mfp-img {
     text-decoration: none; }
 
 .article-info {
-  font-family: "Source Sans Pro", Arial, sans-serif;
+  font-family: "Open Sans", "Source Sans Pro", Arial, sans-serif;
   color: #c8c8c8;
   display: inline; }
 
 .article-blurb {
-  font-family: "Bitter", serif, "Source Sans Pro", Arial, sans-serif;
+  font-family: "Bitter", "Source Sans Pro", Arial, sans-serif, "Source Sans Pro", Arial, sans-serif;
   color: #4d4d4d;
   display: none; }
   @media (min-width: 768px) {
@@ -7586,7 +7585,7 @@ img.mfp-img {
     margin-bottom: auto; }
   .index-card p {
     color: #4d4d4d;
-    font-family: "Source Sans Pro", Arial, sans-serif;
+    font-family: "Open Sans", "Source Sans Pro", Arial, sans-serif;
     margin: 0; }
 
 .index-title {
@@ -7839,7 +7838,7 @@ main {
       margin: 0;
       z-index: 2; } }
 
-.main-content {
+.news-content {
   z-index: 3;
   margin-top: -7%;
   z-index: 10;
@@ -7856,38 +7855,38 @@ main {
   /* Standard syntax */
   /* note articles-block is below mini-block in html */ }
   @media (min-width: 768px) {
-    .main-content {
+    .news-content {
       margin-top: -14%;
       margin-left: 6%;
       margin-right: 6%; } }
-  .main-content .flex-order-initial-article {
+  .news-content .flex-order-initial-article {
     -webkit-order: 1; }
-  .main-content .flex-order-agri-data {
+  .news-content .flex-order-agri-data {
     -webkit-order: 2; }
-  .main-content .flex-order-articles-block {
+  .news-content .flex-order-articles-block {
     -webkit-order: 3; }
-  .main-content .flex-order-mini-block {
+  .news-content .flex-order-mini-block {
     -webkit-order: 4; }
-  .main-content .flex-order-initial-article {
+  .news-content .flex-order-initial-article {
     -ms-flex-order: 1;
     order: 1; }
-  .main-content .flex-order-agri-data {
+  .news-content .flex-order-agri-data {
     -ms-flex-order: 2;
     order: 2; }
-  .main-content .flex-order-articles-block {
+  .news-content .flex-order-articles-block {
     -ms-flex-order: 3;
     order: 3; }
-  .main-content .flex-order-mini-block {
+  .news-content .flex-order-mini-block {
     -ms-flex-order: 4;
     order: 4; }
   @media (min-width: 768px) {
-    .main-content {
+    .news-content {
       /* note the order changes for desktop version*/
       display: block; }
-      .main-content .flex-order-articles-block {
+      .news-content .flex-order-articles-block {
         -ms-flex-order: 4;
         order: 4; }
-      .main-content .flex-order-mini-block {
+      .news-content .flex-order-mini-block {
         -ms-flex-order: 3;
         order: 3; } }
 

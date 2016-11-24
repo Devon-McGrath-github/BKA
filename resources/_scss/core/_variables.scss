@@ -17,8 +17,11 @@
 // Fonts
 // Components
 
-// bitter font-family 
+// bitter font-family
 @import url('https://fonts.googleapis.com/css?family=Bitter:400,700');
+
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700');
 
 
 @mixin _assert-ascending($map, $map-name) {
@@ -214,17 +217,18 @@ $font-family-serif:      Georgia, "Times New Roman", Times, serif !default;
 $font-family-monospace:  Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
 $font-family-base:       $font-family-sans-serif !default;
 
-$font-family-bitter:     'Bitter', serif !default;
+$font-family-bitter:     'Bitter', $font-family-sans-serif !default;
+$font-family-open-sans:  'Open Sans', $font-family-sans-serif !default;
 
 // Fonts in use
 
 /* font's currently placeholder */
-$newsletter-font:           $font-family-sans-serif !default;
+$newsletter-font:           $font-family-open-sans !default;
 /* font for nav bar and some other text */
-$basic-font:                $font-family-sans-serif !default;
+$basic-font:                $font-family-open-sans !default;
 $title-font:                $font-family-bitter, $font-family-sans-serif !default;
-$footer-heading-font:       $font-family-sans-serif !default;
-$footer-main-font:          $font-family-sans-serif !default;
+$footer-heading-font:       $font-family-open-sans !default;
+$footer-main-font:          $font-family-open-sans !default;
 
 
 // Pixel value used to responsively scale all typography. Applied to the `<html>` element.
