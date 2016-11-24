@@ -50,6 +50,7 @@ $gray-light:                #b5b5b5 !default;
 $gray-lighter:              #dbdbdb !default;
 $gray-lightest:             #f7f7f7 !default;
 $gray-muted:                #c8c8c8 !default;
+$gray-menu:                 #999999 !default;
 $white:                     #FFFFFF !default;
 
 $brand-primary:             #3273dc !default;
@@ -136,6 +137,10 @@ $footer-margin-right:       2%   !default;
 
 $content-block-margin:      5%   !default;
 
+$nav-padding:               2%   !default;
+$content-padding:           5%   !default;
+
+
 // Body
 //
 // Settings for the `<body>` element.
@@ -206,6 +211,17 @@ $font-family-monospace:  Menlo, Monaco, Consolas, "Liberation Mono", "Courier Ne
 $font-family-base:       $font-family-sans-serif !default;
 
 $font-family-bitter:     'Bitter', serif !default;
+
+// Fonts in use
+
+/* font's currently placeholder */
+$newsletter-font:           $font-family-sans-serif !default;
+/* font for nav bar and some other text */
+$basic-font:                $font-family-sans-serif !default;
+$title-font:                $font-family-bitter, $font-family-sans-serif !default;
+$footer-heading-font:       $font-family-sans-serif !default;
+$footer-main-font:          $font-family-sans-serif !default;
+
 
 // Pixel value used to responsively scale all typography. Applied to the `<html>` element.
 $font-size-root: 10px !default;
@@ -357,6 +373,9 @@ $btn-border-radius:              $border-radius !default;
 $btn-border-radius-lg:           $border-radius-lg !default;
 $btn-border-radius-sm:           $border-radius-sm !default;
 
+// personalised button
+
+$button-padding:                 6px 13px !default;
 
 // Forms
 
@@ -572,6 +591,9 @@ $nav-tabs-justified-active-link-border-color: $body-bg !default;
 $nav-pills-border-radius:     $border-radius !default;
 $nav-pills-active-link-color: $component-active-color !default;
 $nav-pills-active-link-bg:    $component-active-bg !default;
+
+$nav-newsletter-margin:     0.75rem !default;
+
 
 
 // Pagination

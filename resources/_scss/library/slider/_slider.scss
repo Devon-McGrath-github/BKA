@@ -1,8 +1,5 @@
 // Slider CSS
 
-// TODO: remove unnecessary comments
-// make was originally 10px.
-// width: 100%;
 // TODO: slider needs to be properly sized for different images.
 // makes sure that it is fully responsive
 .panel {
@@ -18,14 +15,12 @@
 	.slider-caption {
 		position: absolute;
 		top: 0;
-		
 	}
 }
 
 // positioning of the dots
 .slider {
 	z-index: 1;
-
 	.slick-dots {
 		position: absolute;
 		top:3%;

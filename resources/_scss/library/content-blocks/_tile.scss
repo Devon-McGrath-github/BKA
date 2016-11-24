@@ -77,9 +77,33 @@
     display: inline-block;
     width: 100%;
   }
+  .image-container {
+    width: 100%;
+    .image-info {
+      display: none;
+      @include mquery(medium) {
+        display: inline-block;
+        position: absolute;
+    		top:3%;
+    		right:2%;
+    		bottom: auto;
+    		z-index: 3;
+    		width: auto;
+    		text-align: right;
+        p {
+          color: white;
+          font-family: $basic-font;
+          display: inline-block;
+          font-size: 1.3rem;
+        }
+        .image-info-item {
+          padding: 0 2% 0 2%;
+        }
+      }
+    }
+  }
   .featured-article-image {
     width: 100%;
-    // height: 50%;
   }
   .featured-article-text-content {
     // TODO: boilerplate with sub-article create a variable?
@@ -100,14 +124,14 @@
 .article-title-big {
   color: $black-lighter;
   margin: 0;
-  font-family: $font-family-bitter;
+  font-family: $title-font;
   font-weight: bold;
 }
 .article-title-small {
   color: $black-lighter;
   // removed margin for these h3's not universally
   margin: 0;
-  font-family: $font-family-bitter;
+  font-family: $title-font;
   a {
     text-decoration: none;
   }
@@ -126,11 +150,12 @@
   }
 }
 .article-info {
+  font-family: $basic-font;
   color: $gray-muted;
   display: inline;
 }
 .article-blurb {
-  font-family: $font-family-bitter;
+  font-family: $title-font;
   color: $black-lighter;
   display: none;
   @include mquery(medium) {

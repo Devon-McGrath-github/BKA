@@ -4,6 +4,8 @@
  * Copyright 2011-2015 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
+/* font's currently placeholder */
+/* font for nav bar and some other text */
 /*////////////////////////////////////////////////////
   
   NOTE: This is not original flex scss from Bourbon.
@@ -6842,11 +6844,6 @@ img.mfp-img {
   display: none; }
 
 /* Navigation */
-.display-gap {
-  margin: 0;
-  padding: 0;
-  border-top: 5px solid #40c4c6; }
-
 .site-navigation {
   display: block; }
   @media screen and (min-width: 640px) {
@@ -6917,30 +6914,102 @@ img.mfp-img {
   margin: 0;
   padding: 0;
   width: 100%;
-  background-color: #FFFFFF;
-  /* Change the link color to #111 (black) on hover */ }
-  .nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #FFFFFF; }
-  .nav li {
+  border-top: 5px solid #40c4c6;
+  border-bottom: 1px solid #e2e2e2;
+  background-color: #FFFFFF; }
+  @media (min-width: 760px) {
+    .nav {
+      padding: 0 5% 0 5%; } }
+
+.logo {
+  display: none; }
+  @media (min-width: 760px) {
+    .logo {
+      display: inline-block;
+      vertical-align: top;
+      margin: 0;
+      float: left; } }
+
+.header-logo {
+  display: inline-block; }
+
+.nav-links {
+  display: inline-block;
+  float: left; }
+
+.nav-main, .nav-secondary {
+  display: inline-block;
+  vertical-align: top; }
+
+.nav-main-list, .nav-secondary-list {
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+  list-style-type: none;
+  overflow: hidden; }
+  .nav-main-list li, .nav-secondary-list li {
     float: left; }
-  .nav li a {
+  .nav-main-list li a, .nav-secondary-list li a {
     display: block;
+    text-decoration: none;
+    font-family: "Source Sans Pro", Arial, sans-serif;
     color: #4d4d4d;
+    font-size: 1.5rem;
     text-align: center;
-    padding: 14px 16px;
-    text-decoration: none; }
-  .nav li a:hover {
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-bottom: 2%; }
+
+.nav-main-list {
+  /* Change the link color to #111 (black) on hover */ }
+  .nav-main-list li a:hover {
     border-bottom: 4px solid #40c4c6; }
+
+.nav-secondary-list .sectors-list {
+  color: #999999; }
+
+.search-icon {
+  border-left: 1px solid #e2e2e2;
+  border-right: 1px solid #e2e2e2;
+  display: inline-block;
+  padding-left: 2%;
+  padding-right: 2%;
+  float: left; }
+
+.search-image {
+  width: 100%; }
+
+.newsletter-container {
+  display: inline-block;
+  float: left;
+  margin: 0; }
+
+.newsletter-text {
+  font-size: 1.4rem;
+  display: block;
+  margin-bottom: 0.75rem; }
+
+.newsletter-input {
+  border: 1px solid #e2e2e2;
+  border-radius: 5px;
+  display: block;
+  margin-bottom: 0.75rem; }
+
+.button-basic-blue {
+  border: none;
+  color: #FFFFFF;
+  font-family: "Source Sans Pro", Arial, sans-serif;
+  background-color: #40c4c6;
+  padding: 6px 13px;
+  display: block;
+  margin: 0; }
 
 .site-footer {
   display: block;
   clear: both;
   position: relative;
   background-color: #40c4c6;
+  font-family: "Source Sans Pro", Arial, sans-serif;
   color: #FFFFFF;
   text-align: center;
   width: 100%; }
@@ -6948,6 +7017,7 @@ img.mfp-img {
 .footer-heading {
   width: 100%;
   text-align: left;
+  font-family: "Source Sans Pro", Arial, sans-serif;
   color: #FFFFFF;
   padding-top: 4%;
   padding-bottom: 4%; }
@@ -6992,7 +7062,9 @@ img.mfp-img {
   display: block; }
 
 .footer-information {
-  display: none; }
+  display: none;
+  font-family: "Source Sans Pro", Arial, sans-serif;
+  color: #FFFFFF; }
   @media (min-width: 760px) {
     .footer-information {
       display: inline-block;
@@ -7013,6 +7085,7 @@ img.mfp-img {
       /* Firefox */
       columns: auto 5; } }
   .footer-list a {
+    font-family: "Source Sans Pro", Arial, sans-serif;
     color: #FFFFFF;
     display: block; }
 
@@ -7314,6 +7387,7 @@ img.mfp-img {
   background-color: #40c4c6;
   text-align: center;
   color: #FFFFFF;
+  font-family: "Source Sans Pro", Arial, sans-serif;
   margin: 0;
   padding-top: 3%;
   padding-bottom: 3%; }
@@ -7326,6 +7400,7 @@ img.mfp-img {
   background-color: #33425b;
   text-align: center;
   color: #FFFFFF;
+  font-family: "Source Sans Pro", Arial, sans-serif;
   margin: 0;
   padding-top: 3%;
   padding-bottom: 3%; }
@@ -7338,6 +7413,7 @@ img.mfp-img {
   background-color: #8d2704;
   text-align: center;
   color: #FFFFFF;
+  font-family: "Source Sans Pro", Arial, sans-serif;
   margin: 0;
   padding-top: 3%;
   padding-bottom: 3%; }
@@ -7350,6 +7426,7 @@ img.mfp-img {
   background-color: #e29d2d;
   text-align: center;
   color: #FFFFFF;
+  font-family: "Source Sans Pro", Arial, sans-serif;
   margin: 0;
   padding-top: 3%;
   padding-bottom: 3%; }
@@ -7362,6 +7439,7 @@ img.mfp-img {
   background-color: #4a8348;
   text-align: center;
   color: #FFFFFF;
+  font-family: "Source Sans Pro", Arial, sans-serif;
   margin: 0;
   padding-top: 3%;
   padding-bottom: 3%; }
@@ -7380,6 +7458,27 @@ img.mfp-img {
     .featured-article {
       display: inline-block;
       width: 100%; } }
+  .featured-article .image-container {
+    width: 100%; }
+    .featured-article .image-container .image-info {
+      display: none; }
+      @media (min-width: 760px) {
+        .featured-article .image-container .image-info {
+          display: inline-block;
+          position: absolute;
+          top: 3%;
+          right: 2%;
+          bottom: auto;
+          z-index: 3;
+          width: auto;
+          text-align: right; }
+          .featured-article .image-container .image-info p {
+            color: white;
+            font-family: "Source Sans Pro", Arial, sans-serif;
+            display: inline-block;
+            font-size: 1.3rem; }
+          .featured-article .image-container .image-info .image-info-item {
+            padding: 0 2% 0 2%; } }
   .featured-article .featured-article-image {
     width: 100%; }
   .featured-article .featured-article-text-content {
@@ -7396,13 +7495,13 @@ img.mfp-img {
 .article-title-big {
   color: #4d4d4d;
   margin: 0;
-  font-family: "Bitter", serif;
+  font-family: "Bitter", serif, "Source Sans Pro", Arial, sans-serif;
   font-weight: bold; }
 
 .article-title-small {
   color: #4d4d4d;
   margin: 0;
-  font-family: "Bitter", serif; }
+  font-family: "Bitter", serif, "Source Sans Pro", Arial, sans-serif; }
   .article-title-small a {
     text-decoration: none; }
 
@@ -7427,11 +7526,12 @@ img.mfp-img {
     text-decoration: none; }
 
 .article-info {
+  font-family: "Source Sans Pro", Arial, sans-serif;
   color: #c8c8c8;
   display: inline; }
 
 .article-blurb {
-  font-family: "Bitter", serif;
+  font-family: "Bitter", serif, "Source Sans Pro", Arial, sans-serif;
   color: #4d4d4d;
   display: none; }
   @media (min-width: 760px) {
@@ -7486,6 +7586,7 @@ img.mfp-img {
     margin-bottom: auto; }
   .index-card p {
     color: #4d4d4d;
+    font-family: "Source Sans Pro", Arial, sans-serif;
     margin: 0; }
 
 .index-title {

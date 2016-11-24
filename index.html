@@ -28,59 +28,75 @@
     <![endif]-->
 
     <!-- Add your site or application content here -->
-
-    <!-- TODO: add this to the nav bar as a border -->
-    <div class="display-gap">
-      <!-- add margin in css -->
-    </div>
-
     <!-- ############################################ -->
     <!-- nav bar -->
+    <!-- TODO: use nav tag? -->
     <div class="nav">
-      <p>Nav commented out</p>
-      <a href="article1.html">button</a>
+      <div class="logo">
+        <img class="header-logo" src="resources/img/logo-small.png" alt="FarmersWeekly">
+      </div>
 
-      <ul>
-        <li>
-          <a href="#">NEWS</a>
-          <!-- <ul>
-            <li>DAIRY</li>
-            <li>BEEF</li>
-            <li>SHEEP</li>
-            <li>ARABLE</li>
-            <li>OTHER LIVESTOCK</li>
-            <li>FORESTRY/HORTICULTURE</li>
-            <li>OTHER</li>
-          </ul> -->
-        </li>
-        <li><a href="#">PROPERTY</a></li>
-        <li>
-          <a href="#">JOBS</a>
-          <!-- <ul>
-            <li>TOOLS & CALCULATORS</li>
-            <li>REAL ESTATE</li>
-            <li>QUIZZES</li>
-            <li>SOCIAL</li>
-            <li>AGRIHQ MARKETS & DATA</li>
-            <li>JOBS</li>
-          </ul> -->
-        </li>
-        <li><a href="#">OPINION</a></li>
-        <li>
-          <a href="#">SECTORS:</a>
-        </li>
-        <ul>
-          <li><a href="#">DAIRY</a></li>
-          <li><a href="#">BEEF</a></li>
-          <li><a href="#">SHEEP</a></li>
-          <li><a href="#">ARABLE</a></li>
-        </ul>
-      </ul>
+      <div class="nav-links">
 
+        <!-- <p>Nav commented out</p> -->
+        <!-- <a href="article1.html">button</a> -->
+        <div class="nav-main">
+          <ul class="nav-main-list">
+            <li>
+              <a href="#">NEWS</a>
+              <!-- <ul>
+                <li>DAIRY</li>
+                <li>BEEF</li>
+                <li>SHEEP</li>
+                <li>ARABLE</li>
+                <li>OTHER LIVESTOCK</li>
+                <li>FORESTRY/HORTICULTURE</li>
+                <li>OTHER</li>
+              </ul> -->
+            </li>
+            <li><a href="#">PROPERTY</a></li>
+            <li>
+              <a href="#">JOBS</a>
+              <!-- <ul>
+                <li>TOOLS & CALCULATORS</li>
+                <li>REAL ESTATE</li>
+                <li>QUIZZES</li>
+                <li>SOCIAL</li>
+                <li>AGRIHQ MARKETS & DATA</li>
+                <li>JOBS</li>
+              </ul> -->
+            </li>
+            <li><a href="#">OPINION</a></li>
+          </ul>
+        </div>
 
+        <div class="nav-secondary">
+          <ul class="nav-secondary-list">
+            <li><a href="#">SECTORS:</a></li>
+            <li><a class="sectors-list" href="#">DAIRY</a></li>
+            <li><a class="sectors-list" href="#">BEEF</a></li>
+            <li><a class="sectors-list" href="#">SHEEP</a></li>
+            <li><a class="sectors-list" href="#">ARABLE</a></li>
+          </ul>
+        </div>
 
-      <!-- <img class="header-logo" src="resources/img/logo-small.png" alt="FarmersWeekly">
-      <img class="folded-nav" src="resources/img/touch-icons-v2/folded-small.png" alt="menu"> -->
+      <!-- <img class="folded-nav" src="resources/img/touch-icons-v2/folded-small.png" alt="menu"> -->
+      </div>
+
+      <div class="clear-div"></div>
+      <div class="search-icon">
+        <!-- placeholder image -->
+        <img class="search-image" src="resources/img/magnifying-glass.png" alt="menu">
+      </div>
+
+      <div class="newsletter-container">
+        <p class="newsletter-text">SIGN UP FOR OUR NEWSLETTER</p>
+        <input class="newsletter-input" type="text" placeholder="Your email address...">
+        <button class="button-basic-blue">Go</button>
+      </div>
+
+      <div class="clear-div"></div>
+      <!-- nav ends here -->
     </div>
 
     <!-- ############################################ -->
@@ -120,7 +136,6 @@
     <div class="main-content">
 
       <div class="col-1">
-
         <!-- ############################################ -->
         <!-- Latest News -->
         <!-- content block LATEST NEWS -->
@@ -135,13 +150,22 @@
             </div>
           </div>
 
-          <!-- a tag making the whole block clickable, not just text-->
+          <!-- TODO: I cant seem to get this to fill the column vertically -->
           <div class="content-column-right">
             <div class="featured-article">
               <!-- placeholder image -->
+              <!-- a tag making the whole block clickable, not just text-->
               <a class="clickable-content" href="#">
-              <img class="featured-article-image" src="resources/img/304x80.png" alt="">
-
+              <div class="image-container">
+                <img class="featured-article-image" src="resources/img/304x80.png" alt="">
+                <div class="image-info">
+                  <!-- placeholder for the image-sprites -->
+                  <img class="eye-icon" src="resources/img/eye-icon.png" alt="">
+                  <p class="image-stat">52</p>
+                  <img class="speech-icon" src="resources/img/speech-bubble.png" alt="">
+                  <p class="image-stat">35</p>
+                </div>
+              </div>
               <div class="featured-article-text-content">
                 <!-- seperated text so color can be changed -->
                 <p class="category-text category-text-green">Arable</p>
@@ -333,10 +357,6 @@
         <!-- AGRI DATA block ends here -->
       </div>
 
-<!-- TODO:  ask about positioning issue. Currently flex order isnt going to work
-            because 'flex-order-mini-block' is inside the col-2 div. HOWEVER,
-            if you take it out of this div, and put it into its own col-2 div,
-            they dont stack, and the layout of the site is broken. -->
         <div class="col-2 flex-order-mini-block">
           <!-- ############################################ -->
           <!-- advertisement -->
@@ -428,9 +448,8 @@
           <!-- advertisement ends here -->
 
         <!-- flex order 2 ends -->
+        <!-- col-2 div ends here -->
         </div>
-      <!-- col-2 div ends here -->
-      <!-- </div> -->
 
       <div class="col-1 flex-order-articles-block">
         <!-- ############################################ -->

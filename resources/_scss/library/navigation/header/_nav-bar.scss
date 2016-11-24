@@ -1,30 +1,119 @@
+// main nav bar styling
 .nav {
+	margin: 0;
+	padding: 0;
+  width: 100%;
+	border-top: 5px solid $blue;
+  border-bottom: $border-light;
+  background-color: $white;
+  @include mquery(medium) {
+    padding: 0 $content-padding 0 $content-padding;
+  }
+}
+
+.logo {
+  display: none;
+  @include mquery(small) {
+
+  }
+  @include mquery(medium) {
+    display: inline-block;
+    vertical-align: top;
+    margin: 0;
+    float: left;
+  }
+}
+
+.header-logo {
+  display: inline-block;
+}
+
+.nav-links {
+  display: inline-block;
+  // width: 100%;
+  float: left;
+}
+
+.nav-main, .nav-secondary {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.nav-main-list, .nav-secondary-list {
   margin: 0;
   padding: 0;
-  width: 100%;
-  background-color: $white;
-  ul {
-      list-style-type: none;
-      margin: 0;
-      padding: 0;
-      overflow: hidden;
-      background-color: $white;
-  }
-
+  // width: 100%;
+  display: inline-block;
+  list-style-type: none;
+  overflow: hidden;
   li {
       float: left;
   }
-
   li a {
       display: block;
-      color: $black-lighter;
-      text-align: center;
-      padding: 14px 16px;
       text-decoration: none;
+      font-family: $basic-font;
+      color: $black-lighter;
+      font-size: 1.5rem;
+      text-align: center;
+      padding-left: $nav-padding;
+      padding-right: $nav-padding;
+      padding-bottom: $nav-padding;
   }
+}
 
+.nav-main-list {
   /* Change the link color to #111 (black) on hover */
   li a:hover {
     border-bottom: $border-hover;
   }
+}
+
+.nav-secondary-list {
+  .sectors-list {
+    color: $gray-menu;
+  }
+}
+
+// search button
+.search-icon {
+  border-left: $border-light;
+  border-right: $border-light;
+  display: inline-block;
+  padding-left: $nav-padding;
+  padding-right: $nav-padding;
+  float: left;
+}
+.search-image {
+  width: 100%;
+}
+
+// newsletter form
+.newsletter-container {
+  display: inline-block;
+  float: left;
+  margin: 0;
+}
+
+.newsletter-text {
+  font-size: 1.4rem;
+  display: block;
+  margin-bottom: $nav-newsletter-margin;
+}
+
+.newsletter-input {
+  border: $border-light;
+  border-radius: 5px;
+  display: block;
+  margin-bottom: $nav-newsletter-margin;
+}
+
+.button-basic-blue {
+  border: none;
+  color: $white;
+  font-family: $basic-font;
+  background-color: $blue;
+  padding: $button-padding;
+  display: block;
+  margin: 0;
 }

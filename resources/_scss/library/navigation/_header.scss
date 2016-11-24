@@ -8,13 +8,6 @@ $nav-link-color: $brand-primary;
 	&.show-search {}
 }
 
-
-.display-gap {
-	margin: 0;
-	padding: 0;
-	border-top: 5px solid $blue;
-}
-
 @import "header/site-navigation";
 @import "header/sub-navigation";
 @import "header/header-search";

@@ -12,8 +12,8 @@ body {
 	overflow: auto;
 	@include mquery(medium) {
 		padding-bottom: 8%;
-		padding-left: 5%;
-		padding-right: 5%;
+		padding-left: $content-padding;
+		padding-right: $content-padding;
 		margin: 0;
 		z-index: 2;
 	}

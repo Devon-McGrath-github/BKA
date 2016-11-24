@@ -4,6 +4,7 @@
   clear: both;
   position: relative;
   background-color: $blue;
+  font-family: $basic-font;
   color: $white;
   text-align: center;
   width: 100%;
@@ -12,6 +13,7 @@
 .footer-heading {
   width: 100%;
   text-align: left;
+  font-family: $footer-heading-font;
   color: $white;
   padding-top: $padding-footer-text;
   padding-bottom: $padding-footer-text;
@@ -66,6 +68,8 @@
 }
 .footer-information {
   display: none;
+  font-family: $footer-main-font;
+  color: $white;
   @include mquery(medium) {
     display: inline-block;
     text-align: left;
@@ -87,6 +91,7 @@
   text-align: left;
   padding-left: 0;
   a {
+    font-family: $basic-font;
     color: $white;
     display: block;
   }
