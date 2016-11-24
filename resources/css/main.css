@@ -7466,7 +7466,7 @@ img.mfp-img {
         .featured-article .image-container .image-info {
           display: inline-block;
           position: absolute;
-          top: 3%;
+          top: 1%;
           right: 2%;
           bottom: auto;
           z-index: 3;
@@ -7476,9 +7476,7 @@ img.mfp-img {
             color: white;
             font-family: "Source Sans Pro", Arial, sans-serif;
             display: inline-block;
-            font-size: 1.3rem; }
-          .featured-article .image-container .image-info .image-info-item {
-            padding: 0 2% 0 2%; } }
+            font-size: 1.3rem; } }
   .featured-article .featured-article-image {
     width: 100%; }
   .featured-article .featured-article-text-content {
