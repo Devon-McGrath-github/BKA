@@ -17,18 +17,43 @@
         <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
     <![endif]-->
 
+
+    <!-- TODO: THIS WORKS http://www.inmotionhosting.com/support/edu/website-design/using-css/simple-css-drop-down-menu -->
     <!-- Add your site or application content here -->
-    <!-- <nav class="nav clearfix container-fluid">
-      <div class="logo">
-        <img class="header-logo" src="resources/img/logo-small.png" alt="FarmersWeekly">
-      </div>
 
-      <div class="nav-links"> -->
+    <nav id="nav" role="navigation">
+        <a href="#nav" title="Show navigation">Show navigation</a>
+        <a href="#" title="Hide navigation">Hide navigation</a>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li>
+                <a href="/" aria-haspopup="true">Blog</a>
+                <ul>
+                    <li><a href="/">Design</a></li>
+                    <li><a href="/">HTML</a></li>
+                    <li><a href="/">CSS</a></li>
+                    <li><a href="/">JavaScript</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="/" aria-haspopup="true">Work</a>
+                <ul>
+                    <li><a href="/">Web Design</a></li>
+                    <li><a href="/">Typography</a></li>
+                    <li><a href="/">Front-End</a></li>
+                </ul>
+            </li>
+            <li><a href="/">About</a></li>
+        </ul>
+    </nav>
 
-        <!-- <p>Nav commented out</p> -->
-        <!-- <a href="article1.html">button</a> -->
 
-          <ul id="menu" class="nav-main-list clearfix">
+
+
+
+
+
+          <!-- <ul id="menu" class="nav-main-list clearfix">
             <li>
               <a href="#">NEWS</a>
               <ul>
@@ -43,7 +68,7 @@
             </li>
             <li><a href="#">PROPERTY</a></li>
             <li>
-              <a href="#">JOBS</a>
+              <a href="#">JOBS</a> -->
               <!-- <ul>
                 <li><a href="#">TOOLS & CALCULATORS</a></li>
                 <li><a href="#">REAL ESTATE</a></li>
@@ -52,9 +77,9 @@
                 <li><a href="#">AGRIHQ MARKETS & DATA</a></li>
                 <li><a href="#">JOBS</a></li>
               </ul> -->
-            </li>
+            <!-- </li>
             <li><a href="#">OPINION</a></li>
-          </ul>
+          </ul> -->
 
 
         <!-- <div class="nav-secondary">
@@ -67,11 +92,22 @@
           </ul>
         </div> -->
 
-      <!-- </div> -->
+
+
+
+
+
+
+
+
+
+
+
 
     <!-- jquery inclusion -->
     <script src="resources/js/vendor/jquery.js"></script>
 
+    <script> $( '#nav li:has(ul)' ).doubleTapToGo(); </script>
     <!-- slick slider. -->
     <!-- <script type="text/javascript" src="resources/js/libs/slick.js"></script> -->
 
