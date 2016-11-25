@@ -7,10 +7,11 @@ $padding-value-medium:      5%;
   background-color: $color;
   text-align: center;
   color: $white;
+  font-family: $basic-font;
   margin: 0;
   padding-top: $padding-value;
   padding-bottom: $padding-value;
-  @include mquery(medium) {
+  @include media-breakpoint-up(md) {
     padding-top: $padding-value-medium;
     padding-bottom: $padding-value-medium;
   }

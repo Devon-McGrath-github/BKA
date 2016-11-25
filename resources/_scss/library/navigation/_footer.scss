@@ -1,6 +1,11 @@
 // main div styling (blue footer box)
 .site-footer {
+  display: block;
+  clear: both;
+  position: relative;
   background-color: $blue;
+  font-family: $basic-font;
+  font-weight: 600;
   color: $white;
   text-align: center;
   width: 100%;
@@ -9,11 +14,13 @@
 .footer-heading {
   width: 100%;
   text-align: left;
+  font-family: $footer-heading-font;
   color: $white;
   padding-top: $padding-footer-text;
   padding-bottom: $padding-footer-text;
   h3 {
     margin: 0;
+    font-size: 3.5rem;
   }
 }
 
@@ -24,7 +31,7 @@
 }
 
 .footer-content {
-  @include mquery(medium) {
+  @include media-breakpoint-up(md) {
     padding: 0;
     margin: 0;
     width: 100%;
@@ -63,7 +70,10 @@
 }
 .footer-information {
   display: none;
-  @include mquery(medium) {
+  font-family: $footer-main-font;
+  font-weight: 300;
+  color: $white;
+  @include media-breakpoint-up(md) {
     display: inline-block;
     text-align: left;
   }
@@ -75,7 +85,7 @@
   -moz-columns: auto 2; /* Firefox */
   columns: auto 2;
 
-  @include mquery(medium) {
+  @include media-breakpoint-up(md) {
     -webkit-columns: auto 5; /* Chrome, Safari, Opera */
     -moz-columns: auto 5; /* Firefox */
     columns: auto 5;
@@ -84,6 +94,7 @@
   text-align: left;
   padding-left: 0;
   a {
+
     color: $white;
     display: block;
   }
@@ -101,7 +112,7 @@
   display: inline;
   padding-left: 8%;
   padding-right: 4%;
-  @include mquery(medium) {
+  @include media-breakpoint-up(md) {
     padding-left: 0;
   }
 }

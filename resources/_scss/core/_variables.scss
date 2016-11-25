@@ -17,6 +17,14 @@
 // Fonts
 // Components
 
+// bitter font-family
+@import url('https://fonts.googleapis.com/css?family=Bitter:400,700');
+
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700');
+
+
+//TODO: am I using 4 font sizes, load speed increases if only 2 are used.
 @mixin _assert-ascending($map, $map-name) {
   $prev-key: null;
   $prev-num: null;
@@ -50,6 +58,7 @@ $gray-light:                #b5b5b5 !default;
 $gray-lighter:              #dbdbdb !default;
 $gray-lightest:             #f7f7f7 !default;
 $gray-muted:                #c8c8c8 !default;
+$gray-menu:                 #999999 !default;
 $white:                     #FFFFFF !default;
 
 $brand-primary:             #3273dc !default;
@@ -125,15 +134,22 @@ $spacers: (
   )
 ) !default;
 
-$border-width:              1px  !default;
+$border-width:              1px   !default;
+$border-width-hover:        4px   !default;
 
-$wrapper-spacing:           6%   !default;
-$content-wrapper-spacing:   1.5% !default;
+$wrapper-spacing:           6%    !default;
+$content-wrapper-spacing:   1.5%  !default;
 
-$padding-footer-text:       4%   !default;
-$footer-margin-right:       2%   !default;
+$padding-footer-text:       4%    !default;
+$footer-margin-right:       2%    !default;
 
-$content-block-margin:      5%   !default;
+$content-block-margin:      5%    !default;
+
+$nav-padding:               2%    !default;
+$content-padding:           5%    !default;
+
+$featured-article-text-padding:   4%  !default;
+
 
 // Body
 //
@@ -204,7 +220,20 @@ $font-family-serif:      Georgia, "Times New Roman", Times, serif !default;
 $font-family-monospace:  Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
 $font-family-base:       $font-family-sans-serif !default;
 
-$font-family-bitter:     'Bitter', serif !default;
+$font-family-bitter:     'Bitter', $font-family-sans-serif !default;
+$font-family-open-sans:  'Open Sans', $font-family-sans-serif !default;
+
+// Fonts in use
+
+/* font's currently placeholder */
+$newsletter-font:           $font-family-open-sans !default;
+/* font for nav bar and some other text */
+$basic-font:                $font-family-open-sans !default;
+$title-font:                $font-family-bitter, $font-family-sans-serif !default;
+// the actual footer font is breeve news medium, however pay to access font
+$footer-heading-font:       $font-family-open-sans !default;
+$footer-main-font:          $font-family-open-sans !default;
+
 
 // Pixel value used to responsively scale all typography. Applied to the `<html>` element.
 $font-size-root: 10px !default;
@@ -283,7 +312,8 @@ $component-active-bg:    $brand-primary !default;
 $caret-width:            .3em !default;
 $caret-width-lg:         $caret-width !default;
 
-$border-light:           1px solid $border-gray;
+$border-light:           1px solid $border-gray !default;
+$border-hover:           $border-width-hover solid $blue !default;
 // TODO: customize border
 
 
@@ -355,6 +385,9 @@ $btn-border-radius:              $border-radius !default;
 $btn-border-radius-lg:           $border-radius-lg !default;
 $btn-border-radius-sm:           $border-radius-sm !default;
 
+// personalised button
+
+$button-padding:                 6px 13px !default;
 
 // Forms
 
@@ -570,6 +603,9 @@ $nav-tabs-justified-active-link-border-color: $body-bg !default;
 $nav-pills-border-radius:     $border-radius !default;
 $nav-pills-active-link-color: $component-active-color !default;
 $nav-pills-active-link-bg:    $component-active-bg !default;
+
+$nav-newsletter-margin:     0.75rem !default;
+
 
 
 // Pagination

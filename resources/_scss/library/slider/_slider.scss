@@ -1,8 +1,5 @@
 // Slider CSS
 
-// TODO: remove unnecessary comments
-// make was originally 10px.
-// width: 100%;
 // TODO: slider needs to be properly sized for different images.
 // makes sure that it is fully responsive
 .panel {
@@ -18,14 +15,12 @@
 	.slider-caption {
 		position: absolute;
 		top: 0;
-		
 	}
 }
 
 // positioning of the dots
 .slider {
 	z-index: 1;
-
 	.slick-dots {
 		position: absolute;
 		top:3%;
@@ -34,7 +29,7 @@
 		z-index: 3;
 		width: auto;
 		text-align: right;
-		@include mquery(medium) {
+		@include media-breakpoint-up(md) {
 			padding-bottom: 8%;
 			left: 2%;
 			text-align: left;
@@ -57,9 +52,6 @@
     font-family: 'slick';
     font-weight: normal;
     font-style: normal;
-
-    src: url('./fonts/slick.eot');
-    src: url('./fonts/slick.eot?#iefix') format('embedded-opentype'), url('./fonts/slick.woff') format('woff'), url('./fonts/slick.ttf') format('truetype'), url('./fonts/slick.svg#slick') format('svg');
 }
 
 /* Dots */
