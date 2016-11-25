@@ -24,6 +24,7 @@ a {
 	text-decoration: none;
 }
 
+// outer div that contains the nav bar (not the nav bar itself)
 #nav-container {
 	background: $white;
 	width: 100%;
@@ -44,10 +45,6 @@ a {
 	display: block;
 }
 
-nav {
-	float: right;
-	padding: 0%;
-}
 
 #menu-icon {
 	display: hidden;
@@ -56,14 +53,22 @@ nav {
 	background: #4C8FEC url(../../../../resources/img/menu-icon.png) center;
 }
 
+// positioning of the nav icon
+nav {
+	float: right;
+	padding: 0%;
+}
+
 a:hover#menu-icon {
 	border-radius: 4px 4px 0 0;
 }
 
+// no dots
 ul {
 	list-style: none;
 }
 
+// creates inline menu
 li {
 	display: inline-block;
 	float: left;
@@ -92,11 +97,9 @@ p {
 
 /*MEDIA QUERY*/
 @media only screen and (max-width : 640px) {
-
 	.nav-container {
 		position: absolute;
 	}
-
 	#menu-icon {
 		display:inline-block;
 	}
@@ -108,7 +111,7 @@ p {
 		background: $nav-lvl-1-background-color;
 		right: 0%;
 		top: 0%;
-		width: 85%;
+		width: 100%;
 		border: 1px solid $border-gray;
 	}
 	nav li {
