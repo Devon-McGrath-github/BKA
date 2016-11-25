@@ -12,15 +12,12 @@
 }
 
 .logo {
-  display: none;
-  @include media-breakpoint-up(sm) {
-
-  }
+	display: inline-block;
+	vertical-align: top;
+	margin: 0;
+	float: left;
   @include media-breakpoint-up(md) {
-    display: inline-block;
-    vertical-align: top;
-    margin: 0;
-    float: left;
+
   }
 }
 
@@ -34,15 +31,23 @@
   float: left;
 }
 
-.nav-main, .nav-secondary {
+.nav-main {
   display: inline-block;
   vertical-align: top;
+}
+// hidden in mobile version
+.nav-secondary {
+	display: none;
+	@include media-breakpoint-up(md) {
+		display: inline-block;
+		vertical-align: top;
+	}
 }
 
 .nav-main-list, .nav-secondary-list {
   margin: 0;
   padding: 0;
-  // width: 100%;
+  width: 100%;
   display: inline-block;
   list-style-type: none;
   overflow: hidden;
@@ -61,7 +66,34 @@
       padding-right: $nav-padding;
       padding-bottom: $nav-padding;
   }
+	li ul {
+		display: none;
+	}
+	/* makes dropdown links verticla */
+	li ul li {
+	display: block;
+	// float: none;
+	}
+	/*Prevent text wrapping*/
+	li ul li a {
+		width: auto;
+		min-width: 100px;
+		padding: 0 20px;
+	}
+
+	/*Display the dropdown on hover*/
+	ul li a:hover + .hidden, .hidden:hover {
+		display: block;
+	}
 }
+
+
+
+
+
+
+
+
 
 .nav-main-list {
   /* Change the link color to #111 (black) on hover */
@@ -74,6 +106,15 @@
   .sectors-list {
     color: $gray-menu;
   }
+}
+
+// newsletter and search icon container
+.news-search-container {
+	display: none;
+	@include media-breakpoint-up(md) {
+		// display: inline-block;
+
+	}
 }
 
 // search button
