@@ -6910,8 +6910,12 @@ a {
   position: fixed;
   top: 0;
   left: 0;
+  border-top: 5px solid #40c4c6;
   border-bottom: 1px solid #e2e2e2;
   z-index: 100; }
+  @media (min-width: 768px) {
+    #nav-container {
+      position: absolute; } }
 
 #logo {
   margin: 20px;
@@ -6922,7 +6926,6 @@ a {
   display: block; }
 
 #menu-icon {
-  display: hidden;
   width: 40px;
   height: 40px;
   background: #4C8FEC url(../../../../resources/img/menu-icon.png) center; }
@@ -6931,55 +6934,40 @@ nav {
   float: right;
   padding: 0%; }
 
-a:hover#menu-icon {
-  border-radius: 4px 4px 0 0; }
-
-ul {
+.nav-list ul {
   list-style: none; }
 
-li {
+.nav-list li {
   display: inline-block;
   float: left;
   padding: 10px; }
 
-section {
-  margin: 80px auto 40px;
-  max-width: 980px;
-  position: relative;
-  padding: 20px; }
+#nav-container {
+  position: absolute; }
 
-h1 {
-  font-size: 2em;
-  line-height: 1.15em;
-  margin: 20px 0; }
+#menu-icon {
+  display: inline-block; }
 
-p {
-  line-height: 1.45em;
-  margin-bottom: 20px; }
+nav ul, nav:active ul {
+  display: none;
+  position: absolute;
+  padding: 0;
+  background: #302f2c;
+  right: 0%;
+  top: 0%;
+  width: 100%;
+  border: 1px solid #e2e2e2; }
 
-/*MEDIA QUERY*/
-@media only screen and (max-width: 640px) {
-  .nav-container {
-    position: absolute; }
-  #menu-icon {
-    display: inline-block; }
-  nav ul, nav:active ul {
-    display: none;
-    position: absolute;
-    padding: 0;
-    background: #302f2c;
-    right: 0%;
-    top: 0%;
-    width: 100%;
-    border: 1px solid #e2e2e2; }
-  nav li {
-    text-align: left;
-    width: 100%;
-    padding: 10px 10px;
-    margin: 0;
-    border-bottom: 1px solid #383734; }
-  nav:hover ul {
-    display: block; } }
+nav li {
+  text-align: left;
+  width: 100%;
+  padding: 10px 10px;
+  margin: 0;
+  border-bottom: 1px solid #383734; }
+
+nav:hover ul {
+  display: block;
+  color: inherit; }
 
 .site-footer {
   display: block;
