@@ -2,7 +2,8 @@
 $nav-font-color:							#dedede  !default;
 
 // background color
-$nav-background-color:       	#302f2c  !default;
+$nav-lvl-1-background-color:  #302f2c  !default;
+$nav-lvl-2-background-color:  #292827	 !default;
 $nav-border-bottom: 					#383734  !default;
 
 /*RESET*/
@@ -12,96 +13,61 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 body {
 	font-size: 1.05em;
 	line-height: 1.25em;
-	font-family: Helvetica Neue, Helvetica, Arial;
-	background: #f9f9f9;
-	color: #555;
+	font-family: $font-family-open-sans;
+	font-weight: 600;
+	background: $white;
+	color: $nav-font-color;
 }
 
 a {
-
-	color: #4C9CF1;
+	color: $nav-font-color;
 	text-decoration: none;
-	font-weight: bold;
-
 }
 
-a:hover {
-
-	color: #444;
-
-}
-
-img {
-
-	width: 100%;
-
-}
-
-header {
-
-	background: #fff;
+#nav-container {
+	background: $white;
 	width: 100%;
 	height: 76px;
 	position: fixed;
 	top: 0;
 	left: 0;
-	border-bottom: 4px solid #4C9CF1;
+	border-bottom: 1px solid $border-gray;
 	z-index: 100;
-
 }
 
 #logo{
-
 	margin: 20px;
 	float: left;
 	width: 200px;
 	height: 40px;
-	background: url(../img/logo.png) no-repeat center;
+	background: url(../../../../resources/img/logo-small.png) no-repeat center;
 	display: block;
-
 }
 
 nav {
-
 	float: right;
-	padding: 20px;
-
+	padding: 0%;
 }
 
 #menu-icon {
-
 	display: hidden;
 	width: 40px;
 	height: 40px;
-	background: #4C8FEC url(../img/menu-icon.png) center;
-
+	background: #4C8FEC url(../../../../resources/img/menu-icon.png) center;
 }
 
 a:hover#menu-icon {
-
-	background-color: #444;
 	border-radius: 4px 4px 0 0;
-
 }
 
 ul {
-
 	list-style: none;
-
 }
 
 li {
-
 	display: inline-block;
 	float: left;
 	padding: 10px
-
-}
-
-.current {
-
-	color: #2262AD;
-
 }
 
 section {
@@ -114,64 +80,48 @@ section {
 }
 
 h1 {
-
 	font-size: 2em;
-	color: #2262AD;
 	line-height: 1.15em;
 	margin: 20px 0 ;
-
 }
 
 p {
-
 	line-height: 1.45em;
 	margin-bottom: 20px;
-
 }
 
 /*MEDIA QUERY*/
 @media only screen and (max-width : 640px) {
 
-	header {
-
+	.nav-container {
 		position: absolute;
-
 	}
 
 	#menu-icon {
-
 		display:inline-block;
-
 	}
 
 	nav ul, nav:active ul {
-
 		display: none;
 		position: absolute;
-		padding: 20px;
-		background: #fff;
-		border: 5px solid #444;
-		right: 20px;
-		top: 60px;
-		width: 50%;
-		border-radius: 4px 0 4px 4px;
-
+		padding: 0;
+		background: $nav-lvl-1-background-color;
+		right: 0%;
+		top: 0%;
+		width: 85%;
+		border: 1px solid $border-gray;
 	}
-
 	nav li {
-
-		text-align: center;
+		text-align: left;
 		width: 100%;
-		padding: 10px 0;
+		padding: 10px 10px;
 		margin: 0;
-
+		border-bottom: 1px solid $nav-border-bottom;
 	}
-
 	nav:hover ul {
-
 		display: block;
-
 	}
+}
 
 
 

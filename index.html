@@ -28,19 +28,51 @@
     <!-- Add your site or application content here -->
 
     <!-- TODO: checkout the blog source for this code: http://blog.teamtreehouse.com/create-an-absolute-basic-mobile-css-responsive-navigation-menu -->
-  <header>
+  <header id="nav-container">
 
     <a href="#" id="logo"></a>
 
     <nav>
       <a href="#" id="menu-icon"></a>
+      <section>
+
+        <!-- TODO: remember the idea split nav into two columns. left and a
+        right column. button in left column, rgba background, right column all the normal links
+
+      left column sized with a percentage, right column float right. this should allow you to set
+      the height to 100%
+
+      worst case can do some flex order bs -->
+
       <ul>
-        <li><a href="#" class="current">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Work</a></li>
-        <li><a href="#">Blog</a></li>
-        <li><a href="#">Contact</a></li>
+        <li><a href="/">HOME</a></li>
+        <li>
+          <a href="/" aria-haspopup="true">NEWS</a>
+          <!-- <ul>
+            <li><a href="/">DAIRY</a></li>
+            <li><a href="/">BEEF</a></li>
+            <li><a href="/">SHEEP</a></li>
+            <li><a href="/">ARABLE</a></li>
+            <li><a href="/">OTHER LIVESTOCK</a></li>
+            <li><a href="/">FORESTRY</a></li>
+            <li><a href="/">OTHER</a></li>
+          </ul> -->
+        </li>
+        <li>
+          <a href="/" aria-haspopup="true">PROPERTY</a>
+          <!-- <ul>
+            <li><a href="/">TOOLS & CALCULATORS</a></li>
+            <li><a href="/">REAL ESTATE</a></li>
+            <li><a href="/">QUIZZES</a></li>
+            <li><a href="/">SOCIAL</a></li>
+            <li><a href="/">AGRIHQ MARKETS & DATA</a></li>
+            <li><a href="/">JOBS</a></li>
+          </ul> -->
+        </li>
+        <li><a href="/">JOBS</a></li>
+        <li><a href="/">OPINION</a></li>
       </ul>
+      </section>
     </nav>
 
   </header>
