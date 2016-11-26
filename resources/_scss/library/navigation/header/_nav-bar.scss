@@ -89,13 +89,12 @@ nav {
 		// border-bottom: 1px solid $border-gray;
 	}
 
-	.dropdown-container, .dropdown-container:active ul {
-		display: none;
+	.dropdown-container {
 		position: absolute;
 		padding: 0;
 		right: 0%;
 		top: 0%;
-		width: 100%;
+		width: 100%
 	}
 
 	.dropdown-container ul li {
@@ -173,7 +172,7 @@ nav {
 // 	}
 // }
 
-// #menu li,  
+// #menu li,
 // #menu a {
 // 	position: relative;
 //   display: block;

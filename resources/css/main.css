@@ -6946,8 +6946,7 @@ nav {
 #menu input[type=checkbox]:checked ~ .dropdown-container {
   display: block; }
 
-nav .dropdown-container, nav .dropdown-container:active ul {
-  display: none;
+nav .dropdown-container {
   position: absolute;
   padding: 0;
   right: 0%;
