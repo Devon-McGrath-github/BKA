@@ -6946,6 +6946,9 @@ nav {
 #menu input[type=checkbox]:checked ~ .dropdown-container {
   display: block; }
 
+#item input[type="checkbox"]:checked ~ .sub-menu {
+  display: block; }
+
 nav .dropdown-container {
   display: none;
   position: absolute;

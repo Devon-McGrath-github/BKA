@@ -80,6 +80,11 @@ nav {
     display: block;
 	}
 }
+#item {
+	input[type="checkbox"]:checked ~ .sub-menu {
+  	display: block;
+	}
+}
 
 nav {
 	.dropdown-container {
