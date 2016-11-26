@@ -37,7 +37,7 @@ a {
 	border-bottom: 1px solid $border-gray;
 	z-index: 100;
 	@include media-breakpoint-up(md) {
-		// desktop nav does not scroll with the page
+		// desktop nav does not scroll with mobile version
 		position: absolute;
 	}
 }
@@ -57,6 +57,8 @@ a {
 	width: 40px;
 	height: 40px;
 	background: #4C8FEC url(../../../../resources/img/menu-icon.png) center;
+	float: right;
+	display: inline-block;
 }
 
 // positioning of the nav icon
@@ -65,10 +67,7 @@ nav {
 	padding: 0%;
 }
 
-a:hover#menu-icon {
-
-}
-
+// general styling of lists inside nav
 .nav-list {
 	// no dots
 	ul {
@@ -83,14 +82,13 @@ a:hover#menu-icon {
 	}
 }
 
-	#nav-container {
-		position: absolute;
-	}
-	#menu-icon {
-		display:inline-block;
-	}
+//
+a:hover#menu-icon + .dropdown-container{
+	display: block;
+}
 
-	nav ul, nav:active ul {
+nav {
+	.dropdown-container, .dropdown-container:active ul {
 		display: none;
 		position: absolute;
 		padding: 0;
@@ -98,19 +96,42 @@ a:hover#menu-icon {
 		right: 0%;
 		top: 0%;
 		width: 100%;
-		border: 1px solid $border-gray;
 	}
-	nav li {
+
+	.dropdown-container ul li {
 		text-align: left;
 		width: 100%;
 		padding: 10px 10px;
 		margin: 0;
 		border-bottom: 1px solid $nav-border-bottom;
 	}
-	nav:hover ul {
+
+	.dropdown-container:hover {
 		display: block;
-		color: inherit;
 	}
+}
+
+// nav ul, nav:active ul {
+// 	display: none;
+// 	position: absolute;
+// 	padding: 0;
+// 	background: $nav-lvl-1-background-color;
+// 	right: 0%;
+// 	top: 0%;
+// 	width: 100%;
+//
+// }
+// nav li {
+// 	text-align: left;
+// 	width: 100%;
+// 	padding: 10px 10px;
+// 	margin: 0;
+// 	border-bottom: 1px solid $nav-border-bottom;
+// }
+// nav:hover ul {
+// 	display: block;
+// 	color: inherit;
+// }
 
 
 

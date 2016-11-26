@@ -6928,7 +6928,9 @@ a {
 #menu-icon {
   width: 40px;
   height: 40px;
-  background: #4C8FEC url(../../../../resources/img/menu-icon.png) center; }
+  background: #4C8FEC url(../../../../resources/img/menu-icon.png) center;
+  float: right;
+  display: inline-block; }
 
 nav {
   float: right;
@@ -6942,32 +6944,27 @@ nav {
   float: left;
   padding: 10px; }
 
-#nav-container {
-  position: absolute; }
+a:hover#menu-icon + .dropdown-container {
+  display: block; }
 
-#menu-icon {
-  display: inline-block; }
-
-nav ul, nav:active ul {
+nav .dropdown-container, nav .dropdown-container:active ul {
   display: none;
   position: absolute;
   padding: 0;
   background: #302f2c;
   right: 0%;
   top: 0%;
-  width: 100%;
-  border: 1px solid #e2e2e2; }
+  width: 100%; }
 
-nav li {
+nav .dropdown-container ul li {
   text-align: left;
   width: 100%;
   padding: 10px 10px;
   margin: 0;
   border-bottom: 1px solid #383734; }
 
-nav:hover ul {
-  display: block;
-  color: inherit; }
+nav .dropdown-container:hover {
+  display: block; }
 
 .site-footer {
   display: block;
