@@ -1,28 +1,16 @@
-// menu font color - mobile version
-$nav-font-color:							#dedede  !default;
-
-// background color
-$nav-lvl-1-background-color:  #302f2c  !default;
-$nav-lvl-2-background-color:  #292827	 !default;
-$nav-border-bottom: 					#383734  !default;
-
 /*RESET*/
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {margin:0; padding:0; border:0; outline:0; font-size:100%; vertical-align:baseline; background:transparent;} body {line-height: 1;}ol, ul{list-style:none;} blockquote, q{quotes:none;} blockquote:before, blockquote:after, q:before, q:after{content:'';content:none;} :focus{outline:0;} ins{text-decoration:none;} del{text-decoration:line-through;} table{border-collapse:collapse; border-spacing:0;}
 
 /*MAIN*/
-body {
-	font-size: 1.05em;
-	line-height: 1.25em;
-	font-family: $font-family-open-sans;
-	font-weight: 600;
-	background: $white;
-	color: $nav-font-color;
-}
+// body {
+// 	font-size: 1.05em;
+// 	line-height: 1.25em;
+// 	font-family: $font-family-open-sans;
+// 	font-weight: 600;
+// 	background: $white;
+// 	color: $nav-font-color;
+// }
 
-a {
-	color: $nav-font-color;
-	text-decoration: none;
-}
 
 // outer div that contains the nav bar (not the nav bar itself)
 #nav-container {
@@ -77,6 +65,11 @@ nav {
 nav {
 	float: right;
 	padding: 0%;
+	// styling anchor tags
+	a, a:hover {
+		color: $nav-font-color;
+		text-decoration: none;
+	}
 }
 
 // general styling of lists inside nav
@@ -162,11 +155,13 @@ nav {
 
 .close-label {
 	height: 100%;
+	margin-left: auto;
+	margin-right: auto;;
 	// styling the close button
 	.close-button-img {
 		width: 30px;
 		height: 30px;
-		padding: 0%;
-		margin: 0%;
+		padding: 0;
+		margin: 0;
 	}
 }
