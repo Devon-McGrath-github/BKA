@@ -6947,6 +6947,10 @@ nav {
 a:hover#menu-icon + .dropdown-container {
   display: block; }
 
+nav .dropdown-container:hover {
+  display: block;
+  border: 1px solid #e2e2e2; }
+
 nav .dropdown-container, nav .dropdown-container:active ul {
   display: none;
   position: absolute;
@@ -6962,9 +6966,6 @@ nav .dropdown-container ul li {
   padding: 10px 10px;
   margin: 0;
   border-bottom: 1px solid #383734; }
-
-nav .dropdown-container:hover {
-  display: block; }
 
 .site-footer {
   display: block;

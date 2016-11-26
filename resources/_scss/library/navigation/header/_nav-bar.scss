@@ -82,12 +82,21 @@ nav {
 	}
 }
 
-//
+// hovering over the #menu-icon will change .dropdown-container's display property from none to block
 a:hover#menu-icon + .dropdown-container{
 	display: block;
 }
 
 nav {
+	// displaying this section is linked to hovering #menu-icon
+	// since this dropdown overlays ontop of #menu-icon you are no longer hovering
+	// so the drop down disappears, meaning you are hovering again, then disappears
+	// creates endless flickering. 
+	.dropdown-container:hover {
+		display: block;
+		border: 1px solid $border-gray;
+	}
+
 	.dropdown-container, .dropdown-container:active ul {
 		display: none;
 		position: absolute;
@@ -106,9 +115,6 @@ nav {
 		border-bottom: 1px solid $nav-border-bottom;
 	}
 
-	.dropdown-container:hover {
-		display: block;
-	}
 }
 
 // nav ul, nav:active ul {
