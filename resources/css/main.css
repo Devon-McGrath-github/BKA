@@ -6947,6 +6947,7 @@ nav {
   display: block; }
 
 nav .dropdown-container {
+  display: none;
   position: absolute;
   padding: 0;
   right: 0%;
