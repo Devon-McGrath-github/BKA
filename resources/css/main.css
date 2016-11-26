@@ -6966,7 +6966,7 @@ nav .dropdown-container ul li {
   display: inline-block; }
 
 .dropdown-container {
-  background-image: -webkit-gradient(linear, left top, right top, color-stop(0, rgba(23, 23, 23, 0.32)), color-stop(15%, rgba(23, 23, 23, 0.32)), color-stop(15%, #302f2c), color-stop(100%, #302f2c)); }
+  background-image: -webkit-gradient(linear, left top, right top, color-stop(0, rgba(0, 0, 0, 0.42)), color-stop(15%, rgba(0, 0, 0, 0.42)), color-stop(15%, #302f2c), color-stop(100%, #302f2c)); }
 
 .nav-column-left {
   float: left;
@@ -6992,6 +6992,9 @@ nav .dropdown-container ul li {
     width: 100%;
     max-width: 40px;
     max-height: 40px; }
+
+.nav-item p {
+  display: inline-block; }
 
 .site-footer {
   display: block;
