@@ -6946,7 +6946,10 @@ nav {
 #menu input[type=checkbox]:checked ~ .dropdown-container {
   display: block; }
 
-#item input[type="checkbox"]:checked ~ .sub-menu {
+#sub-menu-1 input[type="checkbox"]:checked ~ .sub-menu {
+  display: block; }
+
+#sub-menu-2 input[type="checkbox"]:checked ~ .sub-menu {
   display: block; }
 
 nav .dropdown-container {
@@ -7004,12 +7007,22 @@ nav .dropdown-container .nav-column-right .main-nav li {
 #menu .sub-menu {
   display: none; }
 
+.submenu {
+  color: #dedede; }
+
 .nav-item .nav-header {
   display: inline-block; }
 
 .nav-item .dropdown-icon {
   position: absolute;
   right: 0; }
+
+.nav-item .nav-header-img {
+  height: 25px;
+  width: 25px; }
+
+.nav-item:active, :focus, ul, li, a {
+  color: #dedede; }
 
 .sub-menu li {
   background-color: #292827 !important; }

@@ -49,12 +49,12 @@
         <article class="nav-column-right">
           <ul class="main-nav">
             <li><a href="/">HOME</a></li>
-            <li id="item">
-              <!-- sm stands for submenu -->
+            <li id="sub-menu-1" class="nav-item">
                 <a class="nav-item" href="/" aria-haspopup="true">
-                  <p>NEWS</p>
+                  <p class="nav-header">NEWS</p>
                   <label title="Drop-down toggle" class="dropdown-icon nav-header" for="sm1">▾</label>
                 </a>
+
                 <input type="checkbox" id="sm1">
 
                 <ul class="sub-menu">
@@ -67,20 +67,31 @@
                   <li><a href="/">OTHER</a></li>
                 </ul>
             </li>
-            <li>
-              <a href="/" aria-haspopup="true">PROPERTY</a>
-              <!-- <ul>
+            <li><a href="/">PROPERTY</a></li>
+            <li id="sub-menu-2" class="nav-item">
+              <a class="nav-item" href="/" aria-haspopup="true">
+                <p class="nav-header">JOBS</p>
+                <label title="Drop-down toggle" class="dropdown-icon nav-header" for="sm2">▾</label>
+              </a>
+
+              <input type="checkbox" id="sm2">
+
+              <ul class="sub-menu">
                 <li><a href="/">TOOLS & CALCULATORS</a></li>
                 <li><a href="/">REAL ESTATE</a></li>
                 <li><a href="/">QUIZZES</a></li>
                 <li><a href="/">SOCIAL</a></li>
                 <li><a href="/">AGRIHQ MARKETS & DATA</a></li>
                 <li><a href="/">JOBS</a></li>
-              </ul> -->
+              </ul>
             </li>
-            <li><a href="/">JOBS</a></li>
             <li><a href="/">OPINION</a></li>
-            <li><a href="/">LOGIN | REGISTER</a></li>
+            <li class="nav-item">
+              <a href="/">
+                <img class="nav-header nav-header-img" src="resources/img/magnifier-tool.svg">
+                <p class="nav-header">LOGIN | REGISTER</p>
+              </a>
+            </li>
           </ul>
         </article>
       </section>
