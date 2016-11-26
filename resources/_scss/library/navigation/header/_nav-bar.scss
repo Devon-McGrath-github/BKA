@@ -181,6 +181,21 @@ nav {
 	color: $nav-font-color;
 }
 
+// TODO: Is there a jobs toggle for mobile, from what I see from the brief there isn't
+// brief doesnt' have a jobs drop down for mobile
+.jobs-sm {
+	display: none;
+	@include media-breakpoint-up(md) {
+		display: block;
+	}
+}
+.jobs-toggle {
+	display: none;
+	@include media-breakpoint-up(md) {
+		display: inline-block;
+	}
+}
+
 // nav item
 .nav-item {
 	.nav-header {

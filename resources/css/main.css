@@ -7010,6 +7010,18 @@ nav .dropdown-container .nav-column-right .main-nav li {
 .submenu {
   color: #dedede; }
 
+.jobs-sm {
+  display: none; }
+  @media (min-width: 768px) {
+    .jobs-sm {
+      display: block; } }
+
+.jobs-toggle {
+  display: none; }
+  @media (min-width: 768px) {
+    .jobs-toggle {
+      display: inline-block; } }
+
 .nav-item .nav-header {
   display: inline-block; }
 
