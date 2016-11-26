@@ -56,9 +56,24 @@ a {
 #menu-icon {
 	width: 40px;
 	height: 40px;
-	background: #4C8FEC url(../../../../resources/img/menu-icon.png) center;
+	background: $white url(../../../../resources/img/menu-icon.svg) center;
+	background-repeat: no-repeat;
 	float: right;
 	display: inline-block;
+
+	-webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+nav {
+	// hiding the checkbox
+	input[type=checkbox]{
+	    display: none;
+	}
+	input[type=checkbox]:checked ~ ul {
+	    display: block;
+	}
 }
 
 // positioning of the nav icon
@@ -82,19 +97,23 @@ nav {
 	}
 }
 
-// hovering over the #menu-icon will change .dropdown-container's display property from none to block
-a:hover#menu-icon + .dropdown-container{
-	display: block;
+// checkbox, so that mobile menu is a button.
+// mobile users don't have a :hover so they couldnt use the mobile nav which was an issue
+nav {
+	input[type=checkbox]:checked ~ .dropdown-container {
+    display: block;
+	}
 }
 
 nav {
-	// displaying this section is linked to hovering #menu-icon
-	// since this dropdown overlays ontop of #menu-icon you are no longer hovering
-	// so the drop down disappears, meaning you are hovering again, then disappears
-	// creates endless flickering. 
 	.dropdown-container:hover {
-		display: block;
-		border: 1px solid $border-gray;
+		// removed display: block as checkbox doesnt have the hover issue, and this was
+		// actually preventing the checkbox from closing (unchecked box trying to set display to none)
+		// however the button was inside this div, so for desktop was hovering and overiding this display
+		// change back to display: block. The more you know
+		border-left: 1px solid $border-gray;
+		border-right: 1px solid $border-gray;
+		border-bottom: 1px solid $border-gray;
 	}
 
 	.dropdown-container, .dropdown-container:active ul {
@@ -114,9 +133,28 @@ nav {
 		margin: 0;
 		border-bottom: 1px solid $nav-border-bottom;
 	}
-
 }
 
+// nav-bar columns
+.nav-column-left {
+	width: 10%;
+	height: 100%;
+}
+.nav-column-right {
+	float: right;
+}
+
+
+// styling the close button
+.close-button-img {
+	width: 40px;
+	height: 40px;
+	padding: 0%;
+	margin: 0%;
+}
+.close-button:target + .dropdown-container {
+	display: none;
+}
 // nav ul, nav:active ul {
 // 	display: none;
 // 	position: absolute;

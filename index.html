@@ -33,45 +33,54 @@
     <a href="#" id="logo"></a>
 
     <nav>
-      <a href="#" id="menu-icon"></a>
-      <section class="dropdown-container">
+      <input type="checkbox" id="checkbox-toggle">
+      <label id="menu-icon" for="checkbox-toggle"></label>
+      <!-- <a href="#" id="menu-icon"></a> -->
+      <section class="dropdown-container clearfix">
 
-        <!-- TODO: remember the idea split nav into two columns. left and a
-        right column. button in left column, rgba background, right column all the normal links
+          <!-- TODO: remember the idea split nav into two columns. left and a
+          right column. button in left column, rgba background, right column all the normal links
 
-      left column sized with a percentage, right column float right. this should allow you to set
-      the height to 100%
+        left column sized with a percentage, right column float right. this should allow you to set
+        the height to 100%
 
-      worst case can do some flex order bs -->
+        worst case can do some flex order bs -->
+        <article class="nav-column-left mobile-close-btn">
+          <!-- not sure if this is the cleanest way to do this -->
+          <label for="checkbox-toggle"><img class="close-button-img" src="resources/img/close-button.png" alt="close"></label>
+        </article>
 
-      <ul class="main-nav">
-        <li><a href="/">HOME</a></li>
-        <li>
-          <a href="/" aria-haspopup="true">NEWS</a>
-          <!-- <ul>
-            <li><a href="/">DAIRY</a></li>
-            <li><a href="/">BEEF</a></li>
-            <li><a href="/">SHEEP</a></li>
-            <li><a href="/">ARABLE</a></li>
-            <li><a href="/">OTHER LIVESTOCK</a></li>
-            <li><a href="/">FORESTRY</a></li>
-            <li><a href="/">OTHER</a></li>
-          </ul> -->
-        </li>
-        <li>
-          <a href="/" aria-haspopup="true">PROPERTY</a>
-          <!-- <ul>
-            <li><a href="/">TOOLS & CALCULATORS</a></li>
-            <li><a href="/">REAL ESTATE</a></li>
-            <li><a href="/">QUIZZES</a></li>
-            <li><a href="/">SOCIAL</a></li>
-            <li><a href="/">AGRIHQ MARKETS & DATA</a></li>
+        <article class="nav-column-right">
+          <ul class="main-nav">
+            <li><a href="/">HOME</a></li>
+            <li>
+              <a href="/" aria-haspopup="true">NEWS</a>
+              <!-- <ul>
+                <li><a href="/">DAIRY</a></li>
+                <li><a href="/">BEEF</a></li>
+                <li><a href="/">SHEEP</a></li>
+                <li><a href="/">ARABLE</a></li>
+                <li><a href="/">OTHER LIVESTOCK</a></li>
+                <li><a href="/">FORESTRY</a></li>
+                <li><a href="/">OTHER</a></li>
+              </ul> -->
+            </li>
+            <li>
+              <a href="/" aria-haspopup="true">PROPERTY</a>
+              <!-- <ul>
+                <li><a href="/">TOOLS & CALCULATORS</a></li>
+                <li><a href="/">REAL ESTATE</a></li>
+                <li><a href="/">QUIZZES</a></li>
+                <li><a href="/">SOCIAL</a></li>
+                <li><a href="/">AGRIHQ MARKETS & DATA</a></li>
+                <li><a href="/">JOBS</a></li>
+              </ul> -->
+            </li>
             <li><a href="/">JOBS</a></li>
-          </ul> -->
-        </li>
-        <li><a href="/">JOBS</a></li>
-        <li><a href="/">OPINION</a></li>
-      </ul>
+            <li><a href="/">OPINION</a></li>
+            <li><a href="/">LOGIN | REGISTER</a></li>
+          </ul>
+        </article>
       </section>
     </nav>
 
