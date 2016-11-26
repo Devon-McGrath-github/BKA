@@ -6890,7 +6890,6 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
-/*MAIN*/
 #nav-container {
   background: #FFFFFF;
   width: 100%;
@@ -6925,6 +6924,15 @@ table {
   -ms-user-select: none;
   user-select: none; }
 
+#menu ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none; }
+
+#menu a {
+  transition: all .125s ease-in-out;
+  -webkit-transition: all .125s ease-in-out; }
+
 nav input[type=checkbox] {
   display: none; }
 
@@ -6934,14 +6942,6 @@ nav {
   nav a, nav a:hover {
     color: #dedede;
     text-decoration: none; }
-
-.nav-list ul {
-  list-style: none; }
-
-.nav-list li {
-  display: inline-block;
-  float: left;
-  padding: 10px; }
 
 nav input[type=checkbox]:checked ~ .dropdown-container {
   display: block; }
@@ -6957,9 +6957,11 @@ nav .dropdown-container, nav .dropdown-container:active ul {
 nav .dropdown-container ul li {
   text-align: left;
   width: 100%;
-  padding: 10px 10px;
-  margin: 0;
+  margin: 0; }
+
+nav .dropdown-container .nav-column-right .main-nav li {
   background: #302f2c;
+  padding: 0;
   border-bottom: 1px solid #383734; }
 
 .group {
@@ -6993,8 +6995,18 @@ nav .dropdown-container ul li {
     max-width: 40px;
     max-height: 40px; }
 
-.nav-item p {
+#menu {
+  padding: 10px 10px; }
+
+.nav-item .nav-header {
   display: inline-block; }
+
+.nav-item .dropdown-icon {
+  position: absolute;
+  right: 0; }
+
+.sub-menu li {
+  background-color: #292827 !important; }
 
 .site-footer {
   display: block;

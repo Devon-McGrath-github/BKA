@@ -32,14 +32,14 @@
 
     <a href="#" id="logo"></a>
 
-    <nav>
+    <nav id="menu">
       <input type="checkbox" id="checkbox-toggle">
-      <label id="menu-icon" for="checkbox-toggle"></label>
+      <label title="Drop-down toggle" id="menu-icon" for="checkbox-toggle"></label>
 
       <section class="dropdown-container group clearfix">
 
         <article class="nav-column-left mobile-close-btn">
-          <label class="close-label" for="checkbox-toggle">
+          <label title="Drop-down toggle" class="close-label" for="checkbox-toggle">
             <!-- placeholder image -->
             <img class="close-button-img" src="resources/img/close-button.png" alt="close">
           </label>
@@ -49,11 +49,15 @@
           <ul class="main-nav">
             <li><a href="/">HOME</a></li>
             <li>
-              <label title="Toggle Drop-down" class="drop-icon" for="sm1">
-                <a class="nav-item" href="/" aria-haspopup="true"><p>NEWS</p><p>▾</p></a>
+              <!-- sm stands for submenu -->
+                <a class="nav-item" href="/" aria-haspopup="true">
+                  <p class="nav-header">NEWS</p>
+                  <span class="dropdown-icon">▾</span>
+                  <label title="Drop-down toggle" class="dropdown-icon nav-header" for="sm1">▾</label>
+                </a>
 
                 <input type="checkbox" id="sm1">
-                <ul>
+                <ul class="sub-menu">
                   <li><a href="/">DAIRY</a></li>
                   <li><a href="/">BEEF</a></li>
                   <li><a href="/">SHEEP</a></li>
@@ -62,7 +66,6 @@
                   <li><a href="/">FORESTRY</a></li>
                   <li><a href="/">OTHER</a></li>
                 </ul>
-              </label>
             </li>
             <li>
               <a href="/" aria-haspopup="true">PROPERTY</a>

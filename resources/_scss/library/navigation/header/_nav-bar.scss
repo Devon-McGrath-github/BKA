@@ -1,17 +1,6 @@
 /*RESET*/
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {margin:0; padding:0; border:0; outline:0; font-size:100%; vertical-align:baseline; background:transparent;} body {line-height: 1;}ol, ul{list-style:none;} blockquote, q{quotes:none;} blockquote:before, blockquote:after, q:before, q:after{content:'';content:none;} :focus{outline:0;} ins{text-decoration:none;} del{text-decoration:line-through;} table{border-collapse:collapse; border-spacing:0;}
 
-/*MAIN*/
-// body {
-// 	font-size: 1.05em;
-// 	line-height: 1.25em;
-// 	font-family: $font-family-open-sans;
-// 	font-weight: 600;
-// 	background: $white;
-// 	color: $nav-font-color;
-// }
-
-
 // outer div that contains the nav bar (not the nav bar itself)
 #nav-container {
 	background: $white;
@@ -54,6 +43,22 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   -ms-user-select: none;
   user-select: none;
 }
+
+#menu {
+	ul {
+		padding: 0;
+		margin: 0;
+		list-style-type: none;
+	}
+	li {
+
+	}
+	 a {
+	  transition: all .125s ease-in-out;
+	  -webkit-transition: all .125s ease-in-out;
+	}
+}
+
 nav {
 	// hiding the checkbox
 	input[type=checkbox]{
@@ -72,20 +77,6 @@ nav {
 	}
 }
 
-// general styling of lists inside nav
-.nav-list {
-	// no dots
-	ul {
-		list-style: none;
-	}
-
-	// creates inline menu
-	li {
-		display: inline-block;
-		float: left;
-		padding: 10px
-	}
-}
 
 // checkbox, so that mobile menu is a button as mobiles dont have cursor so no :hover
 nav {
@@ -114,11 +105,17 @@ nav {
 	.dropdown-container ul li {
 		text-align: left;
 		width: 100%;
-		padding: 10px 10px;
 		margin: 0;
+		// padding: 10px 10px;
+		// border-bottom: 1px solid $nav-border-bottom;
+	}
+	.dropdown-container .nav-column-right .main-nav li {
 		background: $nav-lvl-1-background-color;
+		padding: 0;
 		border-bottom: 1px solid $nav-border-bottom;
 	}
+	// .dropdown-container a {
+	// }
 }
 
 // column styling to get equal height columns
@@ -167,7 +164,23 @@ nav {
 	}
 }
 
+// styling of a tags
+#menu {
+	padding: 10px 10px;
+}
+
 // nav item
-.nav-item p {
-	display: inline-block;
+.nav-item {
+	.nav-header {
+		display: inline-block;
+	}
+	.dropdown-icon {
+		position: absolute;
+		right: 0;
+	}
+}
+
+// submenu styling
+.sub-menu li {
+	background-color: $nav-lvl-2-background-color !important;
 }
