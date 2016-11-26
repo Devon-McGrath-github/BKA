@@ -50,19 +50,16 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 		margin: 0;
 		list-style-type: none;
 	}
-	li {
-
-	}
-	 a {
+	a {
 	  transition: all .125s ease-in-out;
 	  -webkit-transition: all .125s ease-in-out;
 	}
 }
 
-nav {
+#menu {
 	// hiding the checkbox
 	input[type=checkbox]{
-	    display: none;
+	  display: none;
 	}
 }
 
@@ -77,9 +74,8 @@ nav {
 	}
 }
 
-
 // checkbox, so that mobile menu is a button as mobiles dont have cursor so no :hover
-nav {
+#menu {
 	input[type=checkbox]:checked ~ .dropdown-container {
     display: block;
 	}
@@ -106,16 +102,12 @@ nav {
 		text-align: left;
 		width: 100%;
 		margin: 0;
-		// padding: 10px 10px;
-		// border-bottom: 1px solid $nav-border-bottom;
 	}
 	.dropdown-container .nav-column-right .main-nav li {
-		background: $nav-lvl-1-background-color;
 		padding: 0;
+		background: $nav-lvl-1-background-color;
 		border-bottom: 1px solid $nav-border-bottom;
 	}
-	// .dropdown-container a {
-	// }
 }
 
 // column styling to get equal height columns
@@ -168,6 +160,24 @@ nav {
 #menu {
 	padding: 10px 10px;
 }
+
+#menu {
+	.sub-menu {
+		display: none;
+	}
+}
+
+// #item {
+// 	input[type="checkbox"]:checked ~ .sub-menu {
+//   	display: block;
+// 	}
+// }
+
+// #menu li,  
+// #menu a {
+// 	position: relative;
+//   display: block;
+// }
 
 // nav item
 .nav-item {

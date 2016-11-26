@@ -33,13 +33,14 @@
     <a href="#" id="logo"></a>
 
     <nav id="menu">
-      <input type="checkbox" id="checkbox-toggle">
-      <label title="Drop-down toggle" id="menu-icon" for="checkbox-toggle"></label>
+      <!-- tm stands for top menu -->
+      <input type="checkbox" id="tm">
+      <label title="Drop-down toggle" id="menu-icon" for="tm"></label>
 
       <section class="dropdown-container group clearfix">
 
         <article class="nav-column-left mobile-close-btn">
-          <label title="Drop-down toggle" class="close-label" for="checkbox-toggle">
+          <label title="Drop-down toggle" class="close-label" for="tm">
             <!-- placeholder image -->
             <img class="close-button-img" src="resources/img/close-button.png" alt="close">
           </label>
@@ -48,15 +49,14 @@
         <article class="nav-column-right">
           <ul class="main-nav">
             <li><a href="/">HOME</a></li>
-            <li>
+            <li id="item">
               <!-- sm stands for submenu -->
                 <a class="nav-item" href="/" aria-haspopup="true">
-                  <p class="nav-header">NEWS</p>
-                  <span class="dropdown-icon">▾</span>
+                  NEWS
                   <label title="Drop-down toggle" class="dropdown-icon nav-header" for="sm1">▾</label>
                 </a>
-
                 <input type="checkbox" id="sm1">
+
                 <ul class="sub-menu">
                   <li><a href="/">DAIRY</a></li>
                   <li><a href="/">BEEF</a></li>

@@ -6933,7 +6933,7 @@ table {
   transition: all .125s ease-in-out;
   -webkit-transition: all .125s ease-in-out; }
 
-nav input[type=checkbox] {
+#menu input[type=checkbox] {
   display: none; }
 
 nav {
@@ -6943,7 +6943,7 @@ nav {
     color: #dedede;
     text-decoration: none; }
 
-nav input[type=checkbox]:checked ~ .dropdown-container {
+#menu input[type=checkbox]:checked ~ .dropdown-container {
   display: block; }
 
 nav .dropdown-container, nav .dropdown-container:active ul {
@@ -6960,15 +6960,15 @@ nav .dropdown-container ul li {
   margin: 0; }
 
 nav .dropdown-container .nav-column-right .main-nav li {
-  background: #302f2c;
   padding: 0;
+  background: #302f2c;
   border-bottom: 1px solid #383734; }
 
 .group {
   display: inline-block; }
 
 .dropdown-container {
-  background-image: -webkit-gradient(linear, left top, right top, color-stop(0, rgba(0, 0, 0, 0.42)), color-stop(15%, rgba(0, 0, 0, 0.42)), color-stop(15%, #302f2c), color-stop(100%, #302f2c)); }
+  background-image: -webkit-gradient(linear, left top, right top, color-stop(0, rgba(0, 0, 0, 0.55)), color-stop(15%, rgba(0, 0, 0, 0.55)), color-stop(15%, #302f2c), color-stop(100%, #302f2c)); }
 
 .nav-column-left {
   float: left;
@@ -6997,6 +6997,9 @@ nav .dropdown-container .nav-column-right .main-nav li {
 
 #menu {
   padding: 10px 10px; }
+
+#menu .sub-menu {
+  display: none; }
 
 .nav-item .nav-header {
   display: inline-block; }
