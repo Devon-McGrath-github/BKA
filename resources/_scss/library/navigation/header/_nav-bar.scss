@@ -139,11 +139,11 @@ nav {
 
 // nav-bar columns
 .nav-column-left {
+	float: left;
 	width: 15%;
 	margin: 0;
 	border: none;
 	vertical-align: top;
-	float: left;
 }
 .nav-column-right {
 	float: left;
@@ -155,13 +155,14 @@ nav {
 
 .close-label {
 	height: 100%;
-	margin-left: auto;
-	margin-right: auto;;
+	width: 100%;
+	padding: 10%;
 	// styling the close button
 	.close-button-img {
-		width: 30px;
-		height: 30px;
 		padding: 0;
 		margin: 0;
+		width: 100%;
+		max-width: 40px;
+		max-height: 40px;
 	}
 }
