@@ -82,7 +82,8 @@ $green:                     #4a8348 !default;
 
 $border-gray:               #e2e2e2 !default;
 
-$transparent:               #rgba(255, 255, 255, 0) !default;
+$transparent:               rgba(255, 255, 255, 0) !default;
+$grey-gradient:             rgba(23, 23, 23, 0.32) !default;
 
 // Options
 //
@@ -96,7 +97,6 @@ $enable-transitions:        false !default;
 $enable-hover-media-query:  false !default;
 $enable-grid-classes:       true !default;
 $enable-print-styles:       true !default;
-
 
 // Spacing
 //
