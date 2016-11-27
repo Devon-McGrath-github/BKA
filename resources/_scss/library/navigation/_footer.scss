@@ -20,7 +20,10 @@
   padding-bottom: $padding-footer-text;
   h3 {
     margin: 0;
-    font-size: 3.5rem;
+    font-size: 2em;
+    @include media-breakpoint-up(md) {
+      font-size: 3.5rem;
+    }
   }
 }
 

@@ -7135,7 +7135,10 @@ nav .dropdown-container .nav-column-right .main-nav li {
   padding-bottom: 4%; }
   .footer-heading h3 {
     margin: 0;
-    font-size: 3.5rem; }
+    font-size: 2em; }
+    @media (min-width: 768px) {
+      .footer-heading h3 {
+        font-size: 3.5rem; } }
 
 .footer-container {
   margin-left: 7.5%;
