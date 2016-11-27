@@ -111,14 +111,14 @@
   .featured-article-text-content {
     // TODO: boilerplate with sub-article create a variable?
     // issue is may not use the same padding
-    padding: 3%;
+    padding: $content-padding-mobile;
     border-left: $border-light;
     border-right: $border-light;
     @include media-breakpoint-up(md) {
       /* removed this border as it doubles up now */
       border-left: none;
       position: relative;
-      padding: 6%;
+      padding: $content-padding;
     }
   }
 }

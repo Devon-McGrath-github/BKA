@@ -7576,7 +7576,7 @@ nav .dropdown-container .nav-column-right .main-nav li {
         /* removed this border as it doubles up now */
         border-left: none;
         position: relative;
-        padding: 6%; } }
+        padding: 5%; } }
 
 .article-title-big {
   color: #4d4d4d;
@@ -8165,12 +8165,52 @@ main {
     font-size: 0.875rem;
     color: #999999; }
 
-.author-block-info {
+.article-headline-container {
+  padding: 3%; }
+  @media (min-width: 768px) {
+    .article-headline-container {
+      padding: 5%; } }
+
+.article-title {
+  font-size: 4rem !important; }
+
+.author-info {
   display: inline-block;
   margin: 0; }
+
+.author-img {
+  width: 40px;
+  height: 40px;
+  display: inline-block; }
 
 .article-image {
   display: block;
   width: 100%; }
+
+.article-text-content {
+  padding: 5%; }
+  .article-text-content p {
+    margin: 0; }
+
+.article-text-block, ul {
+  padding-bottom: 25px; }
+
+.article-text-content, ul, li {
+  font-family: "Bitter", "Source Sans Pro", Arial, sans-serif, "Source Sans Pro", Arial, sans-serif;
+  color: #4d4d4d;
+  display: block; }
+  .article-text-content ul, ul ul, li ul {
+    list-style-type: square !important;
+    list-style-position: inside !important;
+    padding-left: 25px; }
+  .article-text-content ul.dashed, ul ul.dashed, li ul.dashed {
+    list-style-type: none; }
+  .article-text-content ul.dashed > li, ul ul.dashed > li, li ul.dashed > li {
+    text-indent: -5px; }
+  .article-text-content ul.dashed > li:before, ul ul.dashed > li:before, li ul.dashed > li:before {
+    content: "-";
+    font-family: "Bitter", "Source Sans Pro", Arial, sans-serif, "Source Sans Pro", Arial, sans-serif;
+    text-indent: -5px;
+    padding-right: 3px; }
 
 /*# sourceMappingURL=maps/main.css.map */

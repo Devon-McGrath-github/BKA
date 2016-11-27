@@ -15,12 +15,67 @@
   }
 }
 
-.author-block-info {
+// article header styling
+.article-headline-container {
+  padding: $content-padding-mobile;
+  @include media-breakpoint-up(md) {
+    padding: $content-padding;
+  }
+}
+
+// article title
+.article-title {
+  font-size: 4rem !important;
+}
+
+// author-block-container content styling
+.author-info {
   display: inline-block;
   margin: 0;
 }
+.author-img {
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+}
+
 
 .article-image {
   display: block;
   width: 100%;
+}
+// setting consistent padding
+.article-text-content {
+  padding: $content-padding;
+  p {
+    margin: 0;
+  }
+}
+.article-text-block, ul {
+  padding-bottom: $content-text-padding;
+}
+
+// styling text and lists
+.article-text-content, ul, li {
+  font-family: $title-font;
+  color: $black-lighter;
+  display: block;
+  ul {
+    list-style-type: square !important;
+    list-style-position: inside !important;
+    padding-left: $content-text-padding;
+  }
+  ul.dashed {
+    list-style-type: none;
+  }
+  ul.dashed > li {
+    text-indent: -5px;
+  }
+  ul.dashed > li:before {
+    content: "-";
+    font-family: $title-font;
+    text-indent: -5px;
+    // spacing between dash and list text
+    padding-right: 3px;
+  }
 }
