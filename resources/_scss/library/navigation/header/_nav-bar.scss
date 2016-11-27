@@ -33,6 +33,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 #menu-icon {
 	width: 40px;
 	height: 40px;
+	// TODO: icon is currently black, not blue
 	background: $white url(../../../../resources/img/menu-icon.svg) center;
 	background-repeat: no-repeat;
 	float: right;
@@ -53,6 +54,9 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 	a {
 	  transition: all .125s ease-in-out;
 	  -webkit-transition: all .125s ease-in-out;
+
+		font-family: $font-family-open-sans;
+		font-weight: 400;
 	}
 }
 
@@ -206,8 +210,9 @@ nav {
 		position: absolute;
 		top: 0;
 		right: 0;
-
 		padding: $text-padding-mobile-nav;
+		text-align: center;
+		font-family: "Source Sans Pro", Arial, sans-serif;
 	}
 	.nav-header-img {
 		height: 25px;
@@ -225,9 +230,7 @@ nav {
 	position: relative;
 	border-bottom: 1px solid $nav-border-bottom;
 }
-#menu label .dropdown-icon {
-	text-align: center;
-}
+
 // removes border double up on sm dropdown.
 // border on sm li allows 100% width border
 #menu .sub-menu a {
