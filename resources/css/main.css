@@ -6979,6 +6979,13 @@ nav .dropdown-container .nav-column-right .main-nav li {
   padding: 0;
   margin: 0; }
 
+.active {
+  color: #40c4c6 !important; }
+
+.active-article {
+  border-left: 4px solid #8d2704;
+  background-color: #f3f3f3; }
+
 .jobs-sm {
   display: none; }
   @media (min-width: 768px) {
@@ -8321,5 +8328,17 @@ main {
   .suggested-article-text .suggested-article-date {
     color: #c8c8c8;
     font-size: 1rem; }
+
+.more-articles-btn {
+  border-top: none;
+  border-left: 1px solid #e2e2e2;
+  border-right: 1px solid #e2e2e2;
+  border-bottom: 1px solid #e2e2e2;
+  background-color: #FFFFFF;
+  width: 100%;
+  padding: 10px 0px;
+  color: #8d2704;
+  font-family: "Open Sans", "Source Sans Pro", Arial, sans-serif;
+  text-align: center; }
 
 /*# sourceMappingURL=maps/main.css.map */

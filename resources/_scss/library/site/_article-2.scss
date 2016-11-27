@@ -127,7 +127,6 @@
   margin-bottom: $content-padding;
 }
 
-
 // latest news container
 .latest-news-container {
   display: none;
@@ -183,7 +182,6 @@
   }
 }
 
-
 .most-read-container {
   .most-read-header {
     margin: 0;
@@ -226,4 +224,24 @@
     color: $gray-muted;
     font-size: 1rem;
   }
+}
+
+
+
+
+
+
+.more-articles-btn {
+  border-top: none;
+  border-left: 1px solid $border-gray;
+  border-right: 1px solid $border-gray;
+  border-bottom: 1px solid $border-gray;
+  background-color: $white;
+
+  width: 100%;
+
+  padding: 10px 0px;
+  color: $red;
+  font-family: $basic-font;
+  text-align: center;
 }

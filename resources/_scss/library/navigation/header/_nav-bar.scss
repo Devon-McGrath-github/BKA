@@ -189,6 +189,14 @@ nav {
 	padding: 0;
 	margin: 0;
 }
+// styling of active items
+.active {
+	color: $blue !important;
+}
+.active-article {
+	border-left: 4px solid $red;
+	background-color: #f3f3f3;
+}
 
 // TODO: Is there a jobs toggle for mobile, from what I see from the brief there isn't
 // brief doesnt' have a jobs drop down for mobile
@@ -280,7 +288,6 @@ nav {
 	.dropdown-container {
 	  background-image: none;
 	}
-
 
 	// styling of menu items
 	#menu {
@@ -375,10 +382,6 @@ nav {
 	#sub-menu-2:hover > input[type="checkbox"] ~ .sub-menu {
 		display: block;
 	}
-
-
-
-
 
 
 
