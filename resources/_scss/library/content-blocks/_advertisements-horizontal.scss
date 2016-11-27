@@ -39,3 +39,15 @@
 .article-advertisement {
 	background-color: transparent !important;
 }
+
+.news-archives-advertisement {
+	width: 100%;
+	.horizontal-news-archives-ad {
+		display: block;
+
+		max-height: 120px;
+		max-width: 100%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}

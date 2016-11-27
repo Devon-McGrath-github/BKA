@@ -7773,6 +7773,15 @@ nav .dropdown-container .nav-column-right .main-nav li {
 .article-advertisement {
   background-color: transparent !important; }
 
+.news-archives-advertisement {
+  width: 100%; }
+  .news-archives-advertisement .horizontal-news-archives-ad {
+    display: block;
+    max-height: 120px;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto; }
+
 /* Content Cards */
 .card-text {
   color: #0a0a0a; }
