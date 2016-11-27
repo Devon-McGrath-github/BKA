@@ -8165,4 +8165,12 @@ main {
     font-size: 0.875rem;
     color: #999999; }
 
+.author-block-info {
+  display: inline-block;
+  margin: 0; }
+
+.article-image {
+  display: block;
+  width: 100%; }
+
 /*# sourceMappingURL=maps/main.css.map */

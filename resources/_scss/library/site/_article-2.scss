@@ -1,7 +1,9 @@
+// removes negative margin on main content block
 .article-margin-override {
   margin-top: 0 !important;
 }
 
+// small text url styling
 .news-article-url-container {
   width: 100%;
   .url-text {
@@ -11,4 +13,14 @@
     font-size: $font-size-sm;
     color: $gray-menu;
   }
+}
+
+.author-block-info {
+  display: inline-block;
+  margin: 0;
+}
+
+.article-image {
+  display: block;
+  width: 100%;
 }
