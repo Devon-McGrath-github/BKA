@@ -1,8 +1,68 @@
 .news-archives-content {
 	border-top: 3px solid $blue;
 	padding: $content-padding;
+	padding-bottom: 0;
+	// overriding content-blocks margin so the buttons can sit against content block
+	margin-bottom: 0;
 }
 
+.news-archives-header {
+	.news-archives-title {
+		font-weight: 800;
+		color: $black-lighter;
+		font-size: 2.8rem;
+		padding-bottom: $content-padding;
+	}
+	h1 {
+		margin: 0;
+	}
+}
+
+.news-archive-article {
+	padding-bottom:  $content-padding-mobile;
+	@include media-breakpoint-up(md) {
+		padding-bottom:  $content-padding;
+	}
+	h2 {
+		font-family: $title-font;
+		color: $black-lighter;
+		margin: 0;
+		padding-bottom: 5px;
+		font-size: 2rem;
+	}
+	.news-archive-article-blurb {
+		font-family: $title-font;
+		color: $black-lighter;
+		margin: 0;
+		font-size: 1.4rem;
+	}
+	.news-archive-article-info {
+		font-family: $basic-font;
+		color: $gray-menu;
+		margin: 0;
+		font-size: 1rem;
+	}
+}
+
+.news-archive-article-text {
+	width: 70%;
+	display: block;
+	float: left;
+	padding-right: $content-padding-mobile;
+	@include media-breakpoint-up(md) {
+		padding-right: $content-padding;
+	}
+}
+.news-archive-img-container {
+	width: 30%;
+	display: block;
+	float: left;
+}
+.news-archive-article-img {
+	width: auto;
+	max-width: 100%;
+	max-height: auto;
+}
 
 // toggling display between nav and desktop
 .sectors-container {
@@ -11,9 +71,6 @@
 		display: block;
 	}
 }
-
-
-$sectors-right-nav-padding: 20px !default;
 
 .sectors-right-nav {
 	padding: $sectors-right-nav-padding;
@@ -62,4 +119,27 @@ $sectors-right-nav-padding: 20px !default;
 // generic sector title styling
 .sector-title {
 	font-weight: 600;
+}
+
+// archive page navigation buttons styling
+.news-archive-page-nav-container {
+	width: 100%;
+	margin-top: 8px;
+	margin-bottom: $content-block-margin;
+	background-color: none;
+	ul {
+		width: 100%;
+		list-style-type: none;
+	}
+	li {
+		float: right;
+		width: 25px;
+	}
+	li a {
+		display: block;
+	}
+	.arrow-nav-btn {
+		width: 25px;
+		height: 25px;
+	}
 }

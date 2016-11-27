@@ -48,6 +48,10 @@
 
 .news-archives-advertisement {
 	width: 100%;
+	padding-bottom: $content-padding-mobile;
+	@include media-breakpoint-up(md) {
+		padding-bottom: $content-padding;
+	}
 	.horizontal-news-archives-ad {
 		display: block;
 

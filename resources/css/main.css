@@ -7780,7 +7780,11 @@ nav .dropdown-container .nav-column-right .main-nav li {
   background-color: transparent !important; }
 
 .news-archives-advertisement {
-  width: 100%; }
+  width: 100%;
+  padding-bottom: 30px; }
+  @media (min-width: 768px) {
+    .news-archives-advertisement {
+      padding-bottom: 5%; } }
   .news-archives-advertisement .horizontal-news-archives-ad {
     display: block;
     max-height: 120px;
@@ -8095,7 +8099,59 @@ h1, h3, h4, h5, h6, a {
 
 .news-archives-content {
   border-top: 3px solid #40c4c6;
-  padding: 5%; }
+  padding: 5%;
+  padding-bottom: 0;
+  margin-bottom: 0; }
+
+.news-archives-header .news-archives-title {
+  font-weight: 800;
+  color: #4d4d4d;
+  font-size: 2.8rem;
+  padding-bottom: 5%; }
+
+.news-archives-header h1 {
+  margin: 0; }
+
+.news-archive-article {
+  padding-bottom: 30px; }
+  @media (min-width: 768px) {
+    .news-archive-article {
+      padding-bottom: 5%; } }
+  .news-archive-article h2 {
+    font-family: "Bitter", "Source Sans Pro", Arial, sans-serif, "Source Sans Pro", Arial, sans-serif;
+    color: #4d4d4d;
+    margin: 0;
+    padding-bottom: 5px;
+    font-size: 2rem; }
+  .news-archive-article .news-archive-article-blurb {
+    font-family: "Bitter", "Source Sans Pro", Arial, sans-serif, "Source Sans Pro", Arial, sans-serif;
+    color: #4d4d4d;
+    margin: 0;
+    font-size: 1.4rem; }
+  .news-archive-article .news-archive-article-info {
+    font-family: "Open Sans", "Source Sans Pro", Arial, sans-serif;
+    color: #999999;
+    margin: 0;
+    font-size: 1rem; }
+
+.news-archive-article-text {
+  width: 70%;
+  display: block;
+  float: left;
+  padding-right: 30px; }
+  @media (min-width: 768px) {
+    .news-archive-article-text {
+      padding-right: 5%; } }
+
+.news-archive-img-container {
+  width: 30%;
+  display: block;
+  float: left; }
+
+.news-archive-article-img {
+  width: auto;
+  max-width: 100%;
+  max-height: auto; }
 
 .sectors-container {
   display: none; }
@@ -8138,6 +8194,23 @@ h1, h3, h4, h5, h6, a {
 
 .sector-title {
   font-weight: 600; }
+
+.news-archive-page-nav-container {
+  width: 100%;
+  margin-top: 8px;
+  margin-bottom: 5%;
+  background-color: none; }
+  .news-archive-page-nav-container ul {
+    width: 100%;
+    list-style-type: none; }
+  .news-archive-page-nav-container li {
+    float: right;
+    width: 25px; }
+  .news-archive-page-nav-container li a {
+    display: block; }
+  .news-archive-page-nav-container .arrow-nav-btn {
+    width: 25px;
+    height: 25px; }
 
 .rte__content img {
   display: block;
