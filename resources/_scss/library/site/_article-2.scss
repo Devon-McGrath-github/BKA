@@ -228,11 +228,14 @@
 
 // latest-in sub menu
 .latest-in-article-container {
-  height: 120px;
+  height: 110px;
   width: 100%;
   background-color: $white;
   border-left: 1px solid $border-gray;
   border-bottom: 1px solid $border-gray;
+  @include media-breakpoint-up(lg) {
+    height: 120px;
+  }
 }
 .latest-in-article-text {
   padding: 10px;
@@ -245,13 +248,23 @@
   .latest-in-article-title {
     font-family: $title-font;
     color: $black-lighter;
-    font-size: 1.9rem;
     height: 100%;
+    font-size: 1.6rem;
+    @include media-breakpoint-up(lg) {
+      font-size: 1.9rem;
+    }
   }
   .latest-in-article-info {
+    display: none;
     font-family: $basic-font;
     color: $gray-muted;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
+    @media (min-width: 840px) {
+      display: block;
+    }
+    @include media-breakpoint-up(lg) {
+      font-size: 1.2rem;
+    }
   }
 }
 .latest-in-img {
@@ -262,11 +275,6 @@
   padding: 0;
   float: left;
 }
-
-
-
-
-
 
 .more-articles-btn {
   border-top: none;
@@ -283,4 +291,18 @@
   text-align: center;
 
   margin-bottom: $content-padding;
+}
+
+// article 1 design
+.image-container-article-1 {
+  width: 35%;
+  max-width: 500px;
+  height: 100%;
+  float: left;
+  margin: $content-padding;
+}
+.article-1-headline {
+  float: left;
+  width: 55%;
+  padding-left: 0;
 }
