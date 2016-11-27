@@ -8284,8 +8284,42 @@ main {
     @media (min-width: 768px) {
       .supporting-content .most-read-container {
         position: relative;
+        display: block;
         padding: 5%;
         font-weight: 600;
         color: #4d4d4d; } }
+
+.most-read-container .most-read-header {
+  margin: 0;
+  padding-bottom: 2.5%; }
+
+.most-read-container .most-read-articles {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+
+.suggested-article {
+  width: 30%; }
+  .suggested-article .suggested-article-img {
+    width: 100%;
+    max-height: 140px; }
+
+.suggested-article-text {
+  border-left: 1px solid #e2e2e2;
+  border-right: 1px solid #e2e2e2;
+  border-bottom: 1px solid #e2e2e2;
+  padding: 15px; }
+  .suggested-article-text p, .suggested-article-text h3 {
+    margin: 0; }
+  .suggested-article-text .suggested-article-title {
+    color: #4d4d4d;
+    font-family: "Bitter", "Source Sans Pro", Arial, sans-serif, "Source Sans Pro", Arial, sans-serif;
+    font-size: 1.5rem; }
+  .suggested-article-text .suggested-article-date {
+    color: #c8c8c8;
+    font-size: 1rem; }
 
 /*# sourceMappingURL=maps/main.css.map */

@@ -175,12 +175,55 @@
     display: none;
     @include media-breakpoint-up(md) {
       position: relative;
+      display: block;
       padding: $content-padding;
       font-weight: 600;
       color: $black-lighter;
-      .most-read-container {
-
-      }
     }
+  }
+}
+
+
+.most-read-container {
+  .most-read-header {
+    margin: 0;
+    padding-bottom: 2.5%;
+  }
+  .most-read-articles {
+    display: -webkit-flex;
+    display: flex;
+
+    flex-wrap: nowrap;
+
+    -webkit-justify-content: space-around;
+    justify-content: space-between;
+  }
+}
+
+// styling of individual suggested article
+.suggested-article {
+  width: 30%;
+  .suggested-article-img {
+    width: 100%;
+    max-height: 140px;
+  }
+}
+.suggested-article-text {
+  border-left: 1px solid $border-gray;
+  border-right: 1px solid $border-gray;
+  border-bottom: 1px solid $border-gray;
+  padding: 15px;
+
+  p, h3 {
+    margin: 0;
+  }
+  .suggested-article-title {
+    color: $black-lighter;
+    font-family: $title-font;
+    font-size: 1.5rem;
+  }
+  .suggested-article-date {
+    color: $gray-muted;
+    font-size: 1rem;
   }
 }
