@@ -8189,7 +8189,8 @@ main {
   max-height: 300px; }
 
 .article-text-content {
-  padding: 5%; }
+  padding: 5%;
+  position: relative; }
   .article-text-content p {
     margin: 0; }
 

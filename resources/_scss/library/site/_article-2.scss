@@ -48,6 +48,7 @@
 // setting consistent padding
 .article-text-content {
   padding: $content-padding;
+  position: relative;
   p {
     margin: 0;
   }
