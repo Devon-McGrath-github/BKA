@@ -14,20 +14,6 @@ $cb-padding-bottom: 6rem;
 	}
 }
 
-// .content-block {
-// 	@extend .bg-image-cover;
-// 	@include cb-padding();
-// 	&.no-padding--bottom {
-// 		padding-bottom: 0;
-// 	}
-// 	&.no-padding--top {
-// 		padding-top: 0;
-// 	}
-// 	img {
-// 		width: 100%;
-// 	}
-// }
-
 @import "one-column";
 @import "two-column";
 @import "intro-block";

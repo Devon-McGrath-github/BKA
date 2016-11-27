@@ -7763,6 +7763,9 @@ nav .dropdown-container .nav-column-right .main-nav li {
 .horizontal-content-ad {
   width: 100%; }
 
+.article-advertisement {
+  background-color: transparent !important; }
+
 /* Content Cards */
 .card-text {
   color: #0a0a0a; }
@@ -7920,7 +7923,8 @@ body {
 main {
   margin: 0;
   padding: 0;
-  width: 100%; }
+  width: 100%;
+  margin-top: 76px; }
 
 .no-js {
   background-color: #f7f7f7; }
@@ -8148,5 +8152,8 @@ main {
     .social-block__inner .social-link svg {
       width: 38px;
       height: 38px; }
+
+.article-margin-override {
+  margin-top: 0 !important; }
 
 /*# sourceMappingURL=maps/main.css.map */

@@ -6,6 +6,7 @@ main {
 	margin: 0;
 	padding: 0;
 	width: 100%;
+	margin-top: $nav-bar-height;
 }
 
 .no-js {
@@ -124,3 +125,4 @@ main {
 @import "rich-text-editor";
 @import "contact-item";
 @import "social-block";
+@import "article-2";
