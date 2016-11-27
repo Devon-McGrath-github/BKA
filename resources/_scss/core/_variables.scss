@@ -82,7 +82,14 @@ $green:                     #4a8348 !default;
 
 $border-gray:               #e2e2e2 !default;
 
-$transparent:               #rgba(255, 255, 255, 0) !default;
+// nav bar colors
+$nav-lvl-1-background-color:  #302f2c  !default;
+$nav-lvl-2-background-color:  #292827	 !default;
+$nav-border-bottom: 					#383734  !default;
+$grey-gradient:               rgba(0, 0, 0, 0.55) !default;
+
+// nav font color - mobile version
+$nav-font-color:							#dedede  !default;
 
 // Options
 //
@@ -96,7 +103,6 @@ $enable-transitions:        false !default;
 $enable-hover-media-query:  false !default;
 $enable-grid-classes:       true !default;
 $enable-print-styles:       true !default;
-
 
 // Spacing
 //
@@ -149,6 +155,7 @@ $nav-padding:               2%    !default;
 $content-padding:           5%    !default;
 
 $featured-article-text-padding:   4%  !default;
+$text-padding-mobile-nav:   20px  !default;
 
 
 // Body

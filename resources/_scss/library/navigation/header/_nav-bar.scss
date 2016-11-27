@@ -1,167 +1,385 @@
-// main nav bar styling
-.nav {
-	margin: 0;
-	padding: 0;
-  width: 100%;
+/*RESET*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, .nav-header, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {margin:0; padding:0; border:0; outline:0; font-size:100%; vertical-align:baseline; background:transparent;} body {line-height: 1;}ol, ul{list-style:none;} blockquote, q{quotes:none;} blockquote:before, blockquote:after, q:before, q:after{content:'';content:none;} :focus{outline:0;} ins{text-decoration:none;} del{text-decoration:line-through;} table{border-collapse:collapse; border-spacing:0;}
+
+// outer div that contains the nav bar (not the nav bar itself)
+#nav-container {
+	background: $white;
+	width: 100%;
+	height: 76px;
+	// mobile nav scrolls with the page
+	position: absolute;
+	top: 0;
+	left: 0;
 	border-top: 5px solid $blue;
-  border-bottom: $border-light;
-  background-color: $white;
-  @include media-breakpoint-up(md) {
-    padding: 0 $content-padding 0 $content-padding;
-  }
+	border-bottom: 1px solid $border-gray;
+	z-index: 100;
 }
 
-.logo {
-	display: inline-block;
-	vertical-align: top;
-	margin: 0;
+// site logo image
+#logo{
+	margin: 20px;
 	float: left;
-  @include media-breakpoint-up(md) {
-
-  }
+	width: 200px;
+	height: 40px;
+	background: url(../../../../resources/img/logo-small.png) no-repeat center;
+	display: block;
 }
 
-.header-logo {
-  display: inline-block;
+// mobile friendly menu icon
+#menu-icon {
+	width: 40px;
+	height: 40px;
+	// TODO: icon is currently black, not blue
+	background: $white url(../../../../resources/img/menu-icon.svg) center;
+	background-repeat: no-repeat;
+	float: right;
+	display: inline-block;
+
+	-webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
-.nav-links {
-  display: inline-block;
-  // width: 100%;
-  float: left;
-}
+#menu {
+	ul {
+		padding: 0;
+		margin: 0;
+		list-style-type: none;
+	}
+	a {
+	  transition: all .125s ease-in-out;
+	  -webkit-transition: all .125s ease-in-out;
 
-.nav-main {
-  display: inline-block;
-  vertical-align: top;
-}
-// hidden in mobile version
-.nav-secondary {
-	display: none;
-	@include media-breakpoint-up(md) {
-		display: inline-block;
-		vertical-align: top;
+		font-family: $font-family-open-sans;
+		font-weight: 400;
 	}
 }
 
-.nav-main-list, .nav-secondary-list {
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  display: inline-block;
-  list-style-type: none;
-  overflow: hidden;
-  li {
-      float: left;
-  }
-  li a {
-      display: block;
-      text-decoration: none;
-      font-family: $basic-font;
-			font-weight: 600;
-      color: $black-lighter;
-      font-size: 1.5rem;
-      text-align: center;
-      padding-left: $nav-padding;
-      padding-right: $nav-padding;
-      padding-bottom: $nav-padding;
-  }
-	li ul {
+#menu {
+	// hiding the checkbox
+	input[type=checkbox]{
+	  display: none;
+	}
+}
+
+// positioning of the nav icon
+nav {
+	float: right;
+	padding: 0%;
+	// styling anchor tags
+	a {
+		color: $nav-font-color;
+		text-decoration: none;
+	}
+	a:hover {
+		color: $blue;
+		text-decoration: none;
+	}
+}
+
+// checkbox, so that mobile menu is a button as mobiles dont have cursor so no :hover
+#menu {
+	input[type=checkbox]:checked ~ .dropdown-container {
+    display: block;
+	}
+}
+#sub-menu-1 {
+	input[type="checkbox"]:checked ~ .sub-menu {
+  	display: block;
+	}
+}
+#sub-menu-2 {
+	input[type="checkbox"]:checked ~ .sub-menu {
+  	display: block;
+	}
+}
+
+nav {
+	.dropdown-container {
+		// border looks very naff
+		// border-left: 1px solid $border-gray;
+		// border-right: 1px solid $border-gray;
+		// border-bottom: 1px solid $border-gray;
+	}
+
+	.dropdown-container {
+		display: none;
+		position: absolute;
+		right: 0%;
+		top: 0%;
+		width: 100%;
+		overflow: scroll;
+	}
+
+	.dropdown-container ul li {
+		text-align: left;
+		width: 100%;
+		margin: 0;
+	}
+	.dropdown-container .nav-column-right .main-nav li {
+		background: $nav-lvl-1-background-color;
+		border-bottom: 1px solid $nav-border-bottom;
+	}
+}
+
+// column styling to get equal height columns
+.group { display: inline-block; }
+
+// this trick doesnt extend the column to full height, but makes it look like it is
+.dropdown-container {
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    color-stop(0, $grey-gradient),
+    color-stop(15%, $grey-gradient),
+    color-stop(15%, $nav-lvl-1-background-color),
+    color-stop(100%, $nav-lvl-1-background-color)
+  );
+}
+
+// nav-bar columns
+.nav-column-left {
+	float: left;
+	width: 15%;
+	margin: 0;
+	border: none;
+	vertical-align: top;
+}
+.nav-column-right {
+	float: left;
+	width: 85%;
+	margin: 0;
+	border: none;
+	vertical-align: top;
+}
+
+.close-label {
+	height: 100%;
+	width: 100%;
+	padding: 10%;
+	// styling the close button
+	.close-button-img {
+		padding: 0;
+		margin: 0;
+		width: 100%;
+		max-width: 40px;
+		max-height: 40px;
+	}
+}
+
+// styling of menu-icon positioning
+#menu {
+	// TODO: position nav menu icon
+	// padding: 10px 10px;
+}
+
+#menu {
+	.sub-menu {
 		display: none;
 	}
-	/* makes dropdown links verticla */
-	li ul li {
-	display: block;
-	// float: none;
+	// hiding sectors li for mobile
+	.sectors-li {
+		display: none;
 	}
-	/*Prevent text wrapping*/
-	li ul li a {
-		width: auto;
-		min-width: 100px;
-		padding: 0 20px;
-	}
+}
 
-	/*Display the dropdown on hover*/
-	ul li a:hover + .hidden, .hidden:hover {
+.submenu {
+	color: $nav-font-color;
+}
+
+// TODO: Is there a jobs toggle for mobile, from what I see from the brief there isn't
+// brief doesnt' have a jobs drop down for mobile
+.jobs-sm {
+	display: none;
+	@include media-breakpoint-up(md) {
 		display: block;
 	}
 }
-
-
-
-
-
-
-
-
-
-.nav-main-list {
-  /* Change the link color to #111 (black) on hover */
-  li a:hover {
-    border-bottom: $border-hover;
-  }
-}
-
-.nav-secondary-list {
-  .sectors-list {
-    color: $gray-menu;
-  }
-}
-
-// newsletter and search icon container
-.news-search-container {
+.jobs-toggle {
 	display: none;
 	@include media-breakpoint-up(md) {
-		// display: inline-block;
-
+		display: inline-block;
 	}
 }
 
-// search button
-.search-icon {
-  border-left: $border-light;
-  border-right: $border-light;
-  display: inline-block;
-  padding-left: $nav-padding;
-  padding-right: $nav-padding;
-  float: left;
+// nav item
+.nav-item {
+	.nav-header {
+		display: inline-block;
+		vertical-align: top;
+	}
+	.dropdown-icon {
+		display: inline-block;
+		position: absolute;
+		top: 0;
+		right: 0;
+		padding: $text-padding-mobile-nav;
+		text-align: center;
+		font-family: "Source Sans Pro", Arial, sans-serif;
+	}
+	.nav-header-img {
+		height: 25px;
+		width: 25px;
+	}
 }
-.search-image {
-	width: 22px;
-	height: 22px;
-}
-.icon-credit {
-	display: none;
-}
-
-// newsletter form
-.newsletter-container {
-  display: inline-block;
-  float: left;
-  margin: 0;
-}
-
-.newsletter-text {
-  font-size: 1.4rem;
-	font-weight: 600;
-  display: block;
-	color: $black-lighter;
-  margin-bottom: $nav-newsletter-margin;
+.nav-item:active, :focus, ul, li, a {
+	color: $nav-font-color;
 }
 
-.newsletter-input {
-  border: $border-light;
-  border-radius: 5px;
-  display: block;
-  margin-bottom: $nav-newsletter-margin;
+// general styling of text/li item sizes (on a tag because we have drop downs inside the li)
+#menu a {
+	display: block;
+	padding: $text-padding-mobile-nav $text-padding-mobile-nav;
+	position: relative;
+	border-bottom: 1px solid $nav-border-bottom;
 }
 
-.button-basic-blue {
-  border: none;
-  color: $white;
-  font-family: $basic-font;
-  background-color: $blue;
-  padding: $button-padding;
-  display: block;
-  margin: 0;
+// removes border double up on sm dropdown.
+// border on sm li allows 100% width border
+#menu .sub-menu a {
+	border-bottom: none;
+}
+
+// submenu styling
+.sub-menu li {
+	padding-left: $text-padding-mobile-nav;
+	background-color: $nav-lvl-2-background-color !important;
+}
+
+// breakpoint for desktop styling
+@include media-breakpoint-up(md) {
+	// hiding and showing toggles/nav items
+	#menu {
+		// hide menu display button
+		#menu-icon {
+			display: none;
+		}
+		// display menu
+		.dropdown-container {
+			display: block;
+			// hide left column
+			.nav-column-left {
+				display: none;
+			}
+		}
+		// display sectors navigation
+		.sectors-li {
+			display: block;
+		}
+	}
+	// hide drop down arrows
+	.nav-item {
+		.dropdown-icon {
+			display: none;
+		}
+	}
+	// removing column backgrounds
+	.dropdown-container {
+	  background-image: none;
+	}
+
+
+	// styling of menu items
+	#menu {
+		.dropdown-container {
+			.nav-column-right {
+				width: 100%;
+				clear: both;
+			}
+		}
+	}
+	// removing background color and borders
+	#menu a {
+		border-bottom: none;
+	}
+	nav .dropdown-container .nav-column-right .main-nav li {
+		background: none;
+		border-bottom: none;
+	}
+
+	// making nav display inline
+	#menu {
+		// width of menu
+		width: 70%;
+		float: left;
+		display: block;
+		// overide mobiles required absolute positioning
+		.dropdown-container {
+			position: static;
+		}
+		.dropdown-container .nav-column-right .main-nav {
+			display: block;
+			width: 100%;
+		}
+	}
+
+	nav .dropdown-container .nav-column-right .main-nav li {
+		float: left;
+		display: block;
+		position: relative;
+	}
+
+	// width of individual list items (overriding mobile width:100%)
+	nav .dropdown-container .nav-column-right .main-nav li {
+		width: auto;
+	}
+
+	// removing mobile specific text
+	.mobile-text {
+		display: none !important;
+	}
+	// changing nav text color to suit white background
+	nav .nav-secondary-list {
+		color: $gray-menu;
+	}
+	nav a{
+		color: $black-lighter;
+	}
+	nav a:hover {
+		color: $blue;
+	}
+
+	// removing padding on menu
+	#menu {
+		padding: 0;
+	  // removing padding on text
+		a {
+			padding: 0;
+		}
+	}
+
+	// removing each of the checkbox's control of dropdowns
+	#menu {
+		input[type=checkbox]:checked ~ .dropdown-container {
+	    display: block;
+		}
+	}
+	#sub-menu-1 {
+		input[type="checkbox"]:checked ~ .sub-menu {
+	  	display: block;
+		}
+	}
+	#sub-menu-2 {
+		input[type="checkbox"]:checked ~ .sub-menu {
+	  	display: block;
+		}
+	}
+
+	// dropdowns changed to hover state from click to display
+	#sub-menu-1:hover > input[type="checkbox"] ~ .sub-menu {
+    display: block;
+  }
+	#sub-menu-2:hover > input[type="checkbox"] ~ .sub-menu {
+		display: block;
+	}
+
+
+
+
+
+
+
+
 }
