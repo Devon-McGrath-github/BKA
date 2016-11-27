@@ -1,3 +1,14 @@
 .article-margin-override {
   margin-top: 0 !important;
 }
+
+.news-article-url-container {
+  width: 100%;
+  .url-text {
+    display: inline-block;
+    margin: 0;
+    font-family: $basic-font;
+    font-size: $font-size-sm;
+    color: $gray-menu;
+  }
+}

@@ -8156,4 +8156,13 @@ main {
 .article-margin-override {
   margin-top: 0 !important; }
 
+.news-article-url-container {
+  width: 100%; }
+  .news-article-url-container .url-text {
+    display: inline-block;
+    margin: 0;
+    font-family: "Open Sans", "Source Sans Pro", Arial, sans-serif;
+    font-size: 0.875rem;
+    color: #999999; }
+
 /*# sourceMappingURL=maps/main.css.map */
