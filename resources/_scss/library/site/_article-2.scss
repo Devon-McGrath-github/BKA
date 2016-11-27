@@ -226,6 +226,43 @@
   }
 }
 
+// latest-in sub menu
+.latest-in-article-container {
+  height: 120px;
+  width: 100%;
+  background-color: $white;
+  border-left: 1px solid $border-gray;
+  border-bottom: 1px solid $border-gray;
+}
+.latest-in-article-text {
+  padding: 10px;
+  float: left;
+  position: relative;
+  width: 70%;
+  p, h3{
+    margin: 0;
+  }
+  .latest-in-article-title {
+    font-family: $title-font;
+    color: $black-lighter;
+    font-size: 1.6rem;
+    height: 100%;
+  }
+  .latest-in-article-info {
+    font-family: $basic-font;
+    color: $gray-muted;
+    font-size: 1rem;
+  }
+}
+.latest-in-img {
+  width: 30%;
+  max-height: 200px;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  float: left;
+}
+
 
 
 
@@ -244,4 +281,6 @@
   color: $red;
   font-family: $basic-font;
   text-align: center;
+
+  margin-bottom: $content-padding;
 }

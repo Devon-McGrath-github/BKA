@@ -194,8 +194,8 @@ nav {
 	color: $blue !important;
 }
 .active-article {
-	border-left: 4px solid $red;
-	background-color: #f3f3f3;
+	border-left: 4px solid $red !important;
+	background-color: #f3f3f3 !important;
 }
 
 // TODO: Is there a jobs toggle for mobile, from what I see from the brief there isn't
