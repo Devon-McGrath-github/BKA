@@ -14,6 +14,14 @@
     color: $gray-menu;
   }
 }
+// article tags styling
+.tags-container {
+  .article-tags {
+    color: $blue !important;
+    display: inline-block;
+    margin: 0;
+  }
+}
 
 // article header styling
 .article-headline-container {
@@ -39,6 +47,30 @@
   display: inline-block;
 }
 
+// social media links styling
+.social-links-header {
+  position: absolute;
+  right: 0;
+  // half of 100 - content-spacer width
+  margin-right: 2.5%;
+  padding-bottom: 10px;
+  .social-media-icon {
+    display: inline-block;
+    padding: 0;
+  }
+}
+
+// social media links styling
+.social-links {
+  float: right;
+  // half of 100 - content-spacer width
+  margin-right: 2.5%;
+  padding-bottom: 10px;
+  .social-media-icon {
+    display: inline-block;
+    padding: 0;
+  }
+}
 
 .article-image {
   display: block;
@@ -95,6 +127,7 @@
   margin-bottom: $content-padding;
 }
 
+
 // latest news container
 .latest-news-container {
   display: none;
@@ -104,7 +137,50 @@
 }
 
 .content-spacer {
+  color: #d6d6d6;
   padding-bottom: $content-padding;
   width: 95%;
-  color: #d6d6d6;
+  margin-bottom: 0;
+}
+
+.supporting-content {
+  width: 100%;
+  font-family: $basic-font;
+  font-size: 2rem;
+
+  // center the button
+  .comments-container {
+    width: 100%;
+    text-align: center;
+    padding-bottom: $content-padding;
+    @include media-breakpoint-up(md) {
+      padding-bottom: 0;
+    }
+
+    // styling of the button
+    .show-comments-btn {
+      border: 1px solid $blue;
+      border-radius: 25px;
+      background-color: $white;
+
+      padding: 10px 80px;
+
+      // styling the button text
+      text-align: center;
+      color: $blue;
+      font-weight: 400;
+    }
+  }
+  .most-read-container {
+    display: none;
+    @include media-breakpoint-up(md) {
+      position: relative;
+      padding: $content-padding;
+      font-weight: 600;
+      color: $black-lighter;
+      .most-read-container {
+
+      }
+    }
+  }
 }
