@@ -7000,7 +7000,8 @@ nav .dropdown-container .nav-column-right .main-nav li {
 
 .nav-item .nav-header {
   display: inline-block;
-  vertical-align: top; }
+  vertical-align: top;
+  font-family: "Open Sans", "Source Sans Pro", Arial, sans-serif !important; }
 
 .nav-item .dropdown-icon {
   display: inline-block;
@@ -7097,7 +7098,7 @@ nav .dropdown-container .nav-column-right .main-nav li {
   background-color: #40c4c6;
   font-family: "Open Sans", "Source Sans Pro", Arial, sans-serif;
   font-weight: 600;
-  color: #FFFFFF;
+  color: #FFFFFF !important;
   text-align: center;
   width: 100%; }
 
@@ -7105,7 +7106,7 @@ nav .dropdown-container .nav-column-right .main-nav li {
   width: 100%;
   text-align: left;
   font-family: "Open Sans", "Source Sans Pro", Arial, sans-serif;
-  color: #FFFFFF;
+  color: #FFFFFF !important;
   padding-top: 4%;
   padding-bottom: 4%; }
   .footer-heading h3 {
@@ -7768,7 +7769,12 @@ nav .dropdown-container .nav-column-right .main-nav li {
       padding-bottom: 5%; } }
 
 .horizontal-content-ad {
-  width: 100%; }
+  display: block;
+  width: 100%;
+  max-height: 90px;
+  max-width: 750px;
+  margin-left: auto;
+  margin-right: auto; }
 
 .article-advertisement {
   background-color: transparent !important; }
@@ -7942,6 +7948,9 @@ main {
   width: 100%;
   margin-top: 76px; }
 
+h1, h3, h4, h5, h6, a {
+  font-family: "Open Sans", "Source Sans Pro", Arial, sans-serif; }
+
 .no-js {
   background-color: #f7f7f7; }
 
@@ -8083,6 +8092,10 @@ main {
   .pagination .pagination-pages {
     display: inline-block;
     width: auto; }
+
+.news-archives-content {
+  border-top: 3px solid #40c4c6;
+  padding: 5%; }
 
 .sectors-container {
   display: none; }

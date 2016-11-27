@@ -6,7 +6,7 @@
   background-color: $blue;
   font-family: $basic-font;
   font-weight: 600;
-  color: $white;
+  color: $white !important;
   text-align: center;
   width: 100%;
 }
@@ -15,7 +15,7 @@
   width: 100%;
   text-align: left;
   font-family: $footer-heading-font;
-  color: $white;
+  color: $white !important;
   padding-top: $padding-footer-text;
   padding-bottom: $padding-footer-text;
   h3 {
