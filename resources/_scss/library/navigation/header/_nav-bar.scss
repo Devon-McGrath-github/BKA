@@ -242,3 +242,8 @@ nav {
 	padding-left: $text-padding-mobile-nav;
 	background-color: $nav-lvl-2-background-color !important;
 }
+
+// breakpoint for desktop styling
+@include media-breakpoint-up(md) {
+
+}

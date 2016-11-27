@@ -7032,9 +7032,9 @@ nav .dropdown-container .nav-column-right .main-nav li {
   position: absolute;
   top: 0;
   right: 0;
+  padding: 20px;
   text-align: center;
-  font-family: "Source Sans Pro", Arial, sans-serif;
-  padding: 20px; }
+  font-family: "Source Sans Pro", Arial, sans-serif; }
 
 .nav-item .nav-header-img {
   height: 25px;
