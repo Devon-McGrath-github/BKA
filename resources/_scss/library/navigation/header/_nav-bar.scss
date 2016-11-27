@@ -102,10 +102,10 @@ nav {
 	.dropdown-container {
 		display: none;
 		position: absolute;
-		padding: 0;
 		right: 0%;
 		top: 0%;
 		width: 100%;
+		overflow: scroll;
 	}
 
 	.dropdown-container ul li {
@@ -114,7 +114,6 @@ nav {
 		margin: 0;
 	}
 	.dropdown-container .nav-column-right .main-nav li {
-		padding: 0;
 		background: $nav-lvl-1-background-color;
 		border-bottom: 1px solid $nav-border-bottom;
 	}
@@ -200,10 +199,15 @@ nav {
 .nav-item {
 	.nav-header {
 		display: inline-block;
+		vertical-align: top;
 	}
 	.dropdown-icon {
+		display: inline-block;
 		position: absolute;
+		top: 0;
 		right: 0;
+
+		padding: $text-padding-mobile-nav;
 	}
 	.nav-header-img {
 		height: 25px;
@@ -214,8 +218,24 @@ nav {
 	color: $nav-font-color;
 }
 
+// general styling of text/li item sizes (on a tag because we have drop downs inside the li)
+#menu a {
+	display: block;
+	padding: $text-padding-mobile-nav $text-padding-mobile-nav;
+	position: relative;
+	border-bottom: 1px solid $nav-border-bottom;
+}
+#menu label .dropdown-icon {
+	text-align: center;
+}
+// removes border double up on sm dropdown.
+// border on sm li allows 100% width border
+#menu .sub-menu a {
+	border-bottom: none;
+}
 
 // submenu styling
 .sub-menu li {
+	padding-left: $text-padding-mobile-nav;
 	background-color: $nav-lvl-2-background-color !important;
 }
