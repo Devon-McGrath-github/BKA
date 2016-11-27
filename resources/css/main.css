@@ -8349,8 +8349,10 @@ main {
   .latest-in-article-text .latest-in-article-title {
     font-family: "Bitter", "Source Sans Pro", Arial, sans-serif, "Source Sans Pro", Arial, sans-serif;
     color: #4d4d4d;
-    height: 100%;
-    font-size: 1.6rem; }
+    height: 100%; }
+    @media (min-width: 768px) {
+      .latest-in-article-text .latest-in-article-title {
+        font-size: 1.6rem; } }
     @media (min-width: 992px) {
       .latest-in-article-text .latest-in-article-title {
         font-size: 1.9rem; } }
@@ -8388,15 +8390,21 @@ main {
   margin-bottom: 5%; }
 
 .image-container-article-1 {
-  width: 35%;
-  max-width: 500px;
-  height: 100%;
-  float: left;
-  margin: 5%; }
+  width: 100%; }
+  @media (min-width: 768px) {
+    .image-container-article-1 {
+      width: 35%;
+      max-width: 500px;
+      height: 100%;
+      float: left;
+      margin: 5%; } }
 
 .article-1-headline {
-  float: left;
-  width: 55%;
-  padding-left: 0; }
+  width: 100%; }
+  @media (min-width: 768px) {
+    .article-1-headline {
+      float: left;
+      width: 55%;
+      padding-left: 0; } }
 
 /*# sourceMappingURL=maps/main.css.map */

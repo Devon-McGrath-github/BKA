@@ -249,7 +249,9 @@
     font-family: $title-font;
     color: $black-lighter;
     height: 100%;
-    font-size: 1.6rem;
+    @include media-breakpoint-up(md) {
+      font-size: 1.6rem;
+    }
     @include media-breakpoint-up(lg) {
       font-size: 1.9rem;
     }
@@ -295,14 +297,20 @@
 
 // article 1 design
 .image-container-article-1 {
-  width: 35%;
-  max-width: 500px;
-  height: 100%;
-  float: left;
-  margin: $content-padding;
+  width: 100%;
+  @include media-breakpoint-up(md) {
+    width: 35%;
+    max-width: 500px;
+    height: 100%;
+    float: left;
+    margin: $content-padding;
+  }
 }
 .article-1-headline {
-  float: left;
-  width: 55%;
-  padding-left: 0;
+  width: 100%;
+  @include media-breakpoint-up(md) {
+    float: left;
+    width: 55%;
+    padding-left: 0;
+  }
 }
