@@ -47,10 +47,13 @@
 }
 // setting consistent padding
 .article-text-content {
-  padding: $content-padding;
+  padding-top: $content-padding;
+  padding-left: $content-padding;
+  padding-right: $content-padding;
   position: relative;
   p {
     margin: 0;
+    text-align: justify;
   }
 }
 .article-text-block, ul {
@@ -80,4 +83,28 @@
     // spacing between dash and list text
     padding-right: 3px;
   }
+}
+
+// advertisement inside the article text content
+.article-advertisement-image {
+  width: 40%;
+  max-width: 300px;
+  float: right;
+  margin: 0;
+  margin-left: $content-padding;
+  margin-bottom: $content-padding;
+}
+
+// latest news container
+.latest-news-container {
+  display: none;
+  @include media-breakpoint-up(md) {
+    display: block;
+  }
+}
+
+.content-spacer {
+  padding-bottom: $content-padding;
+  width: 95%;
+  color: #d6d6d6;
 }

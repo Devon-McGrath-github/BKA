@@ -8189,10 +8189,13 @@ main {
   max-height: 300px; }
 
 .article-text-content {
-  padding: 5%;
+  padding-top: 5%;
+  padding-left: 5%;
+  padding-right: 5%;
   position: relative; }
   .article-text-content p {
-    margin: 0; }
+    margin: 0;
+    text-align: justify; }
 
 .article-text-block, ul {
   padding-bottom: 25px; }
@@ -8214,5 +8217,24 @@ main {
     font-family: "Bitter", "Source Sans Pro", Arial, sans-serif, "Source Sans Pro", Arial, sans-serif;
     text-indent: -5px;
     padding-right: 3px; }
+
+.article-advertisement-image {
+  width: 40%;
+  max-width: 300px;
+  float: right;
+  margin: 0;
+  margin-left: 5%;
+  margin-bottom: 5%; }
+
+.latest-news-container {
+  display: none; }
+  @media (min-width: 768px) {
+    .latest-news-container {
+      display: block; } }
+
+.content-spacer {
+  padding-bottom: 5%;
+  width: 95%;
+  color: #d6d6d6; }
 
 /*# sourceMappingURL=maps/main.css.map */
