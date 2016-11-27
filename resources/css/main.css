@@ -7568,7 +7568,7 @@ nav .dropdown-container .nav-column-right .main-nav li {
       .featured-article .featured-article-image {
         max-height: 100%; } }
   .featured-article .featured-article-text-content {
-    padding: 3%;
+    padding: 30px;
     border-left: 1px solid #e2e2e2;
     border-right: 1px solid #e2e2e2; }
     @media (min-width: 768px) {
@@ -8166,7 +8166,7 @@ main {
     color: #999999; }
 
 .article-headline-container {
-  padding: 3%; }
+  padding: 30px; }
   @media (min-width: 768px) {
     .article-headline-container {
       padding: 5%; } }
@@ -8185,7 +8185,8 @@ main {
 
 .article-image {
   display: block;
-  width: 100%; }
+  width: 100%;
+  max-height: 300px; }
 
 .article-text-content {
   padding: 5%; }
