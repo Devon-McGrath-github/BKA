@@ -72,8 +72,12 @@ nav {
 	float: right;
 	padding: 0%;
 	// styling anchor tags
-	a, a:hover {
+	a {
 		color: $nav-font-color;
+		text-decoration: none;
+	}
+	a:hover {
+		color: $blue;
 		text-decoration: none;
 	}
 }
@@ -169,13 +173,18 @@ nav {
 	}
 }
 
-// styling of a tags
+// styling of menu-icon positioning
 #menu {
-	padding: 10px 10px;
+	// TODO: position nav menu icon
+	// padding: 10px 10px;
 }
 
 #menu {
 	.sub-menu {
+		display: none;
+	}
+	// hiding sectors li for mobile
+	.sectors-li {
 		display: none;
 	}
 }
@@ -245,5 +254,135 @@ nav {
 
 // breakpoint for desktop styling
 @include media-breakpoint-up(md) {
+	// hiding and showing toggles/nav items
+	#menu {
+		// hide menu display button
+		#menu-icon {
+			display: none;
+		}
+		// display menu
+		.dropdown-container {
+			display: block;
+			// hide left column
+			.nav-column-left {
+				display: none;
+			}
+		}
+		// display sectors navigation
+		.sectors-li {
+			display: block;
+		}
+	}
+	// hide drop down arrows
+	.nav-item {
+		.dropdown-icon {
+			display: none;
+		}
+	}
+	// removing column backgrounds
+	.dropdown-container {
+	  background-image: none;
+	}
+
+
+	// styling of menu items
+	#menu {
+		.dropdown-container {
+			.nav-column-right {
+				width: 100%;
+				clear: both;
+			}
+		}
+	}
+	// removing background color and borders
+	#menu a {
+		border-bottom: none;
+	}
+	nav .dropdown-container .nav-column-right .main-nav li {
+		background: none;
+		border-bottom: none;
+	}
+
+	// making nav display inline
+	#menu {
+		// width of menu
+		width: 70%;
+		float: left;
+		display: block;
+		// overide mobiles required absolute positioning
+		.dropdown-container {
+			position: static;
+		}
+		.dropdown-container .nav-column-right .main-nav {
+			display: block;
+			width: 100%;
+		}
+	}
+
+	nav .dropdown-container .nav-column-right .main-nav li {
+		float: left;
+		display: block;
+		position: relative;
+	}
+
+	// width of individual list items (overriding mobile width:100%)
+	nav .dropdown-container .nav-column-right .main-nav li {
+		width: auto;
+	}
+
+	// removing mobile specific text
+	.mobile-text {
+		display: none !important;
+	}
+	// changing nav text color to suit white background
+	nav .nav-secondary-list {
+		color: $gray-menu;
+	}
+	nav a{
+		color: $black-lighter;
+	}
+	nav a:hover {
+		color: $blue;
+	}
+
+	// removing padding on menu
+	#menu {
+		padding: 0;
+	  // removing padding on text
+		a {
+			padding: 0;
+		}
+	}
+
+	// removing each of the checkbox's control of dropdowns
+	#menu {
+		input[type=checkbox]:checked ~ .dropdown-container {
+	    display: block;
+		}
+	}
+	#sub-menu-1 {
+		input[type="checkbox"]:checked ~ .sub-menu {
+	  	display: block;
+		}
+	}
+	#sub-menu-2 {
+		input[type="checkbox"]:checked ~ .sub-menu {
+	  	display: block;
+		}
+	}
+
+	// dropdowns changed to hover state from click to display
+	#sub-menu-1:hover > input[type="checkbox"] ~ .sub-menu {
+    display: block;
+  }
+	#sub-menu-2:hover > input[type="checkbox"] ~ .sub-menu {
+		display: block;
+	}
+
+
+
+
+
+
 
 }

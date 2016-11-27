@@ -17,9 +17,6 @@
 
     <!-- TODO: how to properly style the nav are http://www.adam-bray.com/blog/115/how-to-create-mobile-friendly-html-5-css-3-fixed-responsive-navigation-menu/ -->
 
-    <!-- TODO: THIS WORKS http://www.inmotionhosting.com/support/edu/website-design/using-css/simple-css-drop-down-menu -->
-    <!-- TODO: this aswell http://bootsnipp.com/snippets/xXN -->
-
     <!-- TODO: 100% width dropdown menu http://www.bootply.com/8EgGsi4F7w -->
     <!-- TODO: how to do the toggle icon -->
 
@@ -46,7 +43,9 @@
 
         <article class="nav-column-right">
           <ul class="main-nav">
-            <li><a class="nav-text" href="/">HOME</a></li>
+            <li class="nav-item">
+              <a class="nav-text mobile-text" href="/">HOME</a>
+            </li>
             <li id="sub-menu-1" class="nav-item">
                 <a class="nav-item" href="/" aria-haspopup="true">
                   <p class="nav-header">NEWS</p>
@@ -84,7 +83,7 @@
               </ul>
             </li>
             <li><a href="/">OPINION</a></li>
-            <li>
+            <li class="sectors-li">
               <ul class="nav-secondary-list">
                 <li><a href="#">SECTORS:</a></li>
                 <li><a class="sectors-list" href="#">DAIRY</a></li>
@@ -96,7 +95,7 @@
             <li class="nav-item">
               <a href="/">
                 <img class="nav-header nav-header-img" src="resources/img/magnifier-tool.svg">
-                <p class="nav-header">LOGIN | REGISTER</p>
+                <p class="nav-header mobile-text">LOGIN | REGISTER</p>
               </a>
             </li>
           </ul>

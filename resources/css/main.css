@@ -6941,8 +6941,11 @@ table {
 nav {
   float: right;
   padding: 0%; }
-  nav a, nav a:hover {
+  nav a {
     color: #dedede;
+    text-decoration: none; }
+  nav a:hover {
+    color: #40c4c6;
     text-decoration: none; }
 
 #menu input[type=checkbox]:checked ~ .dropdown-container {
@@ -7002,10 +7005,10 @@ nav .dropdown-container .nav-column-right .main-nav li {
     max-width: 40px;
     max-height: 40px; }
 
-#menu {
-  padding: 10px 10px; }
-
 #menu .sub-menu {
+  display: none; }
+
+#menu .sectors-li {
   display: none; }
 
 .submenu {
@@ -7055,6 +7058,65 @@ nav .dropdown-container .nav-column-right .main-nav li {
 .sub-menu li {
   padding-left: 20px;
   background-color: #292827 !important; }
+
+@media (min-width: 768px) {
+  #menu #menu-icon {
+    display: none; }
+  #menu .dropdown-container {
+    display: block; }
+    #menu .dropdown-container .nav-column-left {
+      display: none; }
+  #menu .sectors-li {
+    display: block; }
+  .nav-item .dropdown-icon {
+    display: none; }
+  .dropdown-container {
+    background-image: none; }
+  #menu .dropdown-container .nav-column-right {
+    width: 100%;
+    clear: both; }
+  #menu a {
+    border-bottom: none; }
+  nav .dropdown-container .nav-column-right .main-nav li {
+    background: none;
+    border-bottom: none; }
+  #menu {
+    width: 70%;
+    float: left;
+    display: block; }
+    #menu .dropdown-container {
+      position: static; }
+    #menu .dropdown-container .nav-column-right .main-nav {
+      display: block;
+      width: 100%; }
+  nav .dropdown-container .nav-column-right .main-nav li {
+    float: left;
+    display: block;
+    position: relative; }
+  nav .dropdown-container .nav-column-right .main-nav li {
+    width: auto; }
+  .mobile-text {
+    display: none !important; }
+  nav .nav-secondary-list {
+    color: #999999; }
+  nav a {
+    color: #4d4d4d; }
+  nav a:hover {
+    color: #40c4c6; }
+  #menu {
+    padding: 0; }
+    #menu a {
+      padding: 0; }
+  #menu input[type=checkbox]:checked ~ .dropdown-container {
+    display: block; }
+  #sub-menu-1 input[type="checkbox"]:checked ~ .sub-menu {
+    display: block; }
+  #sub-menu-2 input[type="checkbox"]:checked ~ .sub-menu {
+    display: block; }
+  #sub-menu-1:hover > input[type="checkbox"] ~ .sub-menu {
+    display: block; }
+  #sub-menu-2:hover > input[type="checkbox"] ~ .sub-menu {
+    display: block; } }
 
 .site-footer {
   display: block;
