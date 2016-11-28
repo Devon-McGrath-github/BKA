@@ -1,6 +1,6 @@
 $cb-padding-top: 6rem;
 $cb-padding-bottom: 6rem;
-
+//
 @mixin cb-padding {
 	padding-top: $cb-padding-top / 3;
 	padding-bottom: $cb-padding-bottom / 3;
@@ -13,20 +13,20 @@ $cb-padding-bottom: 6rem;
 		padding-bottom: $cb-padding-bottom;
 	}
 }
-
-.content-block {
-	@extend .bg-image-cover;
-	@include cb-padding();
-	&.no-padding--bottom {
-		padding-bottom: 0;
-	}
-	&.no-padding--top {
-		padding-top: 0;
-	}
-	img {
-		width: 100%;
-	}
-}
+//
+// .content-block {
+// 	@extend .bg-image-cover;
+// 	@include cb-padding();
+// 	&.no-padding--bottom {
+// 		padding-bottom: 0;
+// 	}
+// 	&.no-padding--top {
+// 		padding-top: 0;
+// 	}
+// 	img {
+// 		width: 100%;
+// 	}
+// }
 
 @import "one-column";
 @import "two-column";

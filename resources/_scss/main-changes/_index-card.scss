@@ -1,0 +1,71 @@
+//index-card
+
+// styling for the entire block of indexs
+.tile-block { @include content-block(); }
+
+.tile-block {
+  // TODO: get correct border styling
+  border-top: $border-light;
+}
+
+// styling for an individual card
+.index-card {
+  border-left: $border-light;
+  border-right: $border-light;
+  border-bottom: $border-light;
+  padding: 5%;
+  .index-info {
+    text-align: right;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+  // local styling of p tag
+  p {
+    color: $black-lighter;
+    font-family: $basic-font;
+    margin: 0;
+  }
+}
+.index-title {
+  padding-right: 2%;
+}
+
+.info-provider {
+  clear: both;
+}
+
+.column-left{
+  float: left;
+  width: 60%;
+}
+.column-right{
+  float: right;
+  width: 40%;
+  height: 100%;
+}
+.index-arrow {
+  width: 20px;
+  height: 20px;
+}
+
+.agri-logo {
+  width: 100%;
+}
+
+// making all 3 components of a single index card display inline
+.index-title, .index-info, .index-arrow {
+  display: inline-block;
+}
+
+.info-column-left {
+  display: inline-block;
+  text-align: right;
+  width: 50%;
+  padding-right: 15px;
+
+}
+.info-column-right {
+  float: right;
+  display: inline-block;
+  width: 50%;
+}

@@ -1,0 +1,22 @@
+// content block
+
+$padding-value:             3%;
+$padding-value-medium:      5%;
+
+@mixin category($color) {
+  background-color: $color;
+  text-align: center;
+  color: $white;
+  font-family: $basic-font;
+  margin: 0;
+  padding-top: $padding-value;
+  padding-bottom: $padding-value;
+  @include media-breakpoint-up(md) {
+    padding-top: $padding-value-medium;
+    padding-bottom: $padding-value-medium;
+  }
+}
+
+@mixin category-text($color) {
+  color: $color;
+}

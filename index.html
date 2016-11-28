@@ -1,50 +1,122 @@
 <!doctype html>
 <html class="no-js" lang="">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>FarmersWeekly</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>FarmersWeekly</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <link rel="stylesheet" href="resources/css/main.css">
+    <link rel="stylesheet" href="resources/css/main.css">
+  </head>
+  <body>
+    <!--[if lte IE 9]>
+        <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+    <![endif]-->
+    <header id="nav-container">
+      <!-- Add your site or application content here -->
+      <nav class="desktop navbar navbar-light">
+        <div class="clearfix" id="navbarResponsive">
+          <a id="logo" class="navbar-brand" href="index.html"></a>
+          <ul class="nav navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-item dropdown" href="/" aria-haspopup="true">
+                <p class="nav-header">NEWS</p>
+              </a>
 
-    </head>
-    <body>
-        <!--[if lte IE 9]>
-            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
-        <![endif]-->
-      <header id="nav-container">
-        <!-- Add your site or application content here -->
-        <nav class="desktop navbar navbar-light">
-          <div class="clearfix" id="navbarResponsive">
-            <a id="logo" class="navbar-brand" href="index.html"></a>
+              <div class="desktop-sub-menu" aria-labelledby="responsiveNavbarDropdown">
+                <a class="dropdown-item" href="articles.html">DAIRY</a>
+                <a class="dropdown-item" href="/">BEEF</a>
+                <a class="dropdown-item" href="/">SHEEP</a>
+                <a class="dropdown-item" href="/">ARABLE</a>
+                <a class="dropdown-item" href="/">OTHER LIVESTOCK</a>
+                <a class="dropdown-item" href="/">FORESTRY</a>
+                <a class="dropdown-item" href="archives.html">OTHER</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">PROPERTY</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-item dropdown" href="/" aria-haspopup="true">
+                <p class="nav-header">JOBS</p>
+              </a>
+
+              <ul class="desktop-sub-menu" aria-labelledby="responsiveNavbarDropdown">
+                <li><a class="dropdown-item" href="/">TOOLS & CALCULATORS</a></li>
+                <li><a class="dropdown-item" href="/">REAL ESTATE</a></li>
+                <li><a class="dropdown-item" href="/">QUIZZES</a></li>
+                <li><a class="dropdown-item" href="/">SOCIAL</a></li>
+                <li><a class="dropdown-item" href="/">AGRIHQ MARKETS & DATA</a></li>
+                <li><a class="dropdown-item" href="/">JOBS</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">OPINION</a>
+            </li>
+          </ul>
+          <form class="form-inline float-lg-right">
+            <a href="/">
+              <img class="nav-header nav-header-img" src="resources/img/magnifier-tool.svg">
+            </a>
+            <input class="form-control" type="text" placeholder="Your email address...">
+            <button class="btn btn-outline-success" type="submit">Go</button>
+          </form>
+        </div>
+      </nav>
+      <!-- desktop nav ends -->
+
+      <nav class="mobile navbar">
+
+        <a id="logo" href="index.html"></a>
+
+        <input type="checkbox" id="tm">
+        <label title="Drop-down toggle" id="menu-icon" for="tm"></label>
+
+        <div class="navbar-toggleable-md dropdown-container group clearfix" id="navbarResponsive">
+          <article class="nav-column-left mobile-close-btn">
+            <label title="Drop-down toggle" class="close-label" for="tm">
+              <!-- placeholder image -->
+              <img class="close-button-img" src="resources/img/close-button.png" alt="close">
+            </label>
+          </article>
+
+          <article class="nav-column-right">
             <ul class="nav navbar-nav">
               <li class="nav-item active">
-                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="#">HOME</a>
               </li>
-              <li class="nav-item dropdown">
+              <li id="sub-menu-1" class="nav-item dropdown">
                 <a class="nav-item dropdown" href="/" aria-haspopup="true">
                   <p class="nav-header">NEWS</p>
+                  <label title="Drop-down toggle" class="dropdown-icon nav-header" for="sm1">▾</label>
                 </a>
 
-                <div class="sub-menu" aria-labelledby="responsiveNavbarDropdown">
-                  <a class="dropdown-item" href="articles.html">DAIRY</a>
-                  <a class="dropdown-item" href="/">BEEF</a>
-                  <a class="dropdown-item" href="/">SHEEP</a>
-                  <a class="dropdown-item" href="/">ARABLE</a>
-                  <a class="dropdown-item" href="/">OTHER LIVESTOCK</a>
-                  <a class="dropdown-item" href="/">FORESTRY</a>
-                  <a class="dropdown-item" href="archives.html">OTHER</a>
-                </div>
+                <input type="checkbox" id="sm1">
+
+                <ul class="sub-menu" aria-labelledby="responsiveNavbarDropdown">
+                  <li><a class="dropdown-item" href="articles.html">DAIRY</a></li>
+                  <li><a class="dropdown-item" href="/">BEEF</a></li>
+                  <li><a class="dropdown-item" href="/">SHEEP</a></li>
+                  <li><a class="dropdown-item" href="/">ARABLE</a></li>
+                  <li><a class="dropdown-item" href="/">OTHER LIVESTOCK</a></li>
+                  <li><a class="dropdown-item" href="/">FORESTRY</a></li>
+                  <li><a class="dropdown-item" href="archives.html">OTHER</a></li>
+                </ul>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">PROPERTY</a>
+                <a class="nav-item nav-link" href="#">PROPERTY</a>
               </li>
-              <li class="nav-item dropdown">
+              <li id="sub-menu-2" class="nav-item dropdown clearfix">
                 <a class="nav-item dropdown" href="/" aria-haspopup="true">
                   <p class="nav-header">JOBS</p>
+                  <label title="Drop-down toggle" class="dropdown-icon nav-header" for="sm2">▾</label>
                 </a>
+
+                <input type="checkbox" id="sm2">
 
                 <ul class="sub-menu" aria-labelledby="responsiveNavbarDropdown">
                   <li><a class="dropdown-item" href="/">TOOLS & CALCULATORS</a></li>
@@ -58,101 +130,680 @@
               <li class="nav-item">
                 <a class="nav-link" href="#">OPINION</a>
               </li>
+              <li class="nav-item">
+                <a href="/">
+                  <img class="nav-header nav-header-img" src="resources/img/magnifier-tool.svg">
+                  <p class="nav-header mobile-text">LOGIN | REGISTER</p>
+                </a>
+              </li>
             </ul>
-            <form class="form-inline float-lg-right">
-              <a href="/">
-                <img class="nav-header nav-header-img" src="resources/img/magnifier-tool.svg">
+          </article>
+        </div>
+      </nav>
+    <!-- nav header ends here -->
+    </header>
+
+    <main >
+    <!-- ############################################ -->
+    <!-- horizontal banner advertisement -->
+    <div class="horizontal-banner-ad-container column-1-advertisement">
+      <img class="horizontal-banner-ad" src="resources/img/750x90.png" alt="">
+    </div>
+
+    <!-- ############################################ -->
+    <!-- Slider -->
+    <!-- slider content styled in site.scss -->
+    <section class="slider-content">
+      <div class="js-slider slider">
+        <!-- each div is a panel of the slider -->
+        <div class="panel">
+          <img src="resources/img/1000x500.png" alt="">
+          <!-- TODO:  -->
+          <!-- ************************************* -->
+          <!-- hey Rod, this is the bit I needed help fixing. -->
+          <!-- ************************************* -->
+          <!-- caption -->
+          <!-- <div class="slide-caption">
+            <button>DAIRY</button>
+            <h1>New feeder gives calf development insight</h1>
+            <p>by First Lastname</p>
+          </div> -->
+        </div>
+
+        <div class="panel"><img src="resources/img/1000x500.png" alt=""></div>
+
+        <div class="panel"><img src="resources/img/1000x500.png" alt=""></div>
+      </div>
+    </section>
+    <!-- Slider ends here -->
+
+    <!-- Main Content -->
+    <!-- site.scss file -->
+    <div class="news-content container-fluid">
+
+      <div class="col-1">
+        <!-- ############################################ -->
+        <!-- Latest News -->
+        <!-- content block LATEST NEWS -->
+        <div class="content-block news-content-block initial-content-block flex-order-initial-article clearfix">
+          <!-- making the headline clickable -->
+          <div class="content-column-left">
+            <section class="headline-container">
+              <a class="headline-text" href="#">
+                <!-- headline text -->
+                <h4 class="headline-text category-blue">Latest News</h4>
               </a>
-              <input class="form-control" type="text" placeholder="Your email address...">
-              <button class="btn btn-outline-success" type="submit">Go</button>
-            </form>
+            </section>
           </div>
-        </nav>
-        <!-- desktop nav ends -->
 
-        <nav class="mobile navbar">
+          <!-- TODO: I cant seem to get this to fill the column vertically -->
+          <!-- ************************************* -->
+          <!-- hey Rod, this is the bit I needed help fixing. -->
+          <!-- ************************************* -->
+          <section class="content-column-right">
+            <article class="featured-article">
+              <!-- placeholder image -->
+              <!-- a tag making the whole block clickable, not just text-->
+              <a class="clickable-content" href="#">
+                <article class="image-container">
+                  <img class="featured-article-image" src="resources/img/1000x600.png" alt="">
+                  <div class="image-info">
+                    <!-- placeholder for the image-sprites -->
+                    <img class="image-info-item eye-icon" src="resources/img/eye-icon.png" alt="">
+                    <p class="image-info-item image-stat">52</p>
+                    <img class="image-info-item speech-icon" src="resources/img/speech-bubble.png" alt="">
+                    <p class="image-info-item image-stat">35</p>
+                  </div>
+                </article>
+                <article class="featured-article-text-content">
+                  <header>
+                    <!-- seperated text so color can be changed -->
+                    <p class="category-text category-text-green">Arable</p>
+                    <p class="article-info"> - September 27 2016 </p>
+                  </header>
 
-          <a id="logo" href="index.html"></a>
+                  <!-- article title -->
+                  <h2 class="article-title-big">O'Conner still not convinced of benefits</h2>
 
-          <input type="checkbox" id="tm">
-          <label title="Drop-down toggle" id="menu-icon" for="tm"></label>
+                  <footer class="article-footer-text">
+                    <p class="article-info">by First Lastname</p>
+                  </footer>
 
-          <div class="navbar-toggleable-md dropdown-container group clearfix" id="navbarResponsive">
-            <article class="nav-column-left mobile-close-btn">
-              <label title="Drop-down toggle" class="close-label" for="tm">
-                <!-- placeholder image -->
-                <img class="close-button-img" src="resources/img/close-button.png" alt="close">
-              </label>
+                  <p class="article-blurb">Lely introduces a new automated calf feeder - the Calm Control. The Lely Calm supplies calves with precisely what they need, when they need it</p>
+                </article>
+              <!-- clickable block ends -->
+              </a>
             </article>
+          </section>
 
-            <article class="nav-column-right">
-              <ul class="nav navbar-nav">
-                <li class="nav-item active">
-                  <a class="nav-link" href="#">HOME</a>
-                </li>
-                <li id="sub-menu-1" class="nav-item dropdown">
-                  <a class="nav-item dropdown" href="/" aria-haspopup="true">
-                    <p class="nav-header">NEWS</p>
-                    <label title="Drop-down toggle" class="dropdown-icon nav-header" for="sm1">▾</label>
-                  </a>
+          <!-- sub article -->
+          <!-- a tag making the whole block clickable, not just text -->
+          <section class="content-column-left">
+          <div class="articles-container">
+            <section class="sub-articles">
+              <a href="#">
+                <article class="sub-article">
+                  <h3 class="article-title-small">Horn-free for new genetics release</h3>
+                  <p class="article-info">september 27 2016</p>
+                </article>
+              </a>
+              <!-- sub article -->
+              <a href="#">
+                <article class="sub-article">
+                  <h3 class="article-title-small">Horn-free for new genetics release</h3>
+                  <p class="article-info">september 27 2016</p>
+                </article>
+              </a>
+              <!-- sub article -->
+              <a href="#">
+                <article class="sub-article">
+                  <h3 class="article-title-small">Horn-free for new genetics release</h3>
+                  <p class="article-info">september 27 2016</p>
+                </article>
+              </a>
+            </section>
 
-                  <input type="checkbox" id="sm1">
-
-                  <ul class="sub-menu" aria-labelledby="responsiveNavbarDropdown">
-                    <li><a class="dropdown-item" href="articles.html">DAIRY</a></li>
-                    <li><a class="dropdown-item" href="/">BEEF</a></li>
-                    <li><a class="dropdown-item" href="/">SHEEP</a></li>
-                    <li><a class="dropdown-item" href="/">ARABLE</a></li>
-                    <li><a class="dropdown-item" href="/">OTHER LIVESTOCK</a></li>
-                    <li><a class="dropdown-item" href="/">FORESTRY</a></li>
-                    <li><a class="dropdown-item" href="archives.html">OTHER</a></li>
-                  </ul>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-item nav-link" href="#">PROPERTY</a>
-                </li>
-                <li id="sub-menu-2" class="nav-item dropdown clearfix">
-                  <a class="nav-item dropdown" href="/" aria-haspopup="true">
-                    <p class="nav-header">JOBS</p>
-                    <label title="Drop-down toggle" class="dropdown-icon nav-header" for="sm2">▾</label>
-                  </a>
-
-                  <input type="checkbox" id="sm2">
-
-                  <ul class="sub-menu" aria-labelledby="responsiveNavbarDropdown">
-                    <li><a class="dropdown-item" href="/">TOOLS & CALCULATORS</a></li>
-                    <li><a class="dropdown-item" href="/">REAL ESTATE</a></li>
-                    <li><a class="dropdown-item" href="/">QUIZZES</a></li>
-                    <li><a class="dropdown-item" href="/">SOCIAL</a></li>
-                    <li><a class="dropdown-item" href="/">AGRIHQ MARKETS & DATA</a></li>
-                    <li><a class="dropdown-item" href="/">JOBS</a></li>
-                  </ul>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">OPINION</a>
-                </li>
-                <li class="nav-item">
-                  <a href="/">
-                    <img class="nav-header nav-header-img" src="resources/img/magnifier-tool.svg">
-                    <p class="nav-header mobile-text">LOGIN | REGISTER</p>
-                  </a>
-                </li>
-              </ul>
-            </article>
+            <section class="sub-articles extra-articles">
+              <a href="#">
+                <article class="sub-article">
+                  <h3 class="article-title-small">Horn-free for new genetics release</h3>
+                  <p class="article-info">september 27 2016</p>
+                </article>
+              </a>
+              <!-- sub article -->
+              <a href="#">
+                <article class="sub-article">
+                  <h3 class="article-title-small">Horn-free for new genetics release</h3>
+                  <p class="article-info">september 27 2016</p>
+                </article>
+              </a>
+              <!-- sub article -->
+              <a href="#">
+                <article class="sub-article">
+                  <h3 class="article-title-small">Horn-free for new genetics release</h3>
+                  <p class="article-info">september 27 2016</p>
+                </article>
+              </a>
+            </section>
           </div>
-        </nav>
-      <!-- nav header ends here -->
-      </header>
+          </section>
+        </div>
+      <!-- content block LATEST NEWS ends here -->
 
-        <script src="resources/js/vendor/jquery.js"></script>
-        <!--<script src="js/plugins.js"></script>
-        <script src="js/main.js"></script>-->
+      <!-- ############################################ -->
+      <!-- horizontal advertisement -->
 
-        <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
-        <script>
-            window.ga=function(){ga.q.push(arguments)};ga.q=[];ga.l=+new Date;
-            ga('create','UA-XXXXX-Y','auto');ga('send','pageview')
-        </script>
-        <script src="https://www.google-analytics.com/analytics.js" async defer></script>
-    </body>
+      <article class="horizontal-content-ad-container column-1-advertisement">
+        <img class="horizontal-content-ad" src="resources/img/750x90.png" alt="">
+      </article>
+
+      <!-- col-1 div ends here -->
+      </div>
+
+      <div class="col-2">
+        <!-- ############################################ -->
+        <!-- Agri Data -->
+        <section class="tile-block flex-order-agri-data">
+          <article class="index-card clearfix">
+            <div class="column-left">
+              <p class="index-title">GDT Price Index</p>
+            </div>
+            <div class="column-right clearfix">
+              <div class="info-column-left">
+                <p class="index-info">919</p>
+              </div>
+              <div class="info-column-right">
+                <!-- placeholder arrow image -->
+                <img class="index-arrow" src="resources/img/up-arrow.svg" alt="">
+              </div>
+            </div>
+          </article>
+
+          <!-- repeated cards to test how they display stacked ontop of each other -->
+          <article class="index-card clearfix">
+            <div class="column-left">
+              <p class="index-title">NZ Steer Schedule</p>
+            </div>
+            <div class="column-right clearfix">
+              <div class="info-column-left">
+                <p class="index-info">5.16</p>
+              </div>
+              <div class="info-column-right">
+                <!-- placeholder arrow image -->
+                <img class="index-arrow" src="resources/img/right-arrow.svg" alt="">
+              </div>
+            </div>
+          </article>
+
+          <article class="index-card clearfix">
+            <div class="column-left">
+              <p class="index-title">NZ Lamb Schedule</p>
+            </div>
+            <div class="column-right clearfix">
+              <div class="info-column-left">
+                <p class="index-info">5.75</p>
+              </div>
+              <div class="info-column-right">
+                <!-- placeholder arrow image -->
+                <img class="index-arrow" src="resources/img/up-arrow.svg" alt="">
+              </div>
+            </div>
+          </article>
+
+          <article class="index-card clearfix">
+            <div class="column-left">
+              <p class="index-title">CAN Feed Wheat</p>
+            </div>
+            <div class="column-right clearfix">
+              <div class="info-column-left">
+                <p class="index-info">273</p>
+              </div>
+              <div class="info-column-right">
+                <!-- placeholder arrow image -->
+                <img class="index-arrow" src="resources/img/up-arrow.svg" alt="">
+              </div>
+            </div>
+          </article>
+
+          <article class="index-card clearfix">
+            <div class="column-left">
+              <p class="index-title">Fonterra</p>
+            </div>
+            <div class="column-right clearfix">
+              <div class="info-column-left">
+                <p class="index-info">5.25</p>
+              </div>
+              <div class="info-column-right">
+                <!-- placeholder arrow image -->
+                <img class="index-arrow" src="resources/img/up-arrow.svg" alt="">
+              </div>
+            </div>
+          </article>
+
+          <article class="index-card clearfix">
+            <div class="column-left">
+              <p class="index-title">AgriHQ</p>
+            </div>
+            <div class="column-right clearfix">
+              <div class="info-column-left">
+                <p class="index-info">5.90</p>
+              </div>
+              <div class="info-column-right">
+                <!-- placeholder arrow image -->
+                <img class="index-arrow" src="resources/img/up-arrow.svg" alt="">
+              </div>
+            </div>
+          </article>
+
+          <!-- index information provider -->
+          <article class="index-card info-provider">
+            <!-- placeholder image -->
+            <img class="agri-logo" src="resources/img/logo-small.png" alt="AgriHQ Market and Data">
+          </article>
+        </section>
+        <!-- AGRI DATA block ends here -->
+      </div>
+
+        <div class="col-2 flex-order-mini-block">
+          <!-- ############################################ -->
+          <!-- advertisement -->
+          <a href="#">
+            <div class="advertisement-container">
+              <img class="advertisement-image" src="resources/img/slider-small.png" alt="slider image">
+            </div>
+          </a>
+          <!-- advertisement ends here -->
+
+          <!-- ############################################ -->
+          <!-- mini content block -->
+          <div class="content-block most-popular-container">
+            <!-- a tag making the whole block clickable, not just text -->
+            <a href="#">
+              <!-- headline text -->
+              <h4 class="category-blue">Most Popular</h4>
+            </a>
+
+            <!-- sub article -->
+            <!-- a tag making the whole block clickable, not just text -->
+            <a href="#">
+              <div class="sub-article">
+                <h3 class="article-title-small">Horn-free for new genetics release</h3>
+                <p class="article-info">september 27 2016</p>
+              </div>
+            </a>
+            <!-- sub article -->
+            <a href="#">
+              <div class="sub-article">
+                <h3 class="article-title-small">Horn-free for new genetics release</h3>
+                <p class="article-info">september 27 2016</p>
+              </div>
+            </a>
+            <!-- sub article -->
+            <a href="#">
+              <div class="sub-article">
+                <h3 class="article-title-small">Horn-free for new genetics release</h3>
+                <p class="article-info">september 27 2016</p>
+              </div>
+            </a>
+          </div>
+          <!-- mini content block ends here -->
+
+          <!-- ############################################ -->
+          <!-- mini content block OPINION -->
+          <div class="content-block opinion-container">
+            <!-- a tag making the whole block clickable, not just text -->
+            <a href="#">
+              <!-- headline text -->
+              <h4 class="category-blue">Opinion</h4>
+            </a>
+
+            <!-- sub article -->
+            <!-- a tag making the whole block clickable, not just text -->
+            <a href="#">
+              <img class="opinion-image" src="resources/img/slider-small.png" alt="">
+              <div class="sub-article">
+                <h3 class="article-title-small">Horn-free for new genetics release</h3>
+                <p class="article-info">september 27 2016</p>
+              </div>
+            </a>
+            <!-- sub article -->
+            <a href="#">
+              <img class="opinion-image" src="resources/img/slider-small.png" alt="">
+              <div class="sub-article">
+                <h3 class="article-title-small">Horn-free for new genetics release</h3>
+                <p class="article-info">september 27 2016</p>
+              </div>
+            </a>
+            <!-- sub article -->
+            <a href="#">
+              <img class="opinion-image" src="resources/img/slider-small.png" alt="">
+              <div class="sub-article">
+                <h3 class="article-title-small">Horn-free for new genetics release</h3>
+                <p class="article-info">september 27 2016</p>
+              </div>
+            </a>
+          </div>
+          <!-- mini content block ends here -->
+
+          <!-- ############################################ -->
+          <!-- advertisement -->
+          <a href="#">
+            <div class="advertisement-container advertisement-2">
+              <img class="advertisement-image" src="resources/img/slider-small.png" alt="slider image">
+            </div>
+          </a>
+          <!-- advertisement ends here -->
+
+        <!-- flex order 2 ends -->
+        <!-- col-2 div ends here -->
+        </div>
+
+      <div class="col-1 flex-order-articles-block">
+        <!-- ############################################ -->
+        <!-- Latest in Dairy -->
+        <!-- content block DAIRY -->
+        <div class="content-block">
+          <!-- making the headline clickable -->
+          <a href="#">
+            <!-- headline text -->
+            <h4 class="category-red">Latest in Dairy</h4>
+          </a>
+          <!-- a tag making the whole block clickable, not just text -->
+          <a href="#">
+            <div class="featured-article">
+              <!-- placeholder image -->
+              <img class="featured-article-image" src="resources/img/1000x600.png" alt="">
+
+              <div class="featured-article-text-content">
+                <!-- seperated text so text can have different colors -->
+                <p class="category-text category-text-red">Dairy</p>
+                <p class="article-info"> - September 27 2016 </p>
+
+                <!-- article title -->
+                <h2 class="article-title-big">Spreading the word on Wormwise</h2>
+                <!-- first last coming from where? -->
+                <p class="article-info">by First Lastname</p>
+              </div>
+              <!-- clickable block ends -->
+            </div>
+          </a>
+
+          <!-- sub article -->
+          <!-- a tag making the whole block clickable, not just text -->
+          <a href="#">
+            <div class="sub-article">
+              <h3 class="article-title-small">Horn-free for new genetics release</h3>
+              <p class="article-info">september 27 2016</p>
+            </div>
+          </a>
+          <!-- sub article -->
+          <a href="#">
+            <div class="sub-article">
+              <h3 class="article-title-small">Horn-free for new genetics release</h3>
+              <p class="article-info">september 27 2016</p>
+            </div>
+          </a>
+          <!-- sub article -->
+          <a href="#">
+            <div class="sub-article">
+              <h3 class="article-title-small">Horn-free for new genetics release</h3>
+              <p class="article-info">september 27 2016</p>
+            </div>
+          </a>
+        </div>
+        <!-- content block DAIRY ends here -->
+
+        <!-- ############################################ -->
+        <!-- horizontal advertisement -->
+
+        <div class="horizontal-content-ad-container column-1-advertisement">
+          <img class="horizontal-content-ad" src="resources/img/750x90.png" alt="">
+        </div>
+
+        <!-- ############################################ -->
+        <!-- Latest in Beef -->
+        <!-- content block BEEF -->
+        <div class="content-block">
+          <!-- making the headline clickable -->
+          <a href="#">
+            <!-- headline text -->
+            <h4 class="category-yellow">Latest in Beef</h4>
+          </a>
+
+          <!-- a tag making the whole block clickable, not just text-->
+          <a href="#">
+            <div class="featured-article">
+              <!-- placeholder image -->
+              <img class="featured-article-image" src="resources/img/304x80.png" alt="">
+
+              <div class="featured-article-text-content">
+                <!-- seperated text so color can be changed -->
+                <p class="category-text category-text-yellow">Beef</p>
+                <p class="article-info"> - September 27 2016 </p>
+
+                <!-- article title -->
+                <h2 class="article-title-big">O'Conner still not convinced of benefits</h2>
+                <!-- first last coming from where? -->
+                <p class="article-info">by First Lastname</p>
+              </div>
+              <!-- clickable block ends -->
+            </div>
+          </a>
+
+          <!-- sub article -->
+          <!-- a tag making the whole block clickable, not just text -->
+          <a href="#">
+            <div class="sub-article">
+              <h3 class="article-title-small">Horn-free for new genetics release</h3>
+              <p class="article-info">september 27 2016</p>
+            </div>
+          </a>
+          <!-- sub article -->
+          <a href="#">
+            <div class="sub-article">
+              <h3 class="article-title-small">Horn-free for new genetics release</h3>
+              <p class="article-info">september 27 2016</p>
+            </div>
+          </a>
+          <!-- sub article -->
+          <a href="#">
+            <div class="sub-article">
+              <h3 class="article-title-small">Horn-free for new genetics release</h3>
+              <p class="article-info">september 27 2016</p>
+            </div>
+          </a>
+        </div>
+        <!-- content block BEEF ends here -->
+
+        <!-- ############################################ -->
+        <!-- Latest in Sheep -->
+        <!-- content block SHEEP -->
+        <div class="content-block">
+          <!-- making the headline clickable -->
+          <a href="#">
+            <!-- headline text -->
+            <h4 class="category-blue-dark">Latest in Sheep</h4>
+          </a>
+
+          <a href="#">
+            <div class="featured-article">
+              <!-- placeholder image -->
+              <img class="featured-article-image" src="resources/img/304x80.png" alt="">
+
+              <div class="featured-article-text-content">
+                <!-- seperated text so color can be changed -->
+                <p class="category-text category-text-blue-dark">Sheep</p>
+                <p class="article-info"> - September 27 2016 </p>
+
+                <!-- article title -->
+                <h2 class="article-title-big">O'Conner still not convinced of benefits</h2>
+                <!-- first last coming from where? -->
+                <p class="article-info">by First Lastname</p>
+              </div>
+              <!-- clickable block ends -->
+            </div>
+          </a>
+
+          <!-- sub article -->
+          <!-- a tag making the whole block clickable, not just text -->
+          <a href="#">
+            <div class="sub-article">
+              <h3 class="article-title-small">Horn-free for new genetics release</h3>
+              <p class="article-info">september 27 2016</p>
+            </div>
+          </a>
+          <!-- sub article -->
+          <a href="#">
+            <div class="sub-article">
+              <h3 class="article-title-small">Horn-free for new genetics release</h3>
+              <p class="article-info">september 27 2016</p>
+            </div>
+          </a>
+          <!-- sub article -->
+          <a href="#">
+            <div class="sub-article">
+              <h3 class="article-title-small">Horn-free for new genetics release</h3>
+              <p class="article-info">september 27 2016</p>
+            </div>
+          </a>
+        </div>
+        <!-- content block SHEEP ends here -->
+
+        <!-- ############################################ -->
+        <!-- Latest in Arable -->
+        <!-- content block ARABLE -->
+        <div class="content-block">
+          <!-- making the headline clickable -->
+          <a href="#">
+            <!-- headline text -->
+            <h4 class="category-green">Latest in Arable</h4>
+          </a>
+
+          <a href="#">
+            <div class="featured-article">
+              <!-- placeholder image -->
+              <img class="featured-article-image" src="resources/img/304x80.png" alt="">
+
+              <div class="featured-article-text-content">
+                <!-- seperated text so color can be changed -->
+                <p class="category-text category-text-green">Arable</p>
+                <p class="article-info"> - September 27 2016 </p>
+
+                <!-- article title -->
+                <h2 class="article-title-big">O'Conner still not convinced of benefits</h2>
+                <!-- first last coming from where? -->
+                <p class="article-info">by First Lastname</p>
+              </div>
+              <!-- clickable block ends -->
+            </div>
+          </a>
+
+          <!-- sub article -->
+          <!-- a tag making the whole block clickable, not just text -->
+          <a href="#">
+            <div class="sub-article">
+              <h3 class="article-title-small">Horn-free for new genetics release</h3>
+              <p class="article-info">september 27 2016</p>
+            </div>
+          </a>
+          <!-- sub article -->
+          <a href="#">
+            <div class="sub-article">
+              <h3 class="article-title-small">Horn-free for new genetics release</h3>
+              <p class="article-info">september 27 2016</p>
+            </div>
+          </a>
+          <!-- sub article -->
+          <a href="#">
+            <article class="sub-article">
+              <h3 class="article-title-small">Horn-free for new genetics release</h3>
+              <p class="article-info">september 27 2016</p>
+            </article>
+          </a>
+        </div>
+        <!-- content block ARABLE ends here -->
+      <!-- col-1 div ends here -->
+      </div>
+
+    </div>
+
+    </main>
+
+    <!-- ############################################ -->
+    <footer class="site-footer">
+      <section class="footer-container">
+
+        <header class=footer-heading>
+          <h3>FARMERSWEEKLY</h3>
+        </header>
+
+        <section class="footer-content">
+          <article class="footer-col-1 footer-information">
+            <p>Farmers Weekly is our leading brand for the farming community.</p>
+            <p>It's Where we deliver news, advice, inspiration and the latest farm management information in print and online.</p>
+            <p>8 Weld Street, P.O Box 529, Feilding, New Zealand</p>
+            <p>0800 85 25 80</p>
+          </article>
+
+          <section class="footer-links-container">
+            <article class="footer-list">
+              <a href="#">About us</a>
+              <a href="#">Jobs</a>
+              <a href="#">Advertising</a>
+              <a href="#">Livestock Theft</a>
+              <a href="#">Real Estate</a>
+
+              <a href="#">Contact us</a>
+              <a href="#">Help</a>
+              <a href="#">Graband</a>
+              <a href="#">Young Country</a>
+              <a href="#">Daily Explorer</a>
+
+              <a href="#">Latest News</a>
+              <a href="#">Beef</a>
+              <a href="#">Dairy</a>
+              <a href="#">Sheep</a>
+              <a href="#">Arable</a>
+
+              <a href="#">Opinion</a>
+              <a href="#">Columnist</a>
+              <a href="#">Your Views</a>
+              <a href="#">Polls</a>
+
+              <a href="#">Virtual Paper</a>
+              <a href="#">Subscribe to email</a>
+              <a href="#">Shop</a>
+              <a href="#">Quizzes</a>
+              <a href="#">Weather</a>
+            </article>
+          </section>
+        </section>
+
+        <section class="copyright-container">
+          <div class="copyright-sentence">
+            <p class="copyright">© </p>
+            <!-- NZX Agri is bold -->
+            <p class="copyright">NZX Agri 2016</p>
+          </div>
+
+          <p class="copyright-sentence-2">Terms of Use</p>
+        </section>
+      </section>
+    </footer>
+
+    <!-- jquery inclusion -->
+    <script src="resources/js/vendor/jquery.js"></script>
+
+    <!-- slick slider. -->
+    <script type="text/javascript" src="resources/js/libs/slick.js"></script>
+    <!-- script that runs slick slider -->
+    <script type="text/javascript" src="resources/js/FarmersWeekly/slick-exe.js"></script>
+
+    <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+    <script>
+        window.ga=function(){ga.q.push(arguments)};ga.q=[];ga.l=+new Date;
+        ga('create','UA-XXXXX-Y','auto');ga('send','pageview')
+    </script>
+    <script src="https://www.google-analytics.com/analytics.js" async defer></script>
+  </body>
 </html>

@@ -1,3 +1,110 @@
+body {
+	background-color: $gray-lightest;
+}
+
+main {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	margin-top: $nav-bar-height;
+	@include media-breakpoint-up(md) {
+		margin-top: $nav-bar-height-medium;
+	}
+}
+
+h1, h3, h4, h5, h6, a {
+	font-family: $basic-font;
+}
+
+.no-js {
+		background-color: $gray-lightest;
+}
+
+.slider-content {
+	width: 100%;
+	background-color: $white;
+	overflow: auto;
+	@include media-breakpoint-up(md) {
+		padding-bottom: 8%;
+		padding-left: $content-padding;
+		padding-right: $content-padding;
+		margin: 0;
+		z-index: 2;
+	}
+}
+
+.news-content {
+	z-index: 3;
+	margin-top: -7%;
+  z-index: 10;
+  position: relative;
+	padding-left: $content-wrapper-spacing;
+	padding-right: $content-wrapper-spacing;
+  @include media-breakpoint-up(md) {
+    margin-top: -14%;
+		margin-left: $wrapper-spacing;
+		margin-right: $wrapper-spacing;
+	}
+
+	// flexbox order manipulation of main content sections
+	display: -webkit-flex; /* Safari */
+	display: flex;
+
+	flex-direction: column;
+	/* Safari 6.1+ */
+	.flex-order-initial-article				   	{-webkit-order: 1;}
+	.flex-order-agri-data  								{-webkit-order: 2;}
+	.flex-order-articles-block  					{-webkit-order: 3;}
+	/* mini-block is 2 ads/opinion/most popular content blocks */
+	.flex-order-mini-block								{-webkit-order: 4;}
+
+	/* Standard syntax */
+	.flex-order-initial-article				   	{order: 1;}
+	.flex-order-agri-data  								{order: 2;}
+	/* note articles-block is below mini-block in html */
+	.flex-order-articles-block  					{order: 3;}
+	.flex-order-mini-block								{order: 4;}
+
+	@include media-breakpoint-up(md) {
+		/* note the order changes for desktop version*/
+		.flex-order-articles-block   				{order: 4;}
+		.flex-order-mini-block						  {order: 3;}
+		// disables flex-order, returns mini-block to original position in html (i.e above articles-block)
+		display: block;
+	}
+}
+
+// styling for responsive repositioning (transition from mobile layout to desktop layout)
+.col-1 {
+	/* for mobile */
+	width: 100%;
+	@include media-breakpoint-up(md) {
+		/* for deskop */
+		width: 72%;
+		display: inline-block;
+		vertical-align: top;
+		float: left;
+	}
+}
+
+.col-2 {
+	/* for mobile */
+	width: 100%;
+	@include media-breakpoint-up(md) {
+		/* for desktop */
+		float: right;
+		width: 25%;
+		margin-left: 2%;
+		display: inline-block;
+		vertical-align: top;
+	}
+}
+
+// div clears floats so parent div expands with floated elements
+.clear-div {
+  clear:both;
+}
+
 .main {
 	overflow-x: hidden;
 }
@@ -21,7 +128,6 @@
 ///////////////////////////
 
 @import "pagination";
-@import "archive-filter";
 @import "rich-text-editor";
 @import "contact-item";
 @import "social-block";

@@ -1,0 +1,12 @@
+.advertisement-container { @include content-block(); }
+
+.advertisement-2 {
+  display: none;
+  @include media-breakpoint-up(md) {
+    display: block
+  }
+}
+
+.advertisement-image {
+  width: 100%;
+}
