@@ -120,6 +120,13 @@
 		width: 100%;
 		margin: 0;
 	}
+	.dropdown-container .nav-column-right ul {
+		-webkit-margin-before: 0px !important;
+		-webkit-margin-after: 0px !important;
+		-webkit-margin-start: 0px !important;
+		-webkit-margin-end: 0px !important;
+		-webkit-padding-start: 0px !important;
+	}
 	.dropdown-container .nav-column-right ul li {
 		text-align: left;
 		width: 100%;
@@ -291,6 +298,13 @@
 	.desktop-sub-menu {
 		display: none;
 	}
+	ul {
+		-webkit-margin-before: 0px !important;
+		-webkit-margin-after: 0px !important;
+		-webkit-margin-start: 0px !important;
+		-webkit-margin-end: 0px !important;
+		-webkit-padding-start: 0px !important;
+	}
 	.newsletter-text {
 	  font-size: 1.4rem;
 		font-weight: 600;
@@ -311,5 +325,9 @@
 	  color: $white;
 	  font-family: $basic-font;
 	  background-color: $blue;
+	}
+
+	.sectors-list {
+		color: $gray-menu;
 	}
 }

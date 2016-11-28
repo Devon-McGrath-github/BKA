@@ -88,12 +88,12 @@
     text-align: justify;
   }
 }
-.article-text-block, ul {
+.article-text-block ul {
   padding-bottom: $content-text-padding;
 }
 
 // styling text and lists
-.article-text-content, ul, li {
+.article-text-content {
   font-family: $title-font;
   color: $black-lighter;
   display: block;
@@ -101,6 +101,14 @@
     list-style-type: square !important;
     list-style-position: inside !important;
     padding-left: $content-text-padding;
+    font-family: $title-font;
+    color: $black-lighter;
+    display: block;
+  }
+  li {
+    font-family: $title-font;
+    color: $black-lighter;
+    display: block;
   }
   ul.dashed {
     list-style-type: none;

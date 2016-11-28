@@ -7283,6 +7283,13 @@ img.mfp-img {
   width: 100%;
   margin: 0; }
 
+.mobile .dropdown-container .nav-column-right ul {
+  -webkit-margin-before: 0px !important;
+  -webkit-margin-after: 0px !important;
+  -webkit-margin-start: 0px !important;
+  -webkit-margin-end: 0px !important;
+  -webkit-padding-start: 0px !important; }
+
 .mobile .dropdown-container .nav-column-right ul li {
   text-align: left;
   width: 100%;
@@ -7402,6 +7409,12 @@ img.mfp-img {
 @media (min-width: 992px) {
   .desktop-sub-menu {
     display: none; }
+  ul {
+    -webkit-margin-before: 0px !important;
+    -webkit-margin-after: 0px !important;
+    -webkit-margin-start: 0px !important;
+    -webkit-margin-end: 0px !important;
+    -webkit-padding-start: 0px !important; }
   .newsletter-text {
     font-size: 1.4rem;
     font-weight: 600;
@@ -7417,7 +7430,9 @@ img.mfp-img {
     border-radius: 0;
     color: #FFFFFF;
     font-family: "Open Sans", "Source Sans Pro", Arial, sans-serif;
-    background-color: #40c4c6; } }
+    background-color: #40c4c6; }
+  .sectors-list {
+    color: #999999; } }
 
 .advertisement-container {
   position: relative;
@@ -7666,22 +7681,25 @@ img.mfp-img {
     margin: 0;
     text-align: justify; }
 
-.article-text-block, ul {
+.article-text-block ul {
   padding-bottom: 25px; }
 
-.article-text-content, ul, li {
+.article-text-content {
   font-family: "Bitter", "Source Sans Pro", Arial, sans-serif, "Source Sans Pro", Arial, sans-serif;
   color: #4d4d4d;
   display: block; }
-  .article-text-content ul, ul ul, li ul {
+  .article-text-content ul {
     list-style-type: square !important;
     list-style-position: inside !important;
-    padding-left: 25px; }
-  .article-text-content ul.dashed, ul ul.dashed, li ul.dashed {
+    padding-left: 25px;
+    font-family: "Bitter", "Source Sans Pro", Arial, sans-serif, "Source Sans Pro", Arial, sans-serif;
+    color: #4d4d4d;
+    display: block; }
+  .article-text-content ul.dashed {
     list-style-type: none; }
-  .article-text-content ul.dashed > li, ul ul.dashed > li, li ul.dashed > li {
+  .article-text-content ul.dashed > li {
     text-indent: -5px; }
-  .article-text-content ul.dashed > li:before, ul ul.dashed > li:before, li ul.dashed > li:before {
+  .article-text-content ul.dashed > li:before {
     content: "-";
     font-family: "Bitter", "Source Sans Pro", Arial, sans-serif, "Source Sans Pro", Arial, sans-serif;
     text-indent: -5px;
