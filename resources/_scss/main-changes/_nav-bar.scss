@@ -1,0 +1,126 @@
+#menu-icon {
+	margin-top: $mobile-nav-margin;
+	margin-right: $mobile-nav-margin;
+	margin-bottom: $mobile-nav-margin;
+	margin-left: 0;
+	@include media-breakpoint-up(lg) {
+		// margin: $mobile-nav-margin;
+    display: none;
+	}
+	width: 40px;
+	height: 40px;
+	// placeholder menu icon
+	// icon is currently black, not blue
+	background: $white url(../../resources/img/menu-icon.svg) center;
+	background-repeat: no-repeat;
+	float: right;
+	display: inline-block;
+
+	-webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+// nav bar styling
+// TODO: undo this for the dektop nav
+.navbar {
+  padding: 0;
+}
+.dropdown-container {
+  display: none;
+	position: absolute;
+	right: 0%;
+	top: 0%;
+	width: 100%;
+	overflow: scroll;
+}
+
+// dropdown-container column colours
+.dropdown-container {
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    color-stop(0, $grey-gradient),
+    color-stop(15%, $grey-gradient),
+    color-stop(15%, $nav-lvl-1-background-color),
+    color-stop(100%, $nav-lvl-1-background-color)
+  );
+}
+
+// nav-bar columns
+.nav-column-left {
+	float: left;
+	width: 15%;
+	margin: 0;
+	border: none;
+	vertical-align: top;
+}
+.nav-column-right {
+	float: left;
+	width: 85%;
+	margin: 0;
+	border: none;
+	vertical-align: top;
+}
+
+
+
+
+// toggling collapse
+.navbar {
+	// hiding the checkbox
+	input[type=checkbox]{
+	  display: none;
+	}
+}
+.navbar {
+	input[type=checkbox]:checked ~ .dropdown-container {
+    display: block;
+	}
+}
+
+#sub-menu-1 {
+	input[type="checkbox"]:checked ~ .sub-menu {
+  	display: block;
+	}
+}
+#sub-menu-2 {
+	input[type="checkbox"]:checked ~ .sub-menu {
+  	display: block;
+	}
+}
+
+.sub-menu {
+  position: absolute;
+  z-index: 1001;
+}
+
+
+
+
+
+
+
+
+
+.dropdown-menu {
+  margin: 0;
+}
+// media queries large screen size
+@include media-breakpoint-up(lg) {
+  // dropdown hover works for all dropdown menus
+  .dropdown a:hover ~ .dropdown-menu {
+    display: block;
+  }
+  .dropdown-menu:hover {
+    display: block;
+  }
+  .dropdown-icon {
+		display: none;
+	}
+  .dropdown-container {
+    
+  }
+}

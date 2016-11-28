@@ -1,0 +1,10 @@
+.nav-link {
+  color: green !important;
+}
+
+.nav-link:hover {
+  color: red !important;
+  .dropdown-menu {
+    display: block !important;
+  }
+}

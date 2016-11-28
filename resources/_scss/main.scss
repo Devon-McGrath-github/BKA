@@ -20,8 +20,10 @@
 // Addons
 @import "third-party/third-party";
 
+// changes
+@import "main-changes/base";
+
 // Library goes here
-/////////////////////////////////////////////
 
 /* Navigation */
 @import "library/navigation/header";
