@@ -24,7 +24,6 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700');
 
 
-//TODO: am I using 4 font sizes, load speed increases if only 2 are used.
 @mixin _assert-ascending($map, $map-name) {
   $prev-key: null;
   $prev-num: null;

@@ -80,6 +80,8 @@
 // sectors list styling
 .sectors-list {
 	padding: 0;
+	list-style: none;
+	list-style-type: none;
 	// changing font
 	li, a {
 		font-family: $basic-font;

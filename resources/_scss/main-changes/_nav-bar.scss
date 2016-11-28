@@ -11,6 +11,8 @@
 	z-index: 100;
 	@include media-breakpoint-up(md) {
 		height: $nav-bar-height-medium;
+		padding-left: $content-padding;
+		padding-right: $content-padding;
 	}
 }
 
@@ -270,7 +272,7 @@
 // media queries large screen size
 @include media-breakpoint-up(lg) {
   // dropdown hover works for all dropdown menus
-  .dropdown a:hover ~ .sub-menu {
+  .dropdown a:hover ~ .desktop-sub-menu {
     display: block;
   }
   .dropdown-menu:hover {
@@ -295,31 +297,43 @@
 
 // nav bar desktop styling
 @include media-breakpoint-up(lg) {
+	// hiding desktop-sub-menu so it becomes a drop down on hover
 	.desktop-sub-menu {
 		display: none;
 	}
-	ul {
-		-webkit-margin-before: 0px !important;
-		-webkit-margin-after: 0px !important;
-		-webkit-margin-start: 0px !important;
-		-webkit-margin-end: 0px !important;
-		-webkit-padding-start: 0px !important;
+
+	// removing padding from navlinks
+	.navbar-nav .nav-link {
+		padding: 0px !important;
 	}
-	.newsletter-text {
+
+	// styling of sector tags
+	.sector-title {
+		padding-left: 5px;
+	}
+	.sectors-list {
+		color: $gray-menu !important;
+	}
+	// sets nav items color to black
+	.navbar .nav-item .nav-link, .navbar a {
+		color: $black-lighter;
+
+	}
+
+	// styling of newsletter form/text and button
+	.newsletter-text, .newsletter-text:hover {
 	  font-size: 1.4rem;
 		font-weight: 600;
 	  display: block;
 		color: $black-lighter;
 	  margin-bottom: $nav-newsletter-margin;
 	}
-
 	.newsletter-input {
 	  border: $border-light;
 	  border-radius: 5px !important;
 	  display: block;
 	  margin-bottom: $nav-newsletter-margin;
 	}
-
 	.button-basic-blue {
 		border-radius: 0;
 	  color: $white;
@@ -327,7 +341,25 @@
 	  background-color: $blue;
 	}
 
-	.sectors-list {
-		color: $gray-menu;
+	//
+	.dropdown-main {
+		position: absolute;
+		left: 0;
+		top: 100%;
+		// width: 100%;
+		min-width: 100%;
+		float: left;
+		background-color: $white;
+		border: none;
+		border-bottom: 1px solid $border-gray;
+		list-style: none;
+		z-index: 1000;
+		text-align: left;
+		font-size: 1.6rem;
 	}
+
+	// .nav > li.dropdown.open { position: static; }
+	// .nav > li.dropdown.open .dropdown-menu {display:table; width: 100%; text-align: center; left:0; right:0; }
+	// .dropdown-menu>li { display: table-cell; }
+
 }

@@ -25,15 +25,35 @@
                 <p class="nav-header">NEWS</p>
               </a>
 
-              <div class="desktop-sub-menu" aria-labelledby="responsiveNavbarDropdown">
-                <a class="dropdown-item" href="articles.html">DAIRY</a>
-                <a class="dropdown-item" href="/">BEEF</a>
-                <a class="dropdown-item" href="/">SHEEP</a>
-                <a class="dropdown-item" href="/">ARABLE</a>
-                <a class="dropdown-item" href="/">OTHER LIVESTOCK</a>
-                <a class="dropdown-item" href="/">FORESTRY</a>
-                <a class="dropdown-item" href="archives.html">OTHER</a>
-              </div>
+              <ul class="desktop-sub-menu dropdown-menu dropdown-main" aria-labelledby="responsiveNavbarDropdown">
+                <li>
+                  <a class="dropdown-item" href="articles.html">DAIRY</a>
+                  <!-- <p class="sector-info">Milk, Dairy products, Cows, Heifer, Calves, Bulls, Sheep, Cattle, Goats</p> -->
+                </li>
+                <li>
+                  <a class="dropdown-item" href="/">BEEF</a>
+                  <!-- <p class="sector-info">Beef meat, Other beef products, Cows, Heifers, Calves, Bulls, Steers</p> -->
+                </li>
+                <li>
+                  <a class="dropdown-item" href="/">SHEEP</a>
+                  <!-- <p class="sector-info">Sheep meat, Wool, Other sheep products, Lambs, Rams, Ewes, Hoggets</p> -->
+                </li>
+                <li>
+                  <a class="dropdown-item" href="/">ARABLE</a>
+                  <!-- <p class="sector-info">Wheat, Barley, Other cereals, Oilseeds, Pulses, Maize, Seed crops, Pasture, Other arable crops</p> -->
+                </li>
+                <li>
+                  <a class="dropdown-item" href="/">OTHER LIVESTOCK</a>
+                  <!-- <p class="sector-info">Pigs, Deer, Poultry, Dogs, Grassland/crops</p> -->
+                </li>
+                <li>
+                  <a class="dropdown-item" href="/">FORESTRY</a>
+                  <!-- <p class="sector-info">Potatoes, Wine, Kiwifruit, Apples, Vegetables, Fruit, Other horticulture crops, Other</p> -->
+                </li>
+                <li>
+                  <a class="dropdown-item" href="archives.html">OTHER</a>
+                </li>
+              </ul>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">PROPERTY</a>
@@ -43,19 +63,45 @@
                 <p class="nav-header">JOBS</p>
               </a>
 
-              <ul class="desktop-sub-menu" aria-labelledby="responsiveNavbarDropdown">
-                <li><a class="dropdown-item" href="/">TOOLS & CALCULATORS</a></li>
-                <li><a class="dropdown-item" href="/">REAL ESTATE</a></li>
-                <li><a class="dropdown-item" href="/">QUIZZES</a></li>
-                <li><a class="dropdown-item" href="/">SOCIAL</a></li>
-                <li><a class="dropdown-item" href="/">AGRIHQ MARKETS & DATA</a></li>
-                <li><a class="dropdown-item" href="/">JOBS</a></li>
+              <!-- TODO: remove one of the other -->
+              <!-- note this one has bootstraps dropdown-menu as well as main  -->
+              <ul class="desktop-sub-menu dropdown-menu dropdown-main" aria-labelledby="responsiveNavbarDropdown">
+                <li>
+                  <!-- <img class="dropdown-img" src="resources/img/author-img.png" alt=""> -->
+                  <a class="dropdown-item" href="/">TOOLS & CALCULATORS</a>
+                  <a class="link" href="#">agrihq.co.nz</a>
+                </li>
+                <li>
+                  <!-- <img class="dropdown-img" src="resources/img/author-img.png" alt=""> -->
+                  <a class="dropdown-item" href="/">REAL ESTATE</a>
+                  <p class="dropdown-paragraph">Land is the biggest asset to any farming business</p>
+                </li>
+                <li>
+                  <!-- <img class="dropdown-img" src="resources/img/author-img.png" alt=""> -->
+                  <a class="dropdown-item" href="/">QUIZZES</a>
+                  <p class="dropdown-paragraph">Latest Quiz - March 18</p>
+                </li>
+                <li>
+                  <!-- <img class="dropdown-img" src="resources/img/author-img.png" alt=""> -->
+                  <a class="dropdown-item" href="/">SOCIAL</a>
+                  <p class="dropdown-paragraph">Stay Connected</p>
+                </li>
+                <li>
+                  <!-- <img class="dropdown-img" src="resources/img/author-img.png" alt=""> -->
+                  <a class="dropdown-item" href="/">AGRIHQ MARKETS & DATA</a>
+                  <a class="link" href="#">agrihq.co.nz/markets</a>
+                </li>
+                <li>
+                  <!-- <img class="dropdown-img" src="resources/img/author-img.png" alt=""> -->
+                  <a class="dropdown-item" href="/">JOBS</a>
+                  <p class="dropdown-paragraph">Latest farming positions from around New Zealand</p>
+                </li>
               </ul>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">OPINION</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item sector-title">
               <a class="nav-item">SECTORS:</a>
             </li>
             <li class="nav-item"><a class="sectors-list" href="#">DAIRY</a></li>
