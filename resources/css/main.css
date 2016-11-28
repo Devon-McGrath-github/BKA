@@ -6864,16 +6864,28 @@ img.mfp-img {
   border-top: 5px solid #40c4c6;
   border-bottom: 1px solid #e2e2e2;
   z-index: 100; }
+  @media (min-width: 768px) {
+    #nav-container {
+      height: 90px; } }
 
 #logo {
-  margin: 20px;
+  margin: 15px;
   float: left;
-  width: 200px;
+  width: 215px;
   height: 40px;
   background: url(../../../../resources/img/logo-small.png) no-repeat center;
   display: block; }
+  @media (min-width: 768px) {
+    #logo {
+      background: url(../../../../resources/img/logo-small.png) no-repeat center;
+      width: 270px;
+      height: 50px; } }
 
 #menu-icon {
+  margin-top: 15px;
+  margin-right: 15px;
+  margin-bottom: 15px;
+  margin-left: 0;
   width: 40px;
   height: 40px;
   background: #FFFFFF url(../../../../resources/img/menu-icon.svg) center;
@@ -6884,6 +6896,9 @@ img.mfp-img {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none; }
+  @media (min-width: 768px) {
+    #menu-icon {
+      margin: 15px; } }
 
 #menu ul {
   padding: 0;
@@ -6958,7 +6973,8 @@ nav .dropdown-container .nav-column-right .main-nav li {
 .close-label {
   height: 100%;
   width: 100%;
-  padding: 10%; }
+  padding: 10%;
+  text-align: centre; }
   .close-label .close-button-img {
     padding: 0;
     margin: 0;
@@ -7032,6 +7048,9 @@ nav .dropdown-container .nav-column-right .main-nav li {
   padding-left: 20px;
   background-color: #292827 !important; }
 
+.newsletter-container {
+  display: none; }
+
 @media (min-width: 768px) {
   #menu #menu-icon {
     display: none; }
@@ -7053,15 +7072,25 @@ nav .dropdown-container .nav-column-right .main-nav li {
   nav .dropdown-container .nav-column-right .main-nav li {
     background: none;
     border-bottom: none; }
+  #nav-container {
+    padding-left: 5%;
+    padding-right: 5%; }
   #menu {
-    width: 70%;
-    float: left;
-    display: block; }
+    width: 55%;
+    float: right;
+    display: block; } }
+  @media (min-width: 768px) and (min-width: 900px) {
+    #menu {
+      width: 63%; } }
+
+@media (min-width: 768px) {
     #menu .dropdown-container {
       position: static; }
     #menu .dropdown-container .nav-column-right .main-nav {
       display: block;
       width: 100%; }
+  .nav-column-right {
+    float: right; }
   nav .dropdown-container .nav-column-right .main-nav li {
     float: left;
     display: block;
@@ -7080,6 +7109,31 @@ nav .dropdown-container .nav-column-right .main-nav li {
     padding: 0; }
     #menu a {
       padding: 0; }
+  .main-nav li a {
+    padding: 14px 16px; }
+  .newsletter-container {
+    display: inline-block;
+    float: left;
+    margin: 0; }
+  .newsletter-text {
+    font-size: 1.4rem;
+    font-weight: 600;
+    display: block;
+    color: #4d4d4d;
+    margin-bottom: 0.75rem; }
+  .newsletter-input {
+    border: 1px solid #e2e2e2;
+    border-radius: 5px;
+    display: block;
+    margin-bottom: 0.75rem; }
+  .button-basic-blue {
+    border: none;
+    color: #FFFFFF;
+    font-family: "Open Sans", "Source Sans Pro", Arial, sans-serif;
+    background-color: #40c4c6;
+    padding: 6px 13px;
+    display: block;
+    margin: 0; }
   #menu input[type=checkbox]:checked ~ .dropdown-container {
     display: block; }
   #sub-menu-1 input[type="checkbox"]:checked ~ .sub-menu {
@@ -7089,7 +7143,9 @@ nav .dropdown-container .nav-column-right .main-nav li {
   #sub-menu-1:hover > input[type="checkbox"] ~ .sub-menu {
     display: block; }
   #sub-menu-2:hover > input[type="checkbox"] ~ .sub-menu {
-    display: block; } }
+    display: block; }
+  .sub-menu {
+    width: 100%; } }
 
 .site-footer {
   display: block;
@@ -7647,13 +7703,13 @@ nav .dropdown-container .nav-column-right .main-nav li {
     margin: 0; } }
 
 .sub-article {
-  padding: 2%;
+  padding: 30px;
   border-left: 1px solid #e2e2e2;
   border-right: 1px solid #e2e2e2;
   border-bottom: 1px solid #e2e2e2; }
   @media (min-width: 768px) {
     .sub-article {
-      padding: 6%; } }
+      padding: 5%; } }
 
 @media (min-width: 768px) {
   .most-popular-container {
@@ -7951,6 +8007,9 @@ main {
   padding: 0;
   width: 100%;
   margin-top: 76px; }
+  @media (min-width: 768px) {
+    main {
+      margin-top: 90px; } }
 
 h1, h3, h4, h5, h6, a {
   font-family: "Open Sans", "Source Sans Pro", Arial, sans-serif; }

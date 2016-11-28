@@ -109,8 +109,6 @@
     }
   }
   .featured-article-text-content {
-    // TODO: boilerplate with sub-article create a variable?
-    // issue is may not use the same padding
     padding: $content-padding-mobile;
     border-left: $border-light;
     border-right: $border-light;
@@ -175,8 +173,6 @@
   }
 }
 
-// TODO: is this needed?
-// sub articles container
 .articles-container {
   @include media-breakpoint-up(md) {
     display: inline-block;
@@ -186,12 +182,12 @@
 }
 
 .sub-article {
-  padding: 2%;
+  padding: $content-padding-mobile;
   border-left: $border-light;
   border-right: $border-light;
   border-bottom: $border-light;
   @include media-breakpoint-up(md) {
-    padding: 6%;
+    padding: $content-padding;
   }
 }
 

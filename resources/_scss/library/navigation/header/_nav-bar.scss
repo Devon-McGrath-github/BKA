@@ -3,29 +3,45 @@
 	background: $white;
 	width: 100%;
 	height: $nav-bar-height;
-	// mobile nav scrolls with the page
 	position: absolute;
 	top: 0;
 	left: 0;
 	border-top: 5px solid $blue;
 	border-bottom: 1px solid $border-gray;
 	z-index: 100;
+	@include media-breakpoint-up(md) {
+		height: $nav-bar-height-medium;
+	}
 }
 
 // site logo image
 #logo{
-	margin: 20px;
+	margin: $mobile-nav-margin;
 	float: left;
-	width: 200px;
+	width: 215px;
 	height: 40px;
 	background: url(../../../../resources/img/logo-small.png) no-repeat center;
 	display: block;
+	@include media-breakpoint-up(md) {
+		background: url(../../../../resources/img/logo-small.png) no-repeat center;
+		width: 270px;
+		height:  50px;
+	}
 }
+
 
 // mobile friendly menu icon
 #menu-icon {
+	margin-top: $mobile-nav-margin;
+	margin-right: $mobile-nav-margin;
+	margin-bottom: $mobile-nav-margin;
+	margin-left: 0;
+	@include media-breakpoint-up(md) {
+		margin: $mobile-nav-margin;
+	}
 	width: 40px;
 	height: 40px;
+	// placeholder menu icon
 	// TODO: icon is currently black, not blue
 	background: $white url(../../../../resources/img/menu-icon.svg) center;
 	background-repeat: no-repeat;
@@ -156,6 +172,7 @@ nav {
 	height: 100%;
 	width: 100%;
 	padding: 10%;
+	text-align: centre;
 	// styling the close button
 	.close-button-img {
 		padding: 0;
@@ -258,6 +275,11 @@ nav {
 	background-color: $nav-lvl-2-background-color !important;
 }
 
+// newsletter form
+.newsletter-container {
+	display: none;
+}
+
 // breakpoint for desktop styling
 @include media-breakpoint-up(md) {
 	// hiding and showing toggles/nav items
@@ -308,11 +330,18 @@ nav {
 		border-bottom: none;
 	}
 
+	// adding content padding to nav bar
+	#nav-container {
+		padding-left: $content-padding;
+		padding-right: $content-padding;
+	}
 	// making nav display inline
 	#menu {
 		// width of menu
-		width: 70%;
-		float: left;
+		width: 55%;
+		@media (min-width: 900px) { width: 63%}
+
+		float: right;
 		display: block;
 		// overide mobiles required absolute positioning
 		.dropdown-container {
@@ -322,6 +351,9 @@ nav {
 			display: block;
 			width: 100%;
 		}
+	}
+	.nav-column-right {
+		float: right;
 	}
 
 	nav .dropdown-container .nav-column-right .main-nav li {
@@ -359,6 +391,42 @@ nav {
 		}
 	}
 
+	.main-nav li a {
+		padding: 14px 16px;
+	}
+
+	// newsletter form styling
+	.newsletter-container {
+	  display: inline-block;
+	  float: left;
+	  margin: 0;
+	}
+
+		.newsletter-text {
+		  font-size: 1.4rem;
+			font-weight: 600;
+		  display: block;
+			color: $black-lighter;
+		  margin-bottom: $nav-newsletter-margin;
+		}
+
+		.newsletter-input {
+		  border: $border-light;
+		  border-radius: 5px;
+		  display: block;
+		  margin-bottom: $nav-newsletter-margin;
+		}
+
+		.button-basic-blue {
+		  border: none;
+		  color: $white;
+		  font-family: $basic-font;
+		  background-color: $blue;
+		  padding: $button-padding;
+		  display: block;
+		  margin: 0;
+		}
+
 	// removing each of the checkbox's control of dropdowns
 	#menu {
 		input[type=checkbox]:checked ~ .dropdown-container {
@@ -384,6 +452,9 @@ nav {
 		display: block;
 	}
 
+	.sub-menu {
+		width: 100%;
+	}
 
 
 

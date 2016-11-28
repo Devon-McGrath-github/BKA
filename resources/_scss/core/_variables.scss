@@ -154,6 +154,7 @@ $content-block-margin:      5%    !default;
 $nav-padding:               2%    !default;
 $content-padding:           5%    !default;
 $nav-bar-height:            76px  !default;
+$nav-bar-height-medium:     90px  !default;
 
 $featured-article-text-padding:   4%  !default;
 $text-padding-mobile-nav:   20px  !default;
@@ -163,7 +164,9 @@ $content-padding:           60px  !default;
 
 $content-text-padding:      25px  !default;
 
-$sectors-right-nav-padding: 20px !default;
+$sectors-right-nav-padding: 20px  !default;
+
+$mobile-nav-margin:         15px  !default;
 
 // Body
 //

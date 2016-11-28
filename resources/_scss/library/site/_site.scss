@@ -7,6 +7,9 @@ main {
 	padding: 0;
 	width: 100%;
 	margin-top: $nav-bar-height;
+	@include media-breakpoint-up(md) {
+		margin-top: $nav-bar-height-medium;
+	}
 }
 
 h1, h3, h4, h5, h6, a {
