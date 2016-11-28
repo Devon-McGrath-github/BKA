@@ -1,3 +1,19 @@
+// outer div that contains the nav bar (not the nav bar itself)
+#nav-container {
+	background: $white;
+	width: 100%;
+	height: $nav-bar-height;
+	position: absolute;
+	top: 0;
+	left: 0;
+	border-top: 5px solid $blue;
+	border-bottom: 1px solid $border-gray;
+	z-index: 100;
+	@include media-breakpoint-up(md) {
+		height: $nav-bar-height-medium;
+	}
+}
+
 // navbar general text styling
 .navbar {
 	a, p {
@@ -8,7 +24,7 @@
 	li:hover, a:hover, p:hover, li:active, a:active {
 		text-decoration: none;
 		color: $blue;
-		background-color: none;
+		background-color: inherit;
 	}
 	li:visited, a:visited {
 		text-decoration: none;
@@ -17,7 +33,14 @@
 		background-color: inherit !important;
 	}
 }
-
+.nav-column-right {
+	a {
+		display: block;
+		padding: $text-padding-mobile-nav $text-padding-mobile-nav !important;
+		position: relative;
+		border-bottom: 1px solid $nav-border-bottom;
+	}
+}
 // desktop set to none by default
 .desktop {
 	display: none;
@@ -58,14 +81,25 @@
   user-select: none;
 }
 
+// main logo styling
 .desktop {
 	#logo{
 		margin: $mobile-nav-margin;
 		float: left;
 		display: block;
-		background: url(../../../../resources/img/logo-small.png) no-repeat center;
 		width: 270px;
-		height:  50px;
+		height: 50px;
+		background: url(../../../../resources/img/logo-small.png) no-repeat center;
+	}
+}
+.mobile {
+	#logo {
+		margin: $mobile-nav-margin;
+		float: left;
+		display: block;
+		width: 215px;
+		height: 40px;
+		background: url(../../../../resources/img/logo-small.png) no-repeat center;
 	}
 }
 // nav bar styling
@@ -73,13 +107,50 @@
 .navbar {
   padding: 0;
 }
-.dropdown-container {
-  display: none;
-	position: absolute;
-	right: 0%;
-	top: 0%;
-	width: 100%;
-	overflow: scroll;
+.mobile {
+	.dropdown-container {
+	  display: none;
+		position: absolute;
+		right: 0%;
+		top: 0%;
+		width: 100%;
+		overflow: scroll;
+	}
+	.dropdown-container .dropdown a {
+		width: 100%;
+		margin: 0;
+	}
+	.dropdown-container .nav-column-right ul li {
+		text-align: left;
+		width: 100%;
+		margin: 0;
+	}
+	.dropdown-container .nav-column-right .nav li {
+		background: $nav-lvl-1-background-color;
+	}
+	.dropdown-container .nav-column-right .dropdown .sub-menu {
+		background-color: $nav-lvl-2-background-color;
+		text-decoration: none;
+		list-style: none;
+		list-style-type: none;
+		list-style-position: inside;
+		-webkit-margin-before: 0px !important;
+    -webkit-margin-after: 0px !important;
+    -webkit-margin-start: 0px !important;
+    -webkit-margin-end: 0px !important;
+    -webkit-padding-start: 0px !important;
+		li {
+			background-color: $nav-lvl-2-background-color;
+			a {
+				padding-left: $text-padding-mobile-nav;
+				margin-left: $text-padding-mobile-nav;
+			}
+		}
+		li:hover, a:hover, li:visited, a:visited {
+			color: $nav-font-color;
+			background-color: $nav-lvl-2-background-color;
+		}
+	}
 }
 
 // dropdown-container column colours
@@ -124,26 +195,33 @@
 	a:hover {
 		text-decoration: none;
 	}
-	.dropdown {
-		position: relative;
+	// nav item
+	.nav-item {
+		.nav-header {
+			display: inline-block;
+			vertical-align: top;
+			font-family: $basic-font !important;
+			float: left;
+		}
+		.dropdown-icon {
+			display: inline-block;
+			vertical-align: top;
+			float: right;
+			text-align: center;
+			margin: 0;
+			padding: 0;
+			font-family: "Source Sans Pro", Arial, sans-serif !important;
+		}
+
+		.nav-header-img {
+			height: 25px;
+			width: 25px;
+		}
+		.nav-item {
+			width: 100%;
+		}
 	}
 }
-.dropdown-icon {
-	display: inline-block;
-	position: absolute;
-	top: 0;
-	right: 0;
-	// padding: $text-padding-mobile-nav;
-	text-align: center;
-	font-family: "Source Sans Pro", Arial, sans-serif !important;
-}
-
-
-
-
-
-
-
 
 // Mobile navigation toggle
 .navbar {
@@ -186,10 +264,16 @@
   .dropdown-icon {
 		display: none;
 	}
-  .dropdown-container {
-
-  }
 }
 .dropdown-menu {
 	margin: 0;
+}
+
+// styling of active items
+.active {
+	color: $blue !important;
+}
+.active-article {
+	border-left: 4px solid $red !important;
+	background-color: #f3f3f3 !important;
 }
