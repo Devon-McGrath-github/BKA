@@ -7184,6 +7184,34 @@ img.mfp-img {
 .slick-arrow.slick-hidden {
   display: none; }
 
+.navbar a, .navbar p {
+  font-family: "Open Sans", "Source Sans Pro", Arial, sans-serif;
+  margin: 0;
+  padding: 0; }
+
+.navbar li:hover, .navbar a:hover, .navbar p:hover, .navbar li:active, .navbar a:active {
+  text-decoration: none;
+  color: #40c4c6;
+  background-color: none; }
+
+.navbar li:visited, .navbar a:visited {
+  text-decoration: none; }
+
+.navbar .dropdown-item:hover {
+  background-color: inherit !important; }
+
+.desktop {
+  display: none; }
+  @media (min-width: 992px) {
+    .desktop {
+      display: block; } }
+
+.mobile {
+  display: block; }
+  @media (min-width: 992px) {
+    .mobile {
+      display: none; } }
+
 #menu-icon {
   margin-top: 15px;
   margin-right: 15px;
@@ -7202,6 +7230,14 @@ img.mfp-img {
   @media (min-width: 992px) {
     #menu-icon {
       display: none; } }
+
+.desktop #logo {
+  margin: 15px;
+  float: left;
+  display: block;
+  background: url(../../../../resources/img/logo-small.png) no-repeat center;
+  width: 270px;
+  height: 50px; }
 
 .navbar {
   padding: 0; }
@@ -7231,6 +7267,28 @@ img.mfp-img {
   border: none;
   vertical-align: top; }
 
+.nav-header-img {
+  height: 25px;
+  width: 25px; }
+
+.nav-column-right ul li a, .nav-column-right ul li p {
+  color: #dedede;
+  display: inline-block; }
+
+.nav-column-right ul li a:hover {
+  text-decoration: none; }
+
+.nav-column-right ul li .dropdown {
+  position: relative; }
+
+.dropdown-icon {
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  text-align: center;
+  font-family: "Source Sans Pro", Arial, sans-serif !important; }
+
 .navbar input[type=checkbox] {
   display: none; }
 
@@ -7244,19 +7302,18 @@ img.mfp-img {
   display: block; }
 
 .sub-menu {
-  position: absolute;
-  z-index: 1001; }
-
-.dropdown-menu {
-  margin: 0; }
+  display: none; }
 
 @media (min-width: 992px) {
-  .dropdown a:hover ~ .dropdown-menu {
+  .dropdown a:hover ~ .sub-menu {
     display: block; }
   .dropdown-menu:hover {
     display: block; }
   .dropdown-icon {
     display: none; } }
+
+.dropdown-menu {
+  margin: 0; }
 
 /* Navigation */
 .site-navigation {

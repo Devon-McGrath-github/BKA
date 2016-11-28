@@ -1,3 +1,39 @@
+// navbar general text styling
+.navbar {
+	a, p {
+		font-family: $basic-font;
+		margin: 0;
+		padding: 0;
+	}
+	li:hover, a:hover, p:hover, li:active, a:active {
+		text-decoration: none;
+		color: $blue;
+		background-color: none;
+	}
+	li:visited, a:visited {
+		text-decoration: none;
+	}
+	.dropdown-item:hover {
+		background-color: inherit !important;
+	}
+}
+
+// desktop set to none by default
+.desktop {
+	display: none;
+	@include media-breakpoint-up(lg) {
+		display: block;
+	}
+}
+// mobile layout displays by default
+.mobile {
+	display: block;
+	@include media-breakpoint-up(lg) {
+		display: none;
+	}
+}
+
+// styling mobile nav icon
 #menu-icon {
 	margin-top: $mobile-nav-margin;
 	margin-right: $mobile-nav-margin;
@@ -22,6 +58,16 @@
   user-select: none;
 }
 
+.desktop {
+	#logo{
+		margin: $mobile-nav-margin;
+		float: left;
+		display: block;
+		background: url(../../../../resources/img/logo-small.png) no-repeat center;
+		width: 270px;
+		height:  50px;
+	}
+}
 // nav bar styling
 // TODO: undo this for the dektop nav
 .navbar {
@@ -65,10 +111,41 @@
 	vertical-align: top;
 }
 
+// styling of the magnifying glass
+.nav-header-img {
+	height: 25px;
+	width: 25px;
+}
+.nav-column-right ul li {
+	a, p {
+		color: $nav-font-color;
+		display: inline-block;
+	}
+	a:hover {
+		text-decoration: none;
+	}
+	.dropdown {
+		position: relative;
+	}
+}
+.dropdown-icon {
+	display: inline-block;
+	position: absolute;
+	top: 0;
+	right: 0;
+	// padding: $text-padding-mobile-nav;
+	text-align: center;
+	font-family: "Source Sans Pro", Arial, sans-serif !important;
+}
 
 
 
-// toggling collapse
+
+
+
+
+
+// Mobile navigation toggle
 .navbar {
 	// hiding the checkbox
 	input[type=checkbox]{
@@ -81,6 +158,7 @@
 	}
 }
 
+// toggling sub menus
 #sub-menu-1 {
 	input[type="checkbox"]:checked ~ .sub-menu {
   	display: block;
@@ -92,26 +170,14 @@
 	}
 }
 
+// hiding the sub menus
 .sub-menu {
-  position: absolute;
-  z-index: 1001;
-}
-
-
-
-
-
-
-
-
-
-.dropdown-menu {
-  margin: 0;
+	display: none;
 }
 // media queries large screen size
 @include media-breakpoint-up(lg) {
   // dropdown hover works for all dropdown menus
-  .dropdown a:hover ~ .dropdown-menu {
+  .dropdown a:hover ~ .sub-menu {
     display: block;
   }
   .dropdown-menu:hover {
@@ -121,6 +187,9 @@
 		display: none;
 	}
   .dropdown-container {
-    
+
   }
+}
+.dropdown-menu {
+	margin: 0;
 }
