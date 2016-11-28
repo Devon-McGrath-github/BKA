@@ -7399,6 +7399,26 @@ img.mfp-img {
   border-left: 4px solid #8d2704 !important;
   background-color: #f3f3f3 !important; }
 
+@media (min-width: 992px) {
+  .desktop-sub-menu {
+    display: none; }
+  .newsletter-text {
+    font-size: 1.4rem;
+    font-weight: 600;
+    display: block;
+    color: #4d4d4d;
+    margin-bottom: 0.75rem; }
+  .newsletter-input {
+    border: 1px solid #e2e2e2;
+    border-radius: 5px !important;
+    display: block;
+    margin-bottom: 0.75rem; }
+  .button-basic-blue {
+    border-radius: 0;
+    color: #FFFFFF;
+    font-family: "Open Sans", "Source Sans Pro", Arial, sans-serif;
+    background-color: #40c4c6; } }
+
 .advertisement-container {
   position: relative;
   background-color: white;

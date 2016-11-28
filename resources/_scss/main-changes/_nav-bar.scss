@@ -285,3 +285,31 @@
 	border-left: 4px solid $red !important;
 	background-color: #f3f3f3 !important;
 }
+
+// nav bar desktop styling
+@include media-breakpoint-up(lg) {
+	.desktop-sub-menu {
+		display: none;
+	}
+	.newsletter-text {
+	  font-size: 1.4rem;
+		font-weight: 600;
+	  display: block;
+		color: $black-lighter;
+	  margin-bottom: $nav-newsletter-margin;
+	}
+
+	.newsletter-input {
+	  border: $border-light;
+	  border-radius: 5px !important;
+	  display: block;
+	  margin-bottom: $nav-newsletter-margin;
+	}
+
+	.button-basic-blue {
+		border-radius: 0;
+	  color: $white;
+	  font-family: $basic-font;
+	  background-color: $blue;
+	}
+}
