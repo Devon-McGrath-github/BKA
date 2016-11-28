@@ -7327,6 +7327,11 @@ img.mfp-img {
   border: none;
   vertical-align: top; }
 
+.nav-column-left {
+  text-align: center; }
+  .nav-column-left .close-label {
+    padding-top: 15px; }
+
 .nav-header-img {
   height: 25px;
   width: 25px; }
